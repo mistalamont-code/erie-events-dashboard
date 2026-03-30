@@ -356,7 +356,7 @@ async function loadEvents(){
 }
 
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
-function pushFilters(){const p=new URLSearchParams();if(F.cat!=='All')p.set('cat',F.cat);if(F.month!=='All')p.set('month',F.month);if(F.src!=='All')p.set('src',F.src);if(F.q)p.set('q',F.q);history.replaceState(null,'',p.toString()?'?'+p:'location.pathname')}
+function pushFilters(){const p=new URLSearchParams();if(F.cat!=='All')p.set('cat',F.cat);if(F.month!=='All')p.set('month',F.month);if(F.src!=='All')p.set('src',F.src);if(F.q)p.set('q',F.q);history.replaceState(null,'',p.toString()?'?'+p:location.pathname)}
 function pullFilters(){const p=new URLSearchParams(location.search);if(p.has('cat'))F.cat=p.get('cat');if(p.has('month'))F.month=p.get('month');if(p.has('src'))F.src=p.get('src');if(p.has('q'))F.q=p.get('q')}
 
 const S={ErieEvents:{l:"Erie Events",d:"#1e40af",bg:"#eff6ff"},FlagshipCity:{l:"Flagship City District",d:"#059669",bg:"#ecfdf5"},VisitErie:{l:"VisitErie",d:"#dc2626",bg:"#fef2f2"},ErieDowntown:{l:"Erie Downtown Partnership",d:"#d97706",bg:"#fffbeb"},ArtMuseum:{l:"Erie Art Museum",d:"#7c3aed",bg:"#f5f3ff"},ChildrensMuseum:{l:"Children\u2019s Museum",d:"#ea580c",bg:"#fff7ed"},CelebrateErie:{l:"CelebrateErie",d:"#db2777",bg:"#fdf2f8"},CityOfErie:{l:"City of Erie",d:"#0891b2",bg:"#ecfeff"},ErieReader:{l:"Erie Reader",d:"#16a34a",bg:"#f0fdf4"},ErieChamber:{l:"Erie Chamber",d:"#b45309",bg:"#fffbeb"},GannonEvents:{l:"Gannon University",d:"#4338ca",bg:"#eef2ff"},EriePlayhouse:{l:"Erie Playhouse",d:"#be123c",bg:"#fff1f2"}};
