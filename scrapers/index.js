@@ -28,6 +28,7 @@ import { scrapeCityOfErie } from './cityoferie.js';
 import { scrapeErieReader } from './eriereader.js';
 import { scrapeErieChamber } from './eriechamber.js';
 import { scrapeGannonEvents } from './gannonevents.js';
+import { scrapeEriePlayhouse } from './erieplayhouse.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -59,6 +60,7 @@ async function main() {
     { name: 'ErieReader', fn: scrapeErieReader },
     { name: 'ErieChamber', fn: scrapeErieChamber },
     { name: 'GannonEvents', fn: scrapeGannonEvents },
+    { name: 'EriePlayhouse', fn: scrapeEriePlayhouse },
   ];
 
   for (const { name, fn } of scrapers) {
