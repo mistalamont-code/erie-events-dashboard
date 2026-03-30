@@ -80,9 +80,14 @@ async function main() {
   console.log('');
   console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 
+  // Remove past events (keep today and forward)
+  const today = new Date().toISOString().slice(0, 10);
+  const current = allEvents.filter(e => e.date >= today);
+  console.log(`  Removed past:      ${allEvents.length - current.length} events before ${today}`);
+
   // Deduplicate
-  const deduped = deduplicateEvents(allEvents);
-  
+  const deduped = deduplicateEvents(current);
+
   // Sort by date
   deduped.sort((a, b) => a.date.localeCompare(b.date) || a.time.localeCompare(b.time));
 

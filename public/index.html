@@ -341,7 +341,8 @@ async function loadEvents(){
     const scraped=(data.events||[]).map(normalize);
     const all=[...scraped,...FALLBACK_EVENTS];
     const seen=new Set();
-    E=all.filter(e=>{const k=e.n.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,25)+e.d;if(seen.has(k))return false;seen.add(k);return true});
+    const today=new Date().toISOString().slice(0,10);
+    E=all.filter(e=>{if(e.d<today)return false;const k=e.n.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,25)+e.d;if(seen.has(k))return false;seen.add(k);return true});
     META=data.meta||META;
     const ts=META.lastUpdated?new Date(META.lastUpdated):null;
     const badge=document.getElementById('update-badge');
@@ -349,7 +350,8 @@ async function loadEvents(){
     const fsync=document.getElementById('footer-sync');
     if(fsync&&ts){fsync.innerHTML='<span class="sync-dot"></span>Last sync: '+ts.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit'})}
   }catch(err){
-    E=FALLBACK_EVENTS;
+    const today2=new Date().toISOString().slice(0,10);
+    E=FALLBACK_EVENTS.filter(e=>e.d>=today2);
     const badge=document.getElementById('update-badge');
     if(badge){badge.textContent='Offline data \u2014 Mar 29, 2026';badge.style.display='block'}
   }
