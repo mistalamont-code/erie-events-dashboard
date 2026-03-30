@@ -53,6 +53,13 @@ button{font-family:var(--font-body);cursor:pointer}
 .pill:hover{background:rgba(255,255,255,0.2);color:#fff;border-color:rgba(255,255,255,0.35)}
 .pill.active{background:#fff;border-color:#fff;color:var(--erie-navy);font-weight:600}
 .pill:focus-visible{outline:2px solid #93c5fd;outline-offset:2px}
+.source-filters{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-top:10px;margin-top:4px;border-top:1px solid rgba(255,255,255,0.1);touch-action:pan-x}
+.source-filters::-webkit-scrollbar{display:none}
+.spill{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.65);padding:5px 14px 5px 10px;border-radius:20px;font-size:0.75rem;font-weight:500;white-space:nowrap;cursor:pointer;transition:background 0.15s,color 0.15s,border-color 0.15s}
+.spill:hover{background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);border-color:rgba(255,255,255,0.25)}
+.spill.active{background:#fff;border-color:#fff;color:var(--erie-navy);font-weight:600}
+.spill:focus-visible{outline:2px solid #93c5fd;outline-offset:2px}
+.spill .sdot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 
 /* === FILTER BAR === */
 .filter-bar{position:sticky;top:var(--header-h);z-index:40;background:var(--erie-white);border-bottom:1px solid var(--erie-border);padding:10px 1.5rem}
@@ -249,6 +256,7 @@ body.modal-open{overflow:hidden}
     <button class="pill" role="tab" data-qf="month" aria-selected="false">This Month</button>
     <button class="pill active" role="tab" data-qf="all" aria-selected="true">All</button>
   </div>
+  <div class="source-filters" id="source-filters"></div>
 </div></section>
 
 <div class="filter-bar">
@@ -405,7 +413,7 @@ function gD(d){return new Date(d+'T12:00:00').getDate()}
 function gMlong(d){return new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'long'})}
 function genDesc(e){const src=S[e.s]||{l:e.s};const t={Music:'Live music',Sports:'Sporting event',Festival:'Festival',Comedy:'Comedy show',Theater:'Theater performance',Arts:'Arts & culture',Family:'Family-friendly event',Community:'Community event'};return `${t[e.c]||'Event'} at ${e.v}. Presented by ${src.l}.`}
 
-let QF='all',activeCats=new Set(CATS),activeSrcs=new Set(Object.keys(S)),searchQ='',VIEW='list',calMonth=new Date().getMonth(),calYear=new Date().getFullYear();
+let QF='all',activeCats=new Set(CATS),activeSrcs=new Set(Object.keys(S)),selectedSrc='all',searchQ='',VIEW='list',calMonth=new Date().getMonth(),calYear=new Date().getFullYear();
 
 function pushURL(){const p=new URLSearchParams();if(QF!=='all')p.set('qf',QF);if(searchQ)p.set('q',searchQ);if(VIEW!=='list')p.set('view',VIEW);history.replaceState(null,'',p.toString()?'?'+p:location.pathname)}
 function pullURL(){const p=new URLSearchParams(location.search);if(p.has('qf'))QF=p.get('qf');if(p.has('q'))searchQ=p.get('q');if(p.has('view'))VIEW=p.get('view')}
@@ -507,7 +515,7 @@ function buildFilterChecks(){
 }
 function applyFilters(){activeSrcs=new Set([...document.querySelectorAll('#src-checks input:checked')].map(i=>i.value));activeCats=new Set([...document.querySelectorAll('#cat-checks input:checked')].map(i=>i.value));document.getElementById('filter-dd').classList.remove('open');render()}
 function clearFilters(){document.querySelectorAll('#src-checks input,#cat-checks input').forEach(i=>i.checked=true);activeSrcs=new Set(Object.keys(S));activeCats=new Set(CATS);document.getElementById('filter-dd').classList.remove('open');render()}
-function resetAll(){QF='all';searchQ='';document.getElementById('q').value='';activeSrcs=new Set(Object.keys(S));activeCats=new Set(CATS);render()}
+function resetAll(){QF='all';searchQ='';document.getElementById('q').value='';activeSrcs=new Set(Object.keys(S));activeCats=new Set(CATS);selectedSrc='all';render()}
 
 /* === RENDER === */
 function render(){
@@ -524,6 +532,16 @@ function render(){
   const srcCount=new Set(E.map(e=>e.s)).size;
   document.getElementById('src-label').textContent='Powered by '+srcCount+' local sources';
   document.getElementById('sources-list').innerHTML=Object.entries(S).filter(([k])=>sc[k]).map(([k,v])=>`<span class="source-badge"><span class="source-dot" style="background:${v.d}"></span>${esc(v.l)}</span>`).join('');
+  // Source filter pills in hero
+  const sfEl=document.getElementById('source-filters');
+  sfEl.innerHTML='<button class="spill'+(selectedSrc==='all'?' active':'')+'" data-src="all">All Sources</button>'+Object.entries(S).filter(([k])=>sc[k]).map(([k,v])=>`<button class="spill${selectedSrc===k?' active':''}" data-src="${k}"><span class="sdot" style="background:${v.d}"></span>${esc(v.l)} <span style="opacity:0.6">${sc[k]||0}</span></button>`).join('');
+  sfEl.querySelectorAll('.spill').forEach(b=>b.addEventListener('click',()=>{
+    const s=b.dataset.src;
+    if(s==='all'){selectedSrc='all';activeSrcs=new Set(Object.keys(S))}
+    else if(selectedSrc===s){selectedSrc='all';activeSrcs=new Set(Object.keys(S))}
+    else{selectedSrc=s;activeSrcs=new Set([s])}
+    render();
+  }));
   const ts=META.lastUpdated?new Date(META.lastUpdated):null;
   if(ts&&!isNaN(ts))document.getElementById('footer-meta').textContent='Last updated '+ts.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit'});
   buildFilterChecks();
