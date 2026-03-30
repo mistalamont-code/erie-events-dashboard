@@ -40,9 +40,9 @@ button{font-family:var(--font-body);cursor:pointer}
 .btn-submit:focus-visible{outline:2px solid var(--erie-blue);outline-offset:2px}
 
 /* === HERO === */
-.hero{padding:2.75rem 1.5rem 2rem;position:relative;overflow:hidden;background:var(--erie-navy)}
-.hero::before{content:'';position:absolute;inset:0;background:url('hero.jpg') center/cover no-repeat;opacity:0.3;z-index:0}
-.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(27,42,74,0.92) 0%,rgba(27,42,74,0.78) 50%,rgba(37,99,235,0.55) 100%);z-index:0}
+.hero{padding:3.5rem 1.5rem 2.5rem;position:relative;overflow:hidden;background:var(--erie-navy);min-height:280px}
+.hero::before{content:'';position:absolute;inset:-20px;background:url('hero.jpg') center/cover no-repeat;opacity:0.35;z-index:0}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(27,42,74,0.88) 0%,rgba(27,42,74,0.7) 50%,rgba(37,99,235,0.5) 100%);z-index:0}
 .hero-inner{max-width:var(--max-w);margin:0 auto;position:relative;z-index:1}
 .hero-headline{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,2.5rem);font-weight:400;color:#fff;line-height:1.25;margin-bottom:1.25rem;text-wrap:balance}
 .hero-count{color:#93c5fd}
@@ -239,7 +239,7 @@ body.modal-open{overflow:hidden}
 </div></header>
 
 <section class="hero"><div class="hero-inner">
-  <h1 class="hero-headline" id="hero-hl">What&rsquo;s happening in downtown Erie</h1>
+  <h1 class="hero-headline" id="hero-hl">What&rsquo;s happening in Erie</h1>
   <p class="hero-sub">Live music, local food, art, markets &amp; more &mdash; all in one place.</p>
   <div class="quick-filters" role="tablist" aria-label="Time filter">
     <button class="pill" role="tab" data-qf="today" aria-selected="false">Today</button>
@@ -427,9 +427,9 @@ function getFiltered(){
 
 function generateHeadline(){
   const we=filterByTime(E,'weekend');
-  if(we.length>0)return `<span class="hero-count">${we.length}</span> events this weekend in downtown Erie`;
-  if(E.length>0)return `<span class="hero-count">${E.length}</span> upcoming events in downtown Erie`;
-  return `What\u2019s happening in downtown Erie`;
+  if(we.length>0)return `<span class="hero-count">${we.length}</span> events this weekend in Erie`;
+  if(E.length>0)return `<span class="hero-count">${E.length}</span> upcoming events in Erie`;
+  return `What\u2019s happening in Erie`;
 }
 
 function downloadICS(e){if(!e)return;const dt=e.d.replace(/-/g,'');const ics=['BEGIN:VCALENDAR','VERSION:2.0','BEGIN:VEVENT','DTSTART;VALUE=DATE:'+dt,'SUMMARY:'+e.n,'LOCATION:'+e.v,'END:VEVENT','END:VCALENDAR'].join('\r\n');const b=new Blob([ics],{type:'text/calendar'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=e.n.replace(/[^a-z0-9]+/gi,'-')+'.ics';a.click()}
