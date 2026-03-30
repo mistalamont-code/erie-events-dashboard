@@ -86,6 +86,8 @@ Music, Sports, Festival, Comedy, Theater, Arts, Community, Family. "Community" i
 | CelebrateErie | celebrateerie.com | Dates hardcoded (Aug 14-16, 2026). Scraper checks for headliner updates. |
 | CityOfErie | erie.pa.us | Sparse. Supplements with known annual events. |
 | ErieReader | eriereader.com | **Most comprehensive source.** Up to 15 pages crawled, 2-second delay between requests. Maps Erie Reader categories to our 8. |
+| ErieChamber | eriepa.com | Erie Regional Chamber & Growth Partnership. Business mixers, luncheons, workshops, ribbon cuttings. GrowthZone/ChamberMaster CMS. |
+| GannonEvents | gannon.edu | Gannon University events. Concerts, lectures, athletics, theatre, commencement. Standard CMS calendar. |
 
 ## Known Issues & Edge Cases
 
