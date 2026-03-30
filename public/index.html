@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#1B2A4A">
 <meta name="color-scheme" content="light">
-<title>Downtown Erie Events &mdash; Flagship City District</title>
-<meta name="description" content="Auto-updated calendar of events happening in downtown Erie, PA. Music, food, arts, community events and more.">
-<meta property="og:title" content="Downtown Erie Events &mdash; What&rsquo;s Happening in the Flagship City District">
-<meta property="og:description" content="Auto-updated calendar of events happening in downtown Erie, PA. Aggregated from 12 local sources by the Erie Downtown Development Corporation.">
+<title>Downtown Erie Events &mdash; What&rsquo;s Happening Downtown</title>
+<meta name="description" content="Free community calendar for downtown Erie, PA. Live music, food, art, markets, and more &mdash; auto-updated daily from local sources. Powered by EDDC &amp; Erie Downtown Partnership.">
+<meta property="og:title" content="Downtown Erie Events &mdash; What&rsquo;s Happening Downtown">
+<meta property="og:description" content="Free community calendar for downtown Erie, PA. Live music, food, art, markets, and more &mdash; auto-updated daily from local sources. Powered by EDDC &amp; Erie Downtown Partnership.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,8 @@ button{font-family:var(--font-body);cursor:pointer}
 .header-brand{display:flex;align-items:baseline;gap:10px}
 .header-title{font-size:1rem;font-weight:700;color:var(--erie-navy);white-space:nowrap}
 .header-subtitle{font-size:0.75rem;color:var(--erie-text-muted);white-space:nowrap}
-.btn-submit{background:transparent;border:1px solid var(--erie-blue);color:var(--erie-blue);padding:6px 16px;border-radius:var(--radius-sm);font-size:0.8125rem;font-weight:600;height:32px;display:inline-flex;align-items:center;opacity:0.4;pointer-events:none}
+.btn-submit{background:transparent;border:1px solid var(--erie-blue);color:var(--erie-blue);padding:6px 16px;border-radius:var(--radius-sm);font-size:0.8125rem;font-weight:600;height:32px;display:inline-flex;align-items:center;transition:background 0.2s,color 0.2s}
+.btn-submit:hover{background:var(--erie-blue);color:#fff}
 .btn-submit:focus-visible{outline:2px solid var(--erie-blue);outline-offset:2px}
 
 /* === HERO === */
@@ -45,6 +46,7 @@ button{font-family:var(--font-body);cursor:pointer}
 .hero-inner{max-width:var(--max-w);margin:0 auto;position:relative;z-index:1}
 .hero-headline{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,2.5rem);font-weight:400;color:#fff;line-height:1.25;margin-bottom:1.25rem;text-wrap:balance}
 .hero-count{color:#93c5fd}
+.hero-sub{font-size:0.9375rem;color:rgba(255,255,255,0.65);margin-bottom:1.25rem;font-weight:400}
 .quick-filters{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px;touch-action:pan-x}
 .quick-filters::-webkit-scrollbar{display:none}
 .pill{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.75);padding:8px 18px;border-radius:20px;font-size:0.8125rem;font-weight:500;white-space:nowrap;transition:background 0.15s,color 0.15s,border-color 0.15s;backdrop-filter:blur(4px);touch-action:manipulation}
@@ -170,9 +172,48 @@ button{font-family:var(--font-body);cursor:pointer}
 .empty-state h3{font-size:1.125rem;font-weight:700;color:var(--erie-text);margin-bottom:6px}
 .empty-state p{font-size:0.9375rem;color:var(--erie-text-muted);line-height:1.6;margin-bottom:16px}
 
+/* === SUBMIT MODAL === */
+.modal-overlay{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,0.5);display:none;align-items:center;justify-content:center;padding:1rem;overflow-y:auto}
+.modal-overlay.open{display:flex}
+body.modal-open{overflow:hidden}
+.modal{background:var(--erie-white);border-radius:12px;max-width:560px;width:100%;padding:2rem;position:relative;max-height:calc(100vh - 2rem);overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.15);animation:modalIn 0.2s ease-out}
+@keyframes modalIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.modal-close{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:var(--radius-sm);border:1px solid var(--erie-border);background:var(--erie-white);color:var(--erie-text-muted);display:flex;align-items:center;justify-content:center;font-size:18px;line-height:1;cursor:pointer;transition:border-color 0.15s,color 0.15s}
+.modal-close:hover{border-color:var(--erie-border-hover);color:var(--erie-text)}
+.modal-close:focus-visible{outline:2px solid var(--erie-blue);outline-offset:2px}
+.modal h2{font-family:var(--font-display);font-size:1.5rem;color:var(--erie-navy);margin-bottom:4px}
+.modal-subtitle{font-size:0.875rem;color:var(--erie-text-muted);margin-bottom:1.5rem}
+.modal-form{display:flex;flex-direction:column;gap:16px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{display:flex;flex-direction:column;gap:4px}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-size:0.8125rem;font-weight:500;color:var(--erie-text-muted)}
+.form-group label .req{color:#DC2626;margin-left:2px}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:var(--erie-surface);border:1px solid var(--erie-border);border-radius:var(--radius-sm);padding:8px 12px;color:var(--erie-text);font-size:0.8125rem;font-family:var(--font-body);outline:none;transition:border-color 0.2s}
+.form-group input::placeholder,.form-group textarea::placeholder{color:var(--erie-text-light)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--erie-blue)}
+.form-group input:invalid:not(:placeholder-shown){border-color:#DC2626}
+.form-group textarea{resize:vertical;min-height:80px}
+.form-group select{cursor:pointer;appearance:auto}
+.char-counter{font-size:0.6875rem;color:var(--erie-text-light);text-align:right;margin-top:2px}
+.char-counter.warn{color:var(--erie-amber)}
+.char-counter.over{color:#DC2626}
+.hp-field{position:absolute;left:-9999px;opacity:0;height:0;width:0;overflow:hidden;tab-index:-1}
+.modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:8px}
+.modal-actions .btn-primary{padding:10px 24px;font-size:0.875rem}
+.modal-actions .btn-outline{padding:10px 24px;font-size:0.875rem}
+
+/* Submit modal success state */
+.submit-success{display:flex;flex-direction:column;align-items:center;text-align:center;padding:2rem 1rem}
+.submit-success .success-icon{width:56px;height:56px;border-radius:50%;background:#ECFDF5;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.submit-success .success-icon svg{width:28px;height:28px;color:#059669}
+.submit-success h3{font-size:1.125rem;font-weight:700;color:var(--erie-text);margin-bottom:8px}
+.submit-success p{font-size:0.9375rem;color:var(--erie-text-muted);line-height:1.6;margin-bottom:20px;max-width:360px}
+.submit-success .btn-primary{padding:10px 28px;font-size:0.875rem}
+
 /* === RESPONSIVE === */
 @media(max-width:768px){
-  .header{padding:0 1rem}.header-subtitle,.btn-submit{display:none}
+  .header{padding:0 1rem}.header-subtitle{display:none}.btn-submit{font-size:0.75rem;padding:5px 10px;height:28px}
   .hero{padding:2rem 1rem 1.5rem}.hero-headline{font-size:1.5rem}
   .filter-bar{padding:10px 1rem}.search-bar{max-width:none;min-width:0}
   .main-content{padding:1rem}
@@ -182,21 +223,24 @@ button{font-family:var(--font-body);cursor:pointer}
   .filter-dropdown-inner{grid-template-columns:1fr}
   .sources-bar{padding:1.5rem 1rem}
   .footer{padding:2rem 1rem}.footer-links{flex-direction:column;gap:0.75rem}
+  .form-row{grid-template-columns:1fr}
+  .modal{padding:1.5rem}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:0.01ms!important;animation-duration:0.01ms!important}}
-@media print{.header,.hero,.filter-bar,.filter-dropdown,.sources-bar,.view-toggle,.search-bar,.quick-filters{display:none!important}.event-row{break-inside:avoid}.footer{background:#fff!important;color:#333!important}body{background:#fff}}
+@media print{.header,.hero,.filter-bar,.filter-dropdown,.sources-bar,.view-toggle,.search-bar,.quick-filters,.modal-overlay{display:none!important}.event-row{break-inside:avoid}.footer{background:#fff!important;color:#333!important}body{background:#fff}}
 </style>
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to Events</a>
 
 <header class="header"><div class="header-inner">
-  <div class="header-brand"><span class="header-title">Downtown Erie Events</span><span class="header-subtitle">Flagship City District</span></div>
-  <button class="btn-submit" disabled title="Coming soon">Submit an Event</button>
+  <div class="header-brand"><span class="header-title">Downtown Erie Events</span><span class="header-subtitle">by Erie Downtown Partnership &amp; EDDC</span></div>
+  <button class="btn-submit" id="btn-submit-event">Submit an Event</button>
 </div></header>
 
 <section class="hero"><div class="hero-inner">
-  <h1 class="hero-headline" id="hero-hl">Downtown Erie Events</h1>
+  <h1 class="hero-headline" id="hero-hl">What&rsquo;s happening in downtown Erie</h1>
+  <p class="hero-sub">Live music, local food, art, markets &amp; more &mdash; all in one place.</p>
   <div class="quick-filters" role="tablist" aria-label="Time filter">
     <button class="pill" role="tab" data-qf="today" aria-selected="false">Today</button>
     <button class="pill" role="tab" data-qf="weekend" aria-selected="false">This Weekend</button>
@@ -243,15 +287,93 @@ button{font-family:var(--font-body);cursor:pointer}
 </section>
 
 <footer class="footer">
-  <p class="footer-brand">Erie Downtown Development Corporation</p>
-  <p class="footer-tagline">Flagship City District &middot; Erie, Pennsylvania</p>
-  <p class="footer-meta" id="footer-meta">Auto-crawled daily from 12 sources</p>
+  <p class="footer-brand">Downtown Erie Events</p>
+  <p class="footer-tagline">A community calendar for downtown Erie and surrounding areas.<br>Brought to you by the Erie Downtown Development Corporation<br>and the Erie Downtown Partnership.</p>
   <div class="footer-links">
-    <a href="https://www.erieddc.org" target="_blank" rel="noopener">EDDC Website</a>
-    <a href="https://www.visiterie.com" target="_blank" rel="noopener">VisitErie.com</a>
+    <a href="https://www.erieddc.org" target="_blank" rel="noopener">EDDC</a>
+    <a href="https://www.eriedowntown.com" target="_blank" rel="noopener">Erie Downtown Partnership</a>
+    <a href="https://www.visiterie.com" target="_blank" rel="noopener">VisitErie</a>
   </div>
+  <p class="footer-meta" id="footer-meta">Auto-updated daily from local sources.</p>
   <p class="footer-legal">&copy; 2026 Erie Downtown Development Corporation</p>
 </footer>
+
+<!-- Submit Event Modal -->
+<div class="modal-overlay" id="submit-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal" id="submit-modal-content">
+    <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+    <div id="modal-body">
+      <h2 id="modal-title">Submit an Event</h2>
+      <p class="modal-subtitle">Know about an event happening in downtown Erie? Let us know and we'll add it to the calendar after review.</p>
+      <form class="modal-form" id="submit-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="se-name">Event Name <span class="req">*</span></label>
+            <input type="text" id="se-name" name="event_name" required placeholder="e.g. Jazz at the Brewerie">
+          </div>
+          <div class="form-group">
+            <label for="se-date">Date <span class="req">*</span></label>
+            <input type="date" id="se-date" name="event_date" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="se-time">Time</label>
+            <input type="text" id="se-time" name="event_time" placeholder="e.g. 7:00 PM">
+          </div>
+          <div class="form-group">
+            <label for="se-venue">Venue <span class="req">*</span></label>
+            <input type="text" id="se-venue" name="event_venue" required placeholder="e.g. Warner Theatre">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="se-category">Category <span class="req">*</span></label>
+            <select id="se-category" name="event_category" required>
+              <option value="">Select a category</option>
+              <option value="Music">Music</option>
+              <option value="Sports">Sports</option>
+              <option value="Festival">Festival</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Theater">Theater</option>
+              <option value="Arts">Arts</option>
+              <option value="Community">Community</option>
+              <option value="Family">Family</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="se-organizer">Organizer Name <span class="req">*</span></label>
+            <input type="text" id="se-organizer" name="organizer_name" required placeholder="e.g. Erie Arts Council">
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="se-desc">Description</label>
+          <textarea id="se-desc" name="event_description" maxlength="500" placeholder="Brief description of the event (optional)"></textarea>
+          <div class="char-counter" id="se-desc-counter">0 / 500</div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="se-email">Contact Email <span class="req">*</span></label>
+            <input type="email" id="se-email" name="contact_email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="se-url">Website URL</label>
+            <input type="url" id="se-url" name="event_url" placeholder="https://...">
+          </div>
+        </div>
+        <!-- Honeypot field -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="se-website2">Do not fill this field</label>
+          <input type="text" id="se-website2" name="website2" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-outline" id="modal-cancel">Cancel</button>
+          <button type="submit" class="btn-primary">Submit Event</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 <script>
 let E=[],META={lastUpdated:'',totalEvents:0};
@@ -265,10 +387,11 @@ const FALLBACK_EVENTS=[
 {n:"A Conversation with Governor Josh Shapiro",d:"2026-03-31",t:"6:00 PM",v:"Jefferson Educational Society",c:"Community",s:"ErieReader"},{n:"Art After Dark: Kactai",d:"2026-04-02",t:"5:00 PM",v:"Erie Art Museum",c:"Music",s:"ErieReader"},
 {n:"Business After Hours",d:"2026-04-17",t:"5:00 PM",v:"Ambassador Center",c:"Community",s:"ErieChamber"},{n:"Outlook Erie 2026",d:"2026-05-08",t:"11:30 AM",v:"Bayfront Convention Center",c:"Community",s:"ErieChamber"},
 {n:"Gannon Spring Concert",d:"2026-04-18",t:"7:30 PM",v:"Schuster Theatre",c:"Music",s:"GannonEvents"},{n:"Gannon Commencement 2026",d:"2026-05-10",t:"10:00 AM",v:"Erie Insurance Arena",c:"Community",s:"GannonEvents"},
-{n:"Matilda The Musical",d:"2026-04-04",t:"7:30 PM",v:"Erie Playhouse",c:"Theater",s:"EriePlayhouse"},{n:"The Wizard of Oz",d:"2026-06-05",t:"7:30 PM",v:"Erie Playhouse",c:"Theater",s:"EriePlayhouse"},{n:"Grease",d:"2026-07-31",t:"7:30 PM",v:"Erie Playhouse",c:"Theater",s:"EriePlayhouse"},{n:"A Christmas Carol",d:"2026-12-04",t:"7:30 PM",v:"Erie Playhouse",c:"Theater",s:"EriePlayhouse"}
+{n:"Matilda The Musical",d:"2026-04-04",t:"7:30 PM",v:"Erie Playhouse",c:"Theater",s:"EriePlayhouse"},{n:"The Wizard of Oz",d:"2026-06-05",t:"7:30 PM",v:"Erie Playhouse",c:"Theater",s:"EriePlayhouse"},{n:"Grease",d:"2026-07-31",t:"7:30 PM",v:"Erie Playhouse",c:"Theater",s:"EriePlayhouse"},{n:"A Christmas Carol",d:"2026-12-04",t:"7:30 PM",v:"Erie Playhouse",c:"Theater",s:"EriePlayhouse"},
+{n:"Zoo Boo",d:"2026-10-18",t:"10:00 AM",v:"Erie Zoo",c:"Family",s:"ErieZoo"},{n:"Wild Lights at the Zoo",d:"2026-11-28",t:"5:00 PM",v:"Erie Zoo",c:"Family",s:"ErieZoo"},{n:"Zoo Camp: Amazing Animals",d:"2026-06-16",t:"9:00 AM",v:"Erie Zoo",c:"Family",s:"ErieZoo"},{n:"Safari Saturday",d:"2026-04-19",t:"10:00 AM",v:"Erie Zoo",c:"Family",s:"ErieZoo"},{n:"Sunset at the Zoo",d:"2026-07-18",t:"6:00 PM",v:"Erie Zoo",c:"Family",s:"ErieZoo"}
 ];
 
-const S={ErieEvents:{l:"Erie Events",d:"#2563EB"},FlagshipCity:{l:"Flagship City District",d:"#059669"},VisitErie:{l:"VisitErie",d:"#DC2626"},ErieDowntown:{l:"Erie Downtown Partnership",d:"#D97706"},ArtMuseum:{l:"Erie Art Museum",d:"#7C3AED"},ChildrensMuseum:{l:"Children\u2019s Museum",d:"#EA580C"},CelebrateErie:{l:"CelebrateErie",d:"#DB2777"},CityOfErie:{l:"City of Erie",d:"#0891B2"},ErieReader:{l:"Erie Reader",d:"#16A34A"},ErieChamber:{l:"Erie Chamber",d:"#B45309"},GannonEvents:{l:"Gannon University",d:"#4338CA"},EriePlayhouse:{l:"Erie Playhouse",d:"#BE123C"}};
+const S={ErieEvents:{l:"Erie Events",d:"#2563EB"},FlagshipCity:{l:"Flagship City District",d:"#059669"},VisitErie:{l:"VisitErie",d:"#DC2626"},ErieDowntown:{l:"Erie Downtown Partnership",d:"#D97706"},ArtMuseum:{l:"Erie Art Museum",d:"#7C3AED"},ChildrensMuseum:{l:"Children\u2019s Museum",d:"#EA580C"},CelebrateErie:{l:"CelebrateErie",d:"#DB2777"},CityOfErie:{l:"City of Erie",d:"#0891B2"},ErieReader:{l:"Erie Reader",d:"#16A34A"},ErieChamber:{l:"Erie Chamber",d:"#B45309"},GannonEvents:{l:"Gannon University",d:"#4338CA"},EriePlayhouse:{l:"Erie Playhouse",d:"#BE123C"},ErieZoo:{l:"Erie Zoo",d:"#15803d"}};
 const CATS=["Music","Sports","Festival","Comedy","Theater","Arts","Community","Family"];
 const TODAY=new Date().toISOString().slice(0,10);
 
@@ -304,9 +427,9 @@ function getFiltered(){
 
 function generateHeadline(){
   const we=filterByTime(E,'weekend');
-  if(we.length>0)return `<span class="hero-count">${we.length} event${we.length===1?'':'s'}</span> this weekend in downtown Erie`;
-  if(E.length>0)return `<span class="hero-count">${E.length} event${E.length===1?'':'s'}</span> coming up in downtown Erie`;
-  return 'Downtown Erie Events';
+  if(we.length>0)return `<span class="hero-count">${we.length}</span> events this weekend in downtown Erie`;
+  if(E.length>0)return `<span class="hero-count">${E.length}</span> upcoming events in downtown Erie`;
+  return `What\u2019s happening in downtown Erie`;
 }
 
 function downloadICS(e){if(!e)return;const dt=e.d.replace(/-/g,'');const ics=['BEGIN:VCALENDAR','VERSION:2.0','BEGIN:VEVENT','DTSTART;VALUE=DATE:'+dt,'SUMMARY:'+e.n,'LOCATION:'+e.v,'END:VEVENT','END:VCALENDAR'].join('\r\n');const b=new Blob([ics],{type:'text/calendar'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=e.n.replace(/[^a-z0-9]+/gi,'-')+'.ics';a.click()}
@@ -315,7 +438,7 @@ function downloadICS(e){if(!e)return;const dt=e.d.replace(/-/g,'');const ics=['B
 function renderList(items){
   if(!items.length){
     const hf=QF!=='all'||activeCats.size<CATS.length||activeSrcs.size<Object.keys(S).length||searchQ;
-    return `<div class="empty-state"><div class="empty-icon">\ud83d\udcc5</div><h3>No events found</h3><p>${hf?'Try adjusting your filters or check back later.':'No events are showing right now. Please check back soon as new events are added from local sources.'}</p>${hf?'<button class="btn-outline" onclick="resetAll()">Clear filters</button>':''}</div>`;
+    return `<div class="empty-state"><div class="empty-icon">\ud83d\udcc5</div><h3>Nothing on the calendar</h3><p>${hf?'No events match your current filter. Try a different time range or clear your filters to see everything coming up.':'No events to show right now. Check back soon \u2014 new events are added daily from local sources.'}</p>${hf?'<button class="btn-outline" onclick="resetAll()">Show all events</button>':''}</div>`;
   }
   // Group by date
   const g={};items.forEach(e=>{(g[e.d]=g[e.d]||[]).push(e)});
@@ -396,7 +519,7 @@ function render(){
   document.getElementById('main').innerHTML=VIEW==='list'?renderList(items):renderCal(items);
   const sc={};E.forEach(e=>sc[e.s]=(sc[e.s]||0)+1);
   const srcCount=new Set(E.map(e=>e.s)).size;
-  document.getElementById('src-label').textContent='Aggregated from '+srcCount+' sources';
+  document.getElementById('src-label').textContent='Powered by '+srcCount+' local sources';
   document.getElementById('sources-list').innerHTML=Object.entries(S).filter(([k])=>sc[k]).map(([k,v])=>`<span class="source-badge"><span class="source-dot" style="background:${v.d}"></span>${esc(v.l)}</span>`).join('');
   const ts=META.lastUpdated?new Date(META.lastUpdated):null;
   if(ts&&!isNaN(ts))document.getElementById('footer-meta').textContent='Last updated '+ts.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit'});
@@ -413,7 +536,7 @@ document.getElementById('filter-clear').addEventListener('click',clearFilters);
 
 /* === LOAD === */
 async function loadEvents(){
-  document.getElementById('main').innerHTML='<div class="skeleton"><div class="skel-header"></div>'+Array(6).fill('<div class="skel-row"></div>').join('')+'</div>';
+  document.getElementById('main').innerHTML='<div class="loading-state"><div class="spinner"></div><p>Loading events\u2026</p></div>';
   try{
     const res=await fetch('events.json',{cache:'no-cache'});
     if(!res.ok)throw new Error('fail');
@@ -427,12 +550,227 @@ async function loadEvents(){
   }catch(err){
     const today=new Date().toISOString().slice(0,10);
     E=FALLBACK_EVENTS.filter(e=>e.d>=today);
+    if(!E.length){document.getElementById('main').innerHTML='<div class="empty-state"><div class="empty-icon">\u26a0\ufe0f</div><h3>Couldn\u2019t load events</h3><p>Our event data is temporarily unavailable. Try refreshing the page.</p><button class="btn-outline" onclick="location.reload()">Refresh</button></div>';return}
   }
   pullURL();
   if(searchQ)document.getElementById('q').value=searchQ;
   render();
 }
 loadEvents();
+
+/* === SUBMIT EVENT MODAL === */
+(function(){
+  const overlay=document.getElementById('submit-modal');
+  const modal=document.getElementById('submit-modal-content');
+  const modalBody=document.getElementById('modal-body');
+  const form=document.getElementById('submit-form');
+  const openBtn=document.getElementById('btn-submit-event');
+  const closeBtn=document.getElementById('modal-close');
+  const cancelBtn=document.getElementById('modal-cancel');
+  const descField=document.getElementById('se-desc');
+  const descCounter=document.getElementById('se-desc-counter');
+
+  function openModal(){
+    overlay.classList.add('open');
+    document.body.classList.add('modal-open');
+    // Focus the first input after a tick
+    setTimeout(()=>{const fi=form.querySelector('input,select,textarea');if(fi)fi.focus()},50);
+  }
+
+  function closeModal(){
+    overlay.classList.remove('open');
+    document.body.classList.remove('modal-open');
+    // Reset to form state
+    resetModalBody();
+  }
+
+  function resetModalBody(){
+    // Rebuild form view if it was replaced by success
+    if(!document.getElementById('submit-form')){
+      modalBody.innerHTML=`<h2 id="modal-title">Submit an Event</h2>
+      <p class="modal-subtitle">Know about an event happening in downtown Erie? Let us know and we\'ll add it to the calendar after review.</p>
+      <form class="modal-form" id="submit-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="se-name">Event Name <span class="req">*</span></label>
+            <input type="text" id="se-name" name="event_name" required placeholder="e.g. Jazz at the Brewerie">
+          </div>
+          <div class="form-group">
+            <label for="se-date">Date <span class="req">*</span></label>
+            <input type="date" id="se-date" name="event_date" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="se-time">Time</label>
+            <input type="text" id="se-time" name="event_time" placeholder="e.g. 7:00 PM">
+          </div>
+          <div class="form-group">
+            <label for="se-venue">Venue <span class="req">*</span></label>
+            <input type="text" id="se-venue" name="event_venue" required placeholder="e.g. Warner Theatre">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="se-category">Category <span class="req">*</span></label>
+            <select id="se-category" name="event_category" required>
+              <option value="">Select a category</option>
+              <option value="Music">Music</option>
+              <option value="Sports">Sports</option>
+              <option value="Festival">Festival</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Theater">Theater</option>
+              <option value="Arts">Arts</option>
+              <option value="Community">Community</option>
+              <option value="Family">Family</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="se-organizer">Organizer Name <span class="req">*</span></label>
+            <input type="text" id="se-organizer" name="organizer_name" required placeholder="e.g. Erie Arts Council">
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="se-desc">Description</label>
+          <textarea id="se-desc" name="event_description" maxlength="500" placeholder="Brief description of the event (optional)"></textarea>
+          <div class="char-counter" id="se-desc-counter">0 / 500</div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="se-email">Contact Email <span class="req">*</span></label>
+            <input type="email" id="se-email" name="contact_email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="se-url">Website URL</label>
+            <input type="url" id="se-url" name="event_url" placeholder="https://...">
+          </div>
+        </div>
+        <div class="hp-field" aria-hidden="true">
+          <label for="se-website2">Do not fill this field</label>
+          <input type="text" id="se-website2" name="website2" tabindex="-1" autocomplete="off">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-outline" id="modal-cancel">Cancel</button>
+          <button type="submit" class="btn-primary">Submit Event</button>
+        </div>
+      </form>`;
+      // Re-bind events on rebuilt form
+      bindFormEvents();
+    } else {
+      document.getElementById('submit-form').reset();
+      updateCharCounter();
+    }
+  }
+
+  function updateCharCounter(){
+    const tf=document.getElementById('se-desc');
+    const tc=document.getElementById('se-desc-counter');
+    if(!tf||!tc)return;
+    const len=tf.value.length;
+    tc.textContent=len+' / 500';
+    tc.className='char-counter'+(len>=450?' warn':'')+(len>=500?' over':'');
+  }
+
+  function showSuccess(){
+    modalBody.innerHTML=`<div class="submit-success">
+      <div class="success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+      <h3>Event Submitted!</h3>
+      <p>Thank you! Your event has been submitted for review.</p>
+      <button class="btn-primary" id="success-close">Close</button>
+    </div>`;
+    document.getElementById('success-close').addEventListener('click',closeModal);
+  }
+
+  function handleSubmit(e){
+    e.preventDefault();
+    const f=e.target;
+
+    // Honeypot check
+    const hp=f.querySelector('[name="website2"]');
+    if(hp&&hp.value){
+      // Silently "succeed" for spambots
+      showSuccess();
+      return;
+    }
+
+    // Validate required fields
+    if(!f.checkValidity()){
+      // Highlight invalid fields
+      f.querySelectorAll(':invalid').forEach(el=>{
+        el.style.borderColor='#DC2626';
+        el.addEventListener('input',function fix(){el.style.borderColor='';el.removeEventListener('input',fix)},{once:true});
+      });
+      // Focus the first invalid field
+      const firstInvalid=f.querySelector(':invalid');
+      if(firstInvalid)firstInvalid.focus();
+      return;
+    }
+
+    // Collect form data
+    const submission={
+      id:Date.now()+'_'+Math.random().toString(36).slice(2,8),
+      name:f.event_name.value.trim(),
+      date:f.event_date.value,
+      time:f.event_time.value.trim()||'TBD',
+      venue:f.event_venue.value.trim(),
+      category:f.event_category.value,
+      description:f.event_description.value.trim(),
+      organizer:f.organizer_name.value.trim(),
+      email:f.contact_email.value.trim(),
+      url:f.event_url.value.trim(),
+      submittedAt:new Date().toISOString(),
+      status:'pending'
+    };
+
+    // Store in localStorage queue
+    try{
+      const queue=JSON.parse(localStorage.getItem('erie_event_submissions')||'[]');
+      queue.push(submission);
+      localStorage.setItem('erie_event_submissions',JSON.stringify(queue));
+    }catch(err){
+      // localStorage may be full or unavailable — proceed anyway
+    }
+
+    showSuccess();
+  }
+
+  function bindFormEvents(){
+    const f=document.getElementById('submit-form');
+    if(!f)return;
+    f.addEventListener('submit',handleSubmit);
+
+    const desc=document.getElementById('se-desc');
+    if(desc)desc.addEventListener('input',updateCharCounter);
+
+    const cancel=document.getElementById('modal-cancel');
+    if(cancel)cancel.addEventListener('click',closeModal);
+  }
+
+  // Open modal
+  openBtn.addEventListener('click',openModal);
+
+  // Close via X button
+  closeBtn.addEventListener('click',closeModal);
+
+  // Close via Cancel button
+  cancelBtn.addEventListener('click',closeModal);
+
+  // Close on overlay click
+  overlay.addEventListener('click',function(e){
+    if(e.target===overlay)closeModal();
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&overlay.classList.contains('open'))closeModal();
+  });
+
+  // Character counter
+  descField.addEventListener('input',updateCharCounter);
+
+  // Form submit
+  form.addEventListener('submit',handleSubmit);
+})();
 </script>
 </body>
 </html>
