@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#1B2A4A">
 <meta name="color-scheme" content="light">
-<title>Downtown Erie Events &mdash; Flagship City District</title>
-<meta name="description" content="Free, auto-updated calendar of events in downtown Erie, PA. Music, food, arts, community events and more &mdash; aggregated from 12 local sources by EDDC.">
-<meta property="og:title" content="Downtown Erie Events &mdash; What&rsquo;s Happening in the Flagship City District">
-<meta property="og:description" content="Auto-updated calendar of events happening in downtown Erie, PA. Aggregated from 12 local sources by the Erie Downtown Development Corporation.">
+<title>Erie Community Events Calendar</title>
+<meta name="description" content="Your guide to events in downtown Erie and the surrounding community. Find local events, support local places, and stay connected.">
+<meta property="og:title" content="Erie Community Events Calendar">
+<meta property="og:description" content="From live performances and festivals to family activities, markets, and neighborhood gatherings, this calendar helps residents and visitors discover what Erie has to offer.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,6 +62,7 @@ button{font-family:var(--font-body);cursor:pointer}
 .hero-inner{max-width:var(--max-w);margin:0 auto;position:relative;z-index:1}
 .hero-headline{font-family:var(--font-display);font-size:clamp(1.75rem,4vw,2.5rem);font-weight:400;color:#fff;line-height:1.25;margin-bottom:1.25rem;text-wrap:balance}
 .hero-count{color:#93c5fd;font-weight:400}
+.hero-sub{font-size:0.9375rem;color:rgba(255,255,255,0.7);line-height:1.6;max-width:540px;margin-bottom:1.5rem;font-weight:400}
 .quick-filters{display:flex;gap:8px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}
 .quick-filters::-webkit-scrollbar{display:none}
 .pill{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.75);padding:8px 18px;border-radius:20px;font-size:0.8125rem;font-weight:500;white-space:nowrap;transition:background 0.15s,color 0.15s,border-color 0.15s;backdrop-filter:blur(4px)}
@@ -229,8 +230,8 @@ button{font-family:var(--font-body);cursor:pointer}
 <header class="header">
   <div class="header-inner">
     <div class="header-brand">
-      <span class="header-title">Downtown Erie Events</span>
-      <span class="header-subtitle">Flagship City District</span>
+      <span class="header-title">Erie Community Events</span>
+      <span class="header-subtitle">Powered by EDDC &amp; Erie Downtown Partnership</span>
     </div>
     <button class="btn-outline btn-submit" disabled title="Coming soon &mdash; Phase 3">Submit an Event</button>
   </div>
@@ -238,7 +239,8 @@ button{font-family:var(--font-body);cursor:pointer}
 
 <section class="hero">
   <div class="hero-inner">
-    <h1 class="hero-headline" id="hero-headline">Downtown Erie&rsquo;s event calendar</h1>
+    <h1 class="hero-headline" id="hero-headline">Erie Community Events Calendar</h1>
+    <p class="hero-sub">Find local events, support local places, and stay connected. From live performances and festivals to family activities, markets, and neighborhood gatherings &mdash; discover what Erie has to offer.</p>
     <div class="quick-filters" id="quick-filters" role="tablist" aria-label="Time filter">
       <button class="pill" role="tab" data-qf="today" aria-selected="false">Today</button>
       <button class="pill" role="tab" data-qf="weekend" aria-selected="false">This Weekend</button>
@@ -294,19 +296,21 @@ button{font-family:var(--font-body);cursor:pointer}
 <main class="main-content" id="main"></main>
 
 <section class="sources-bar">
-  <p class="sources-label" id="sources-label">Aggregated from 12 sources</p>
+  <p class="sources-label">Event Sources</p>
+  <p style="font-size:0.875rem;color:var(--erie-text-muted);max-width:520px;margin:0 auto 16px;line-height:1.6">We bring together listings from participating local organizations and venues to make it easier to find what&rsquo;s happening across the Erie community.</p>
   <div class="sources-list" id="sources-list"></div>
 </section>
 
 <footer class="footer">
-  <p class="footer-brand">Erie Downtown Development Corporation</p>
-  <p class="footer-tagline">Flagship City District &middot; Erie, Pennsylvania</p>
-  <p class="footer-meta" id="footer-meta">Updated daily from 12 local sources</p>
+  <p class="footer-brand">Erie Community Events Calendar</p>
+  <p class="footer-tagline">A community resource for downtown Erie and surrounding areas.</p>
+  <p class="footer-meta" id="footer-meta">Powered by Erie Downtown Development Corporation &amp; Erie Downtown Partnership</p>
   <div class="footer-links">
-    <a href="https://www.erieddc.org" target="_blank" rel="noopener">EDDC Website</a>
-    <a href="https://www.visiterie.com" target="_blank" rel="noopener">VisitErie.com</a>
+    <a href="https://www.erieddc.org" target="_blank" rel="noopener">EDDC</a>
+    <a href="https://www.eriedowntown.com" target="_blank" rel="noopener">Erie Downtown Partnership</a>
+    <a href="https://www.visiterie.com" target="_blank" rel="noopener">VisitErie</a>
   </div>
-  <p class="footer-legal">&copy; 2026 Erie Downtown Development Corporation</p>
+  <p class="footer-legal">&copy; 2026 Erie Downtown Development Corporation &amp; local event partners</p>
 </footer>
 
 <script>
@@ -413,10 +417,10 @@ function getFiltered(){
 /* ===== HEADLINE ===== */
 function generateHeadline(){
   const we=filterByTime(E,'weekend');
-  if(we.length>0)return `<span class="hero-count">${we.length} event${we.length===1?'':'s'}</span> this weekend in downtown Erie`;
+  if(we.length>0)return `<span class="hero-count">${we.length} event${we.length===1?'':'s'}</span> this weekend in Erie`;
   const all=E;
-  if(all.length>0)return `<span class="hero-count">${all.length} event${all.length===1?'':'s'}</span> coming up in downtown Erie`;
-  return `Downtown Erie\u2019s event calendar`;
+  if(all.length>0)return `<span class="hero-count">${all.length} event${all.length===1?'':'s'}</span> coming up in Erie`;
+  return `Erie Community Events Calendar`;
 }
 
 /* ===== ICS DOWNLOAD ===== */
@@ -431,7 +435,7 @@ function downloadICS(e){
 function renderList(items){
   if(!items.length){
     const hasFilters=QF!=='all'||activeCats.size<CATS.length||activeSrcs.size<Object.keys(S).length||searchQ;
-    return `<div class="empty-state"><div class="empty-icon">&#128197;</div><h3>No Events Found</h3><p>${hasFilters?'No events match your current filters. Try broadening your search or clearing your selections.':'No events are showing right now. Please check back soon as new events are added from local sources.'}</p>${hasFilters?'<button class="btn-outline" onclick="resetAll()">Clear Filters</button>':''}</div>`;
+    return `<div class="empty-state"><div class="empty-icon">&#128197;</div><h3>${hasFilters?'No Matching Events':'No Events Right Now'}</h3><p>${hasFilters?'No events match your current filters. Try broadening your search or clearing your selections.':'No events are showing right now. Please check back soon as new events are added from local sources.'}</p>${hasFilters?'<button class="btn-outline" onclick="resetAll()">Clear Filters</button>':''}</div>`;
   }
   // Group by month
   const g={};items.forEach(e=>{const m=gMlong(e.d);(g[m]=g[m]||[]).push(e)});
@@ -570,7 +574,6 @@ function render(){
   // Sources bar
   const sc={};E.forEach(e=>sc[e.s]=(sc[e.s]||0)+1);
   const srcCount=new Set(E.map(e=>e.s)).size;
-  document.getElementById('sources-label').textContent=`Listings from ${srcCount} local sources`;
   document.getElementById('sources-list').innerHTML=Object.entries(S).filter(([k])=>sc[k]).map(([k,v])=>`<span class="source-badge"><span class="source-dot" style="background:${v.d}"></span>${esc(v.l)}</span>`).join('');
   // Footer meta
   const ts=META.lastUpdated?new Date(META.lastUpdated):null;
