@@ -1,0 +1,170 @@
+{
+  "meta": {
+    "lastUpdated": "2026-03-30T01:30:47.495Z",
+    "totalEvents": 19,
+    "sources": [
+      "ErieEvents",
+      "FlagshipCity",
+      "VisitErie",
+      "ErieDowntown",
+      "ArtMuseum",
+      "ChildrensMuseum",
+      "CelebrateErie",
+      "CityOfErie"
+    ]
+  },
+  "events": [
+    {
+      "name": "Karaoke @ the Food Hall",
+      "date": "2026-03-31",
+      "time": "6:00 PM",
+      "venue": "Flagship City Food Hall",
+      "category": "Music",
+      "source": "FlagshipCity"
+    },
+    {
+      "name": "103rd Spring Show Opens",
+      "date": "2026-04-02",
+      "time": "11:00 AM",
+      "venue": "Erie Art Museum",
+      "category": "Arts",
+      "source": "ArtMuseum"
+    },
+    {
+      "name": "Erie SeaWolves Opening Night vs Richmond",
+      "date": "2026-04-03",
+      "time": "6:05 PM",
+      "venue": "UPMC Park",
+      "category": "Sports",
+      "source": "ErieEvents"
+    },
+    {
+      "name": "Colin Mochrie & Brad Sherwood",
+      "date": "2026-04-10",
+      "time": "7:00 PM",
+      "venue": "Warner Theatre",
+      "category": "Comedy",
+      "source": "ErieEvents"
+    },
+    {
+      "name": "Hotel California — Eagles Tribute",
+      "date": "2026-04-11",
+      "time": "8:00 PM",
+      "venue": "Warner Theatre",
+      "category": "Music",
+      "source": "ErieEvents"
+    },
+    {
+      "name": "Spring Craft & Gift Festival",
+      "date": "2026-04-11",
+      "time": "10:00 AM",
+      "venue": "Bayfront Convention Center",
+      "category": "Festival",
+      "source": "ErieEvents"
+    },
+    {
+      "name": "Harlem Globetrotters",
+      "date": "2026-04-15",
+      "time": "7:00 PM",
+      "venue": "Erie Insurance Arena",
+      "category": "Sports",
+      "source": "ErieEvents"
+    },
+    {
+      "name": "Bat Out Of Hell: The Musical",
+      "date": "2026-04-20",
+      "time": "7:30 PM",
+      "venue": "Warner Theatre",
+      "category": "Theater",
+      "source": "ErieEvents"
+    },
+    {
+      "name": "Gallery Night — Spring",
+      "date": "2026-04-24",
+      "time": "5:00 PM",
+      "venue": "Erie Art Museum + Downtown",
+      "category": "Arts",
+      "source": "ArtMuseum"
+    },
+    {
+      "name": "Jerry Seinfeld",
+      "date": "2026-05-15",
+      "time": "7:00 PM",
+      "venue": "Warner Theatre",
+      "category": "Comedy",
+      "source": "ErieEvents"
+    },
+    {
+      "name": "Erie Pride Parade",
+      "date": "2026-06-14",
+      "time": "TBD",
+      "venue": "Perry Square",
+      "category": "Festival",
+      "source": "VisitErie"
+    },
+    {
+      "name": "Erie Juneteenth Celebration",
+      "date": "2026-06-20",
+      "time": "11:00 AM",
+      "venue": "Perry Square",
+      "category": "Festival",
+      "source": "FlagshipCity"
+    },
+    {
+      "name": "Weird Al Yankovic Tour",
+      "date": "2026-07-08",
+      "time": "7:30 PM",
+      "venue": "Erie Insurance Arena",
+      "category": "Music",
+      "source": "ErieEvents"
+    },
+    {
+      "name": "Panegyri Greek Festival",
+      "date": "2026-07-10",
+      "time": "TBD",
+      "venue": "Downtown Erie",
+      "category": "Festival",
+      "source": "VisitErie"
+    },
+    {
+      "name": "CelebrateErie — Day 1",
+      "date": "2026-08-14",
+      "time": "TBD",
+      "venue": "Downtown Erie",
+      "category": "Festival",
+      "source": "CelebrateErie"
+    },
+    {
+      "name": "CelebrateErie — Day 2",
+      "date": "2026-08-15",
+      "time": "TBD",
+      "venue": "Downtown Erie",
+      "category": "Festival",
+      "source": "CelebrateErie"
+    },
+    {
+      "name": "CelebrateErie — Day 3",
+      "date": "2026-08-16",
+      "time": "TBD",
+      "venue": "Downtown Erie",
+      "category": "Festival",
+      "source": "CelebrateErie"
+    },
+    {
+      "name": "Erie Downtown Fall Fest",
+      "date": "2026-10-15",
+      "time": "TBD",
+      "venue": "Downtown Erie",
+      "category": "Festival",
+      "source": "ErieDowntown"
+    },
+    {
+      "name": "Downtown d Lights",
+      "date": "2026-12-04",
+      "time": "5:00 PM",
+      "venue": "Perry Square",
+      "category": "Festival",
+      "source": "ErieDowntown"
+    }
+  ]
+}

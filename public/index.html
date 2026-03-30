@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Downtown Erie — Unified Events Calendar 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--white:#fff;--bg:#f7f8fa;--surface:#fff;--border:#e5e7eb;--border2:#f0f1f3;--text:#1a1a2e;--text2:#6b7280;--text3:#9ca3af;--accent:#1e40af;--accent-light:#eff6ff;--green:#059669;--green-light:#ecfdf5;--shadow:0 1px 3px rgba(0,0,0,0.06)}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+
+.header{background:var(--white);border-bottom:1px solid var(--border)}
+.header-top{background:var(--accent);color:white;padding:20px 32px}
+.header-inner{max-width:1100px;margin:0 auto}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-icon{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:22px}
+.brand h1{font-family:'Instrument Serif',Georgia,serif;font-size:28px;font-weight:400;letter-spacing:-0.5px}
+.brand p{font-size:12px;opacity:0.8;margin-top:2px}
+.header-badge{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:8px;padding:8px 14px;font-size:11px;text-align:center;line-height:1.4}
+.header-badge strong{display:block;font-size:22px}
+
+.sources-bar{padding:14px 32px;background:var(--white);border-bottom:1px solid var(--border2);overflow-x:auto}
+.sources-bar .inner{max-width:1100px;margin:0 auto;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.src-pill{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:var(--text2);background:var(--bg);border:1px solid var(--border);border-radius:100px;padding:4px 12px 4px 8px;white-space:nowrap}
+.src-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.sources-label{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text3);font-weight:600;margin-right:4px}
+
+.filters{background:var(--white);border-bottom:1px solid var(--border);padding:12px 32px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.filters-inner{max-width:1100px;margin:0 auto;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.filter-group{display:flex;align-items:center;gap:6px}
+.filter-label{font-size:10px;color:var(--text3);text-transform:uppercase;letter-spacing:1.2px;font-weight:600;flex-shrink:0}
+.filter-opts{display:flex;gap:3px;flex-wrap:wrap}
+.fbtn{background:transparent;border:1px solid transparent;color:var(--text3);font-size:12px;font-weight:500;padding:5px 12px;border-radius:6px;cursor:pointer;transition:all .15s;font-family:inherit}
+.fbtn:hover{color:var(--text);background:#f3f4f6}
+.fbtn.active{background:var(--accent-light);border-color:#bfdbfe;color:var(--accent);font-weight:600}
+.search-wrap{flex:1;min-width:180px;position:relative}
+.search-wrap input{width:100%;background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:8px 14px 8px 36px;color:var(--text);font-size:13px;font-family:inherit;outline:none;transition:border .2s}
+.search-wrap input:focus{border-color:#3b82f6;box-shadow:0 0 0 3px rgba(59,130,246,0.1)}
+.search-wrap svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--text3)}
+.view-toggle{display:flex;border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.vbtn{background:var(--white);border:none;padding:7px 14px;cursor:pointer;font-size:13px;color:var(--text3);font-family:inherit;transition:all .15s}
+.vbtn.active{background:var(--accent);color:white}
+.vbtn:not(:last-child){border-right:1px solid var(--border)}
+
+.content{max-width:1100px;margin:0 auto;padding:24px 32px 60px}
+
+.upnext{background:var(--green-light);border:1px solid #a7f3d0;border-radius:12px;padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.upnext-badge{background:var(--green);color:white;border-radius:8px;padding:8px 12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;white-space:nowrap}
+.upnext-info{flex:1;min-width:200px}
+.upnext-info h3{font-size:15px;font-weight:600}
+.upnext-info p{font-size:12px;color:var(--text2);margin-top:3px}
+.upnext-countdown{font-size:13px;font-weight:600;color:var(--green);background:white;border:1px solid #a7f3d0;padding:5px 14px;border-radius:100px}
+
+.month-section{margin-bottom:28px}
+.month-header{display:flex;align-items:baseline;gap:10px;margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--text)}
+.month-header h2{font-family:'Instrument Serif',Georgia,serif;font-size:26px;font-weight:400}
+.month-count{font-size:12px;font-weight:500;color:var(--text3)}
+
+.event-list{display:flex;flex-direction:column;gap:4px}
+.event-card{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:center;background:var(--white);border:1px solid var(--border2);border-radius:10px;padding:14px 18px;transition:all .15s}
+.event-card:hover{border-color:var(--border);box-shadow:var(--shadow)}
+.date-col{text-align:center}
+.date-col .dow{font-size:10px;text-transform:uppercase;color:var(--text3);font-weight:600;letter-spacing:0.8px}
+.date-col .day{font-size:24px;font-weight:700;line-height:1.15}
+.date-col .mon{font-size:10px;color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:0.5px}
+.ev-info h3{font-size:14px;font-weight:600;line-height:1.3;margin-bottom:4px}
+.ev-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--text2)}
+.ev-meta .venue{font-weight:500;color:var(--accent)}
+.ev-meta .tbadge{background:var(--bg);padding:2px 8px;border-radius:4px;font-size:11px;font-weight:500}
+.event-right{display:flex;flex-direction:column;align-items:flex-end;gap:5px;min-width:100px}
+.stag{display:inline-flex;align-items:center;gap:4px;font-size:10px;color:var(--text3);background:var(--bg);border:1px solid var(--border2);padding:3px 8px;border-radius:4px;font-weight:500}
+.stag .dot{width:6px;height:6px;border-radius:50%}
+.cd{font-size:11px;font-weight:600;color:var(--green)}
+.cd.past{color:var(--text3)}
+
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.cal-head{background:#f9fafb;padding:8px;text-align:center;font-size:11px;font-weight:600;color:var(--text2);text-transform:uppercase}
+.cal-cell{background:var(--white);min-height:90px;padding:6px}
+.cal-cell.empty{background:#fafbfc}
+.cal-cell .dn{font-size:12px;font-weight:600;color:var(--text3);margin-bottom:4px}
+.cal-cell.today .dn{background:var(--accent);color:white;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px}
+.cal-ev{font-size:10px;padding:2px 5px;border-radius:3px;margin-bottom:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500;line-height:1.4}
+.cal-more{font-size:10px;color:var(--accent);font-weight:600;padding:1px 4px}
+
+.roadmap{background:linear-gradient(135deg,#fefce8,#fef3c7);border:1px solid #fde68a;border-radius:10px;padding:16px 20px;margin-bottom:20px}
+.roadmap h4{font-size:13px;font-weight:700;color:#92400e;margin-bottom:6px}
+.roadmap p{font-size:12px;color:#a16207;line-height:1.5}
+.phases{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.ph{font-size:11px;font-weight:600;padding:4px 10px;border-radius:6px;display:inline-flex;align-items:center;gap:4px}
+.ph.now{background:#dcfce7;color:#166534;border:1px solid #86efac}
+.ph.next{background:#fff;color:#a16207;border:1px solid #fde68a}
+
+.footer{text-align:center;margin-top:40px;padding:24px 0;border-top:1px solid var(--border)}
+.footer p{font-size:12px;color:var(--text3);line-height:1.8}
+.empty{text-align:center;padding:60px 20px;color:var(--text3);font-size:14px}
+
+@media(max-width:768px){
+  .header-top,.filters,.sources-bar,.content{padding-left:16px;padding-right:16px}
+  .brand h1{font-size:22px}
+  .event-card{grid-template-columns:50px 1fr;gap:10px}
+  .event-right{display:none}
+  .cal-cell{min-height:60px;padding:3px}
+}
+@media print{
+  .filters,.roadmap,.search-wrap,.view-toggle{display:none!important}
+  .header-top{background:#1e40af!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .event-card{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top"><div class="header-inner"><div class="header-row">
+    <div class="brand"><div class="brand-icon">⚓</div><div><h1>Downtown Erie Events</h1><p>Unified Calendar — 2026</p></div></div>
+    <div class="header-badge"><strong id="tc">0</strong>events from 9 sources<div id="update-badge" style="display:none;font-size:10px;margin-top:4px;opacity:0.7;font-weight:400"></div></div>
+  </div></div></div>
+  <div class="sources-bar"><div class="inner"><span class="sources-label">Sources</span><span id="sp"></span></div></div>
+</div>
+
+<div class="filters"><div class="filters-inner">
+  <div class="filter-group"><span class="filter-label">Type</span><div class="filter-opts" id="cf"></div></div>
+  <div class="filter-group"><span class="filter-label">Month</span><div class="filter-opts" id="mf"></div></div>
+  <div class="search-wrap"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" id="q" placeholder="Search events, venues..."/></div>
+  <div class="view-toggle"><button class="vbtn active" onclick="sv('list')">☰ List</button><button class="vbtn" onclick="sv('cal')">▦ Calendar</button></div>
+</div></div>
+
+<div class="content" id="c"></div>
+
+<script>
+// ===== DATA LOADING =====
+// Phase 2: Load from events.json (produced by daily scraper)
+// Falls back to inline data if fetch fails (offline/local use)
+
+let E = []; // Will be populated by fetch or fallback
+let META = { lastUpdated: 'Manual crawl — March 29, 2026', totalEvents: 0 };
+
+const FALLBACK_EVENTS = [
+{n:"Erie SeaWolves Opening Night vs Richmond",d:"2026-04-03",t:"6:05 PM",v:"UPMC Park",c:"Sports",s:"ErieEvents"},{n:"Erie SeaWolves vs Richmond",d:"2026-04-04",t:"1:35 PM",v:"UPMC Park",c:"Sports",s:"ErieEvents"},{n:"Erie SeaWolves vs Richmond",d:"2026-04-05",t:"1:35 PM",v:"UPMC Park",c:"Sports",s:"ErieEvents"},{n:"Colin Mochrie & Brad Sherwood: Asking for Trouble",d:"2026-04-10",t:"7:00 PM",v:"Warner Theatre",c:"Comedy",s:"ErieEvents"},{n:"Hotel California — A Salute To The Eagles",d:"2026-04-11",t:"8:00 PM",v:"Warner Theatre",c:"Music",s:"ErieEvents"},{n:"Spring Craft & Gift Festival",d:"2026-04-11",t:"10:00 AM",v:"Bayfront Convention Center",c:"Festival",s:"ErieEvents"},{n:"Boys & Girls Club Bids For Kids",d:"2026-04-11",t:"5:00 PM",v:"Bayfront Convention Center",c:"Community",s:"ErieEvents"},{n:"Spring Craft & Gift Festival (Day 2)",d:"2026-04-12",t:"10:00 AM",v:"Bayfront Convention Center",c:"Festival",s:"ErieEvents"},{n:"Harlem Globetrotters",d:"2026-04-15",t:"7:00 PM",v:"Erie Insurance Arena",c:"Sports",s:"ErieEvents"},{n:"Professional Championship Bull Riders",d:"2026-04-18",t:"7:00 PM",v:"Erie Insurance Arena",c:"Sports",s:"ErieEvents"},{n:"ECHA Golden Gatsby Gala",d:"2026-04-18",t:"6:00 PM",v:"Bayfront Convention Center",c:"Community",s:"ErieEvents"},{n:"Bat Out Of Hell: The Musical",d:"2026-04-20",t:"7:30 PM",v:"Warner Theatre",c:"Theater",s:"ErieEvents"},{n:"Ashley Brown: Spoonful of Sugar",d:"2026-04-25",t:"7:30 PM",v:"Warner Theatre",c:"Theater",s:"ErieEvents"},{n:"Mutt Gala",d:"2026-04-25",t:"5:30 PM",v:"Bayfront Convention Center",c:"Community",s:"ErieEvents"},{n:"Bruce In The USA",d:"2026-04-28",t:"7:30 PM",v:"Warner Theatre",c:"Music",s:"ErieEvents"},{n:"The STARS Tour feat. Anne Wilson",d:"2026-05-01",t:"7:00 PM",v:"Warner Theatre",c:"Music",s:"ErieEvents"},{n:"World Ballet Company: Cinderella",d:"2026-05-05",t:"7:00 PM",v:"Warner Theatre",c:"Theater",s:"ErieEvents"},{n:"Britten's War Requiem",d:"2026-05-09",t:"7:30 PM",v:"Warner Theatre",c:"Music",s:"ErieEvents"},{n:"Jerry Seinfeld",d:"2026-05-15",t:"7:00 PM",v:"Warner Theatre",c:"Comedy",s:"ErieEvents"},{n:"An Evening With Larry The Cable Guy",d:"2026-05-17",t:"8:00 PM",v:"Warner Theatre",c:"Comedy",s:"ErieEvents"},{n:"Broadway By The Bay",d:"2026-05-21",t:"7:30 PM",v:"Warner Theatre",c:"Theater",s:"ErieEvents"},{n:"Clue — The Musical",d:"2026-05-27",t:"7:30 PM",v:"Warner Theatre",c:"Theater",s:"ErieEvents"},{n:"Bayfront Quilt Fest",d:"2026-05-29",t:"10:00 AM",v:"Bayfront Convention Center",c:"Festival",s:"ErieEvents"},{n:"Erie County Senior Expo",d:"2026-06-01",t:"10:00 AM",v:"Bayfront Convention Center",c:"Community",s:"ErieEvents"},{n:"Tom Keifer (Cinderella) w/ LA Guns",d:"2026-06-03",t:"7:30 PM",v:"Warner Theatre",c:"Music",s:"ErieEvents"},{n:"Aaron Lewis And The Stateliners",d:"2026-06-07",t:"7:30 PM",v:"Warner Theatre",c:"Music",s:"ErieEvents"},{n:"Long's School Of Dance",d:"2026-06-12",t:"7:00 PM",v:"Warner Theatre",c:"Arts",s:"ErieEvents"},{n:"The Book Of Mormon",d:"2026-06-17",t:"7:30 PM",v:"Warner Theatre",c:"Theater",s:"ErieEvents"},{n:"The Book Of Mormon (Night 2)",d:"2026-06-18",t:"7:30 PM",v:"Warner Theatre",c:"Theater",s:"ErieEvents"},{n:"Spotlight Dance Spectacular",d:"2026-06-20",t:"2:00 PM",v:"Warner Theatre",c:"Arts",s:"ErieEvents"},{n:"Marguerite's Academy Of Dance",d:"2026-06-26",t:"7:00 PM",v:"Warner Theatre",c:"Arts",s:"ErieEvents"},{n:"\"Weird Al\" Yankovic: Bigger & Weirder Tour",d:"2026-07-08",t:"7:30 PM",v:"Erie Insurance Arena",c:"Music",s:"ErieEvents"},
+{n:"Karaoke @ the Food Hall",d:"2026-03-31",t:"6:00 PM",v:"Flagship City Food Hall",c:"Music",s:"FlagshipCity"},{n:"Eric Brewer Trio LIVE at the Food Hall",d:"2026-04-01",t:"6:00 PM",v:"Flagship City Food Hall",c:"Music",s:"FlagshipCity"},{n:"Summer on State (series launch)",d:"2026-06-01",t:"TBD",v:"State Street",c:"Festival",s:"FlagshipCity"},{n:"Erie's Juneteenth Celebration",d:"2026-06-20",t:"11:00 AM",v:"Perry Square",c:"Festival",s:"FlagshipCity"},
+{n:"Edinboro Art & Music Festival",d:"2026-05-14",t:"TBD",v:"Downtown Edinboro",c:"Festival",s:"VisitErie"},{n:"SeaWolves vs Richmond: Fireworks Night",d:"2026-05-15",t:"TBD",v:"UPMC Park",c:"Sports",s:"VisitErie"},{n:"16th Annual Troika Russian Festival",d:"2026-05-22",t:"TBD",v:"Church of the Nativity",c:"Festival",s:"VisitErie"},{n:"Erie Beer Fest",d:"2026-04-01",t:"TBD",v:"Downtown Erie",c:"Festival",s:"VisitErie"},{n:"2026 Erie Pride Parade",d:"2026-06-14",t:"TBD",v:"Perry Square",c:"Festival",s:"VisitErie"},{n:"Sol Fest at Liberty Park",d:"2026-06-20",t:"TBD",v:"Liberty Park",c:"Festival",s:"VisitErie"},{n:"Flying Legends of Victory Warbird Tour",d:"2026-06-30",t:"TBD",v:"Fundamentals Flight Training",c:"Community",s:"VisitErie"},{n:"U.S. Brig Niagara Returns (America250)",d:"2026-07-02",t:"TBD",v:"Presque Isle Bay",c:"Community",s:"VisitErie"},{n:"Lights Over Lake Erie — Fireworks",d:"2026-07-03",t:"Dusk",v:"Presque Isle Bay",c:"Festival",s:"VisitErie"},{n:"Beer on the Bay",d:"2026-07-01",t:"TBD",v:"Liberty Park",c:"Festival",s:"VisitErie"},{n:"8 Great Tuesdays (series begins)",d:"2026-07-07",t:"6:30 PM",v:"Liberty Park",c:"Music",s:"VisitErie"},{n:"Panegyri Greek Festival",d:"2026-07-10",t:"TBD",v:"Assumption Greek Orthodox Church",c:"Festival",s:"VisitErie"},{n:"AmeriMasala Festival",d:"2026-07-18",t:"TBD",v:"Downtown Erie",c:"Festival",s:"VisitErie"},{n:"UPMC Sunset Series (weekly Jun–Jul)",d:"2026-06-15",t:"5:30 PM",v:"Beach 1, Presque Isle",c:"Music",s:"VisitErie"},{n:"Discover Presque Isle Week",d:"2026-07-20",t:"TBD",v:"Presque Isle State Park",c:"Festival",s:"VisitErie"},{n:"Erie's Blues & Jazz Fest",d:"2026-07-18",t:"TBD",v:"Frontier Park",c:"Music",s:"VisitErie"},{n:"North East Cherry Festival",d:"2026-07-15",t:"TBD",v:"North East, PA",c:"Festival",s:"VisitErie"},{n:"Dan Rice Days Festival",d:"2026-07-30",t:"TBD",v:"Girard, PA",c:"Festival",s:"VisitErie"},{n:"St. Paul's Italian Festival",d:"2026-08-07",t:"TBD",v:"Downtown Erie",c:"Festival",s:"VisitErie"},{n:"Zabawa Polish Festival",d:"2026-08-21",t:"TBD",v:"Downtown Erie",c:"Festival",s:"VisitErie"},{n:"Erie County Fair",d:"2026-08-30",t:"TBD",v:"Wattsburg Fairgrounds",c:"Festival",s:"VisitErie"},{n:"German Heritage Festival",d:"2026-09-05",t:"TBD",v:"St. Nick's Grove",c:"Festival",s:"VisitErie"},{n:"Edinboro Highland Games",d:"2026-09-11",t:"TBD",v:"Edinboro",c:"Festival",s:"VisitErie"},{n:"Fiesta on the Square",d:"2026-09-12",t:"TBD",v:"Perry Square",c:"Festival",s:"VisitErie"},{n:"St. Patrick's Irish Festival",d:"2026-09-20",t:"TBD",v:"Downtown Erie",c:"Festival",s:"VisitErie"},{n:"WineFest — North East",d:"2026-09-25",t:"TBD",v:"North East, PA",c:"Festival",s:"VisitErie"},{n:"West Bayfront Porchfest",d:"2026-09-15",t:"TBD",v:"West Bayfront",c:"Music",s:"VisitErie"},{n:"America250PA Concert in Erie",d:"2026-07-04",t:"TBD",v:"Erie Insurance Arena",c:"Music",s:"VisitErie"},
+{n:"Second Saturday: Rain & Flowers",d:"2026-04-11",t:"10:00 AM",v:"Downtown Erie",c:"Family",s:"ErieDowntown"},{n:"Big Free Yoga in Perry Square",d:"2026-04-18",t:"8:30 AM",v:"Perry Square",c:"Community",s:"ErieDowntown"},{n:"Sunday Farmers Market (series begins)",d:"2026-06-07",t:"10:00 AM",v:"Perry Square",c:"Community",s:"ErieDowntown"},{n:"Thursday Concert Series (summer weekly)",d:"2026-07-02",t:"7:00 PM",v:"Perry Square",c:"Music",s:"ErieDowntown"},{n:"Erie Downtown Fall Fest",d:"2026-10-15",t:"TBD",v:"Downtown Erie",c:"Festival",s:"ErieDowntown"},{n:"Downtown Harvest Dinner",d:"2026-10-01",t:"6:00 PM",v:"Downtown Erie",c:"Community",s:"ErieDowntown"},{n:"Small Business Saturday",d:"2026-11-28",t:"TBD",v:"Downtown Erie",c:"Community",s:"ErieDowntown"},{n:"Downtown d'Lights — Holiday Kickoff",d:"2026-12-04",t:"5:00 PM",v:"Perry Square",c:"Festival",s:"ErieDowntown"},
+{n:"103rd Spring Show Opens (thru Aug 7)",d:"2026-04-02",t:"11:00 AM",v:"Erie Art Museum",c:"Arts",s:"ArtMuseum"},{n:"Gallery Night — Spring",d:"2026-04-24",t:"5:00 PM",v:"Erie Art Museum + Downtown",c:"Arts",s:"ArtMuseum"},{n:"Gallery Night — Summer",d:"2026-07-24",t:"5:00 PM",v:"Erie Art Museum + Downtown",c:"Arts",s:"ArtMuseum"},{n:"Gallery Night — Fall",d:"2026-10-23",t:"5:00 PM",v:"Erie Art Museum + Downtown",c:"Arts",s:"ArtMuseum"},{n:"Gallery Night — Winter",d:"2026-12-04",t:"5:00 PM",v:"Erie Art Museum + Downtown",c:"Arts",s:"ArtMuseum"},{n:"Kids as Curators Exhibition",d:"2026-04-02",t:"TBD",v:"Erie Art Museum",c:"Family",s:"ArtMuseum"},{n:"Access For All — Free Museum Day (monthly)",d:"2026-04-02",t:"11:00 AM",v:"Erie Art Museum",c:"Family",s:"ArtMuseum"},{n:"ARTrageous Gala",d:"2026-09-01",t:"TBD",v:"Erie Art Museum",c:"Arts",s:"ArtMuseum"},
+{n:"Adult Egg Hunt — Eggstravaganza",d:"2026-03-27",t:"6:00 PM",v:"expERIEnce Children's Museum",c:"Family",s:"ChildrensMuseum"},{n:"Discovery Summer Camps (multi-week)",d:"2026-06-15",t:"9:00 AM",v:"expERIEnce Children's Museum",c:"Family",s:"ChildrensMuseum"},{n:"Worldwide Day of Play",d:"2026-09-19",t:"10:00 AM",v:"expERIEnce Children's Museum",c:"Family",s:"ChildrensMuseum"},{n:"Bike Rodeo — Kids Bicycle Safety",d:"2026-06-01",t:"10:00 AM",v:"expERIEnce Children's Museum",c:"Family",s:"ChildrensMuseum"},{n:"Santa's Castle (30th Anniversary)",d:"2026-12-06",t:"10:00 AM",v:"expERIEnce Children's Museum",c:"Family",s:"ChildrensMuseum"},
+{n:"CelebrateErie — Day 1",d:"2026-08-14",t:"TBD",v:"Downtown Erie",c:"Festival",s:"CelebrateErie"},{n:"CelebrateErie — Day 2",d:"2026-08-15",t:"TBD",v:"Downtown Erie",c:"Festival",s:"CelebrateErie"},{n:"CelebrateErie — Day 3",d:"2026-08-16",t:"TBD",v:"Downtown Erie",c:"Festival",s:"CelebrateErie"},
+{n:"Pride on the Bay",d:"2026-06-27",t:"TBD",v:"Bayfront",c:"Festival",s:"CityOfErie"},{n:"Waterford Heritage Days",d:"2026-07-17",t:"TBD",v:"Waterford, PA",c:"Festival",s:"CityOfErie"},{n:"The Gathering at Chaffee's",d:"2026-07-24",t:"TBD",v:"Girard, PA",c:"Music",s:"CityOfErie"},{n:"Party for the Paws — Fall Fundraiser",d:"2026-10-03",t:"11:00 AM",v:"Frontier Park",c:"Community",s:"CityOfErie"},
+{n:"A Conversation with Governor Josh Shapiro",d:"2026-03-31",t:"6:00 PM",v:"Jefferson Educational Society",c:"Community",s:"ErieReader"},{n:"Live Poetry With Miss Mabeline",d:"2026-03-31",t:"6:00 PM",v:"Cafe 7-10",c:"Arts",s:"ErieReader"},{n:"Women Making History 2026",d:"2026-03-30",t:"7:00 PM",v:"Mercyhurst University",c:"Community",s:"ErieReader"},{n:"Music at Noon: Hub New Music feat. Kojiro Umezaki",d:"2026-04-01",t:"12:00 PM",v:"Penn State Behrend",c:"Music",s:"ErieReader"},{n:"Goodell Gardens Opening Day",d:"2026-04-01",t:"TBD",v:"Goodell Gardens, Edinboro",c:"Community",s:"ErieReader"},{n:"Wicked: For Good — Film Screening",d:"2026-04-01",t:"5:00 PM",v:"10/20 Collective",c:"Arts",s:"ErieReader"},{n:"Asbury Woods Beekeeping Workshop (4-week)",d:"2026-04-01",t:"6:30 PM",v:"Asbury Woods Nature Center",c:"Community",s:"ErieReader"},{n:"Art After Dark: Kactai",d:"2026-04-02",t:"5:00 PM",v:"Erie Art Museum",c:"Music",s:"ErieReader"},{n:"103rd Spring Show Opening Reception",d:"2026-04-02",t:"6:00 PM",v:"Erie Art Museum",c:"Arts",s:"ErieReader"},{n:"Smith Creative Writers Reading Series",d:"2026-04-02",t:"5:30 PM",v:"Penn State Behrend",c:"Arts",s:"ErieReader"},{n:"Arundel Cellars Live Music: Tito & Dave",d:"2026-04-03",t:"TBD",v:"Arundel Cellars, North East",c:"Music",s:"ErieReader"},{n:"Arundel Cellars Live Music: Katie & Jack",d:"2026-04-10",t:"TBD",v:"Arundel Cellars, North East",c:"Music",s:"ErieReader"},{n:"Arundel Cellars Live Music: Brown Dog Acoustics",d:"2026-04-17",t:"TBD",v:"Arundel Cellars, North East",c:"Music",s:"ErieReader"},{n:"Arundel Cellars Live Music: Savage Daughter",d:"2026-04-24",t:"TBD",v:"Arundel Cellars, North East",c:"Music",s:"ErieReader"},{n:"K-Pop at the Library",d:"2026-03-31",t:"6:00 PM",v:"Blasco Memorial Library",c:"Music",s:"ErieReader"},{n:"One Night Only: Cheyenne Jackson at Mercyhurst",d:"2026-04-05",t:"7:30 PM",v:"Mercyhurst University",c:"Theater",s:"ErieReader"}
+];
+
+// Normalize event data from JSON (scraper uses full keys) to short keys (frontend uses)
+function normalize(ev) {
+  if (ev.n) return ev; // Already in short format (fallback data)
+  return {
+    n: ev.name || '',
+    d: ev.date || '',
+    t: ev.time || 'TBD',
+    v: ev.venue || '',
+    c: ev.category || 'Community',
+    s: ev.source || '',
+    url: ev.url || '',
+  };
+}
+
+async function loadEvents() {
+  // Show loading state
+  document.getElementById('c').innerHTML = '<div class="empty" id="loading-msg"><div style="font-size:24px;margin-bottom:8px">⚓</div>Loading events...</div>';
+  
+  try {
+    const res = await fetch('events.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('No events.json found');
+    const data = await res.json();
+    
+    E = (data.events || []).map(normalize);
+    META = data.meta || META;
+    
+    // Update header with live timestamp
+    const ts = META.lastUpdated ? new Date(META.lastUpdated) : null;
+    const badge = document.getElementById('update-badge');
+    if (badge && ts) {
+      badge.textContent = 'Auto-crawled ' + ts.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
+      badge.style.display = 'block';
+    }
+    
+    console.log(`✓ Loaded ${E.length} events from events.json (updated ${META.lastUpdated})`);
+  } catch (err) {
+    console.warn('Could not load events.json, using fallback data:', err.message);
+    E = FALLBACK_EVENTS;
+    
+    const badge = document.getElementById('update-badge');
+    if (badge) {
+      badge.textContent = 'Using offline data — last manual crawl Mar 29, 2026';
+      badge.style.display = 'block';
+    }
+  }
+  
+  init();
+}
+const S={ErieEvents:{l:"Erie Events",d:"#1e40af",bg:"#eff6ff"},FlagshipCity:{l:"Flagship City District",d:"#059669",bg:"#ecfdf5"},VisitErie:{l:"VisitErie",d:"#dc2626",bg:"#fef2f2"},ErieDowntown:{l:"Erie Downtown Partnership",d:"#d97706",bg:"#fffbeb"},ArtMuseum:{l:"Erie Art Museum",d:"#7c3aed",bg:"#f5f3ff"},ChildrensMuseum:{l:"Children's Museum",d:"#ea580c",bg:"#fff7ed"},CelebrateErie:{l:"CelebrateErie",d:"#db2777",bg:"#fdf2f8"},CityOfErie:{l:"City of Erie",d:"#0891b2",bg:"#ecfeff"},ErieReader:{l:"Erie Reader",d:"#16a34a",bg:"#f0fdf4"}};
+const CC={Music:"#1e40af",Sports:"#059669",Festival:"#dc2626",Comedy:"#7c3aed",Theater:"#db2777",Arts:"#ea580c",Community:"#0891b2",Family:"#d97706"};
+const CATS=["All","Music","Sports","Festival","Comedy","Theater","Arts","Community","Family"];
+const MO=["All","March","April","May","June","July","August","September","October","November","December"];
+let F={cat:"All",month:"All",q:""},V="list";
+const gM=d=>new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"long"});
+const gMo=d=>new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"short"});
+const gW=d=>new Date(d+"T12:00:00").toLocaleDateString("en-US",{weekday:"short"});
+const gD=d=>new Date(d+"T12:00:00").getDate();
+const dU=d=>{const n=new Date(),t=new Date(d+"T12:00:00"),x=Math.ceil((t-n)/864e5);return x===0?"Today":x===1?"Tomorrow":x<0?Math.abs(x)+"d ago":"in "+x+"d"};
+const TODAY=new Date().toISOString().slice(0,10);
+const TODAY_STR=TODAY;
+function gF(){let r=E.filter(e=>{if(F.cat!=="All"&&e.c!==F.cat)return!1;if(F.month!=="All"&&gM(e.d)!==F.month)return!1;if(F.q){const q=F.q.toLowerCase();if(!e.n.toLowerCase().includes(q)&&!e.v.toLowerCase().includes(q))return!1}return!0});const seen=new Set();r=r.filter(e=>{const k=e.n.toLowerCase().replace(/[^a-z0-9]/g,"").slice(0,25)+e.d;if(seen.has(k))return!1;seen.add(k);return!0});r.sort((a,b)=>a.d.localeCompare(b.d)||a.t.localeCompare(b.t));return r}
+function rL(items){const g={};items.forEach(e=>{const m=gM(e.d);(g[m]=g[m]||[]).push(e)});const nx=items.find(e=>e.d>=TODAY);
+let h=`<div class="roadmap"><h4>📋 Downtown Erie Events Dashboard</h4><p>Aggregating events from 9 sources. Auto-crawled daily at 6 AM via GitHub Actions.</p><div class="phases"><span class="ph now">✓ Phase 1 — Initial Build</span><span class="ph now">✓ Phase 2 — Daily Auto-Crawl</span><span class="ph next">Phase 3 — Public Event Submission (Next)</span></div></div>`;
+if(nx)h+=`<div class="upnext"><span class="upnext-badge">Up Next</span><div class="upnext-info"><h3>${nx.n}</h3><p>${gW(nx.d)}, ${gMo(nx.d)} ${gD(nx.d)} · ${nx.t} · ${nx.v}</p></div><span class="upnext-countdown">${dU(nx.d)}</span></div>`;
+if(!items.length)return h+`<div class="empty">No events match your filters.</div>`;
+Object.entries(g).forEach(([m,evts])=>{h+=`<div class="month-section"><div class="month-header"><h2>${m}</h2><span class="month-count">${evts.length} event${evts.length>1?"s":""}</span></div><div class="event-list">`;
+evts.forEach(e=>{const s=S[e.s]||{l:e.s,d:"#888"};const cc=CC[e.c]||"#6b7280";const up=e.d>=TODAY;
+h+=`<div class="event-card"><div class="date-col"><div class="mon">${gMo(e.d)}</div><div class="day">${gD(e.d)}</div><div class="dow">${gW(e.d)}</div></div><div class="ev-info"><h3><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${cc};margin-right:6px;vertical-align:middle"></span>${e.n}</h3><div class="ev-meta"><span class="tbadge">${e.t}</span><span class="venue">${e.v}</span><span style="color:${cc};font-weight:600;font-size:11px">${e.c}</span></div></div><div class="event-right"><div class="stag"><span class="dot" style="background:${s.d}"></span>${s.l}</div><span class="cd${up?'':' past'}">${dU(e.d)}</span></div></div>`});
+h+=`</div></div>`});return h}
+function rC(items){const bd={};items.forEach(e=>{(bd[e.d]=bd[e.d]||[]).push(e)});
+let mi=F.month!=="All"?MO.indexOf(F.month)+2:3;if(mi<3)mi=3;
+const yr=2026,first=new Date(yr,mi,1),dow=first.getDay(),dim=new Date(yr,mi+1,0).getDate();
+const mn=first.toLocaleDateString("en-US",{month:"long",year:"numeric"});
+let h=`<div class="roadmap"><h4>📋 Product Roadmap</h4><p>Aggregating 9 sources. Select a month above to navigate.</p><div class="phases"><span class="ph now">✓ Phase 1 — Manual Crawl</span><span class="ph next">Phase 2 — Daily Auto-Crawl</span><span class="ph next">Phase 3 — Public Submission</span></div></div>`;
+h+=`<h2 style="font-family:'Instrument Serif',serif;font-size:24px;margin-bottom:12px">${mn}</h2><div class="cal-grid">`;
+["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].forEach(d=>h+=`<div class="cal-head">${d}</div>`);
+for(let i=0;i<dow;i++)h+=`<div class="cal-cell empty"></div>`;
+for(let d=1;d<=dim;d++){const ds=`${yr}-${String(mi+1).padStart(2,"0")}-${String(d).padStart(2,"0")}`;const today=ds===TODAY_STR;const ev=bd[ds]||[];
+h+=`<div class="cal-cell${today?' today':''}"><div class="dn">${d}</div>`;
+ev.slice(0,3).forEach(e=>{const s=S[e.s]||{bg:"#f5f5f5",d:"#333"};h+=`<div class="cal-ev" style="background:${s.bg};color:${s.d}" title="${e.n} — ${e.t} @ ${e.v}">${e.n}</div>`});
+if(ev.length>3)h+=`<div class="cal-more">+${ev.length-3} more</div>`;h+=`</div>`}
+h+=`</div>`;return h}
+function render(){const items=gF();document.getElementById("tc").textContent=items.length;
+document.getElementById("c").innerHTML=V==="list"?rL(items):rC(items);
+const sc={};E.forEach(e=>sc[e.s]=(sc[e.s]||0)+1);
+document.getElementById("sp").innerHTML=Object.entries(S).map(([k,v])=>`<span class="src-pill"><span class="src-dot" style="background:${v.d}"></span>${v.l} <b style="color:${v.d}">${sc[k]||0}</b></span>`).join("")}
+function sv(v){V=v;document.querySelectorAll(".vbtn").forEach(b=>b.classList.remove("active"));document.querySelectorAll(".vbtn")[v==="list"?0:1].classList.add("active");render()}
+function mf(id,opts,key){const el=document.getElementById(id);opts.forEach(o=>{const b=document.createElement("button");b.className="fbtn"+(F[key]===o?" active":"");b.textContent=o;b.onclick=()=>{F[key]=o;el.querySelectorAll(".fbtn").forEach(x=>x.classList.remove("active"));b.classList.add("active");render()};el.appendChild(b)})}
+function init(){
+  mf("cf",CATS,"cat");mf("mf",MO,"month");
+  document.getElementById("q").addEventListener("input",e=>{F.q=e.target.value;render()});
+  render();
+}
+// Boot: try loading from events.json, fall back to embedded data
+loadEvents();
+</script>
+
+<div style="max-width:1100px;margin:0 auto;padding:0 32px 40px">
+<div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:24px;margin-top:20px">
+<h3 style="font-family:'Instrument Serif',serif;font-size:20px;margin-bottom:12px">Implementation Roadmap</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+<div style="border-left:3px solid var(--green);padding-left:16px">
+<h4 style="font-size:13px;font-weight:700;color:var(--green);margin-bottom:6px">✓ Phase 1 — Manual Crawl (Complete)</h4>
+<p style="font-size:12px;color:var(--text2);line-height:1.6">Static HTML dashboard. Events crawled manually from 8 sources. Filter by type, month, and search. List and calendar views. Print-ready for EDDC presentations.</p>
+</div>
+<div style="border-left:3px solid var(--green);padding-left:16px">
+<h4 style="font-size:13px;font-weight:700;color:var(--green);margin-bottom:6px">✓ Phase 2 — Daily Auto-Crawl (Current)</h4>
+<p style="font-size:12px;color:var(--text2);line-height:1.6">Node.js scrapers run daily at 6 AM ET via GitHub Actions. Crawl all 8 source sites, deduplicate, and write events.json. Dashboard loads dynamically from that feed. Hosted on Vercel/Netlify/GitHub Pages.</p>
+</div>
+<div style="border-left:3px solid #7c3aed;padding-left:16px">
+<h4 style="font-size:13px;font-weight:700;color:#7c3aed;margin-bottom:6px">Phase 3 — Public Event Submission (Next)</h4>
+<p style="font-size:12px;color:var(--text2);line-height:1.6">Add a "Submit an Event" form (name, date, time, venue, category, description, contact). Submissions go to a moderation queue. EDDC staff approve before events go live. Could use Airtable, Supabase, or a simple API.</p>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

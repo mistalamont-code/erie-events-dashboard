@@ -1,0 +1,17 @@
+{
+  "name": "erie-events-dashboard",
+  "version": "1.0.0",
+  "description": "Unified events calendar for Downtown Erie — daily auto-crawl from 8 sources",
+  "author": "EDDC / Corey Cook",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scrapers/index.js",
+    "scrape:test": "node scrapers/index.js --dry-run",
+    "serve": "npx serve public -l 3000"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}
