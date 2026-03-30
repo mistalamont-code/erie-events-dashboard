@@ -53,8 +53,13 @@ button{font-family:var(--font-body);cursor:pointer}
 .pill:hover{background:rgba(255,255,255,0.2);color:#fff;border-color:rgba(255,255,255,0.35)}
 .pill.active{background:#fff;border-color:#fff;color:var(--erie-navy);font-weight:600}
 .pill:focus-visible{outline:2px solid #93c5fd;outline-offset:2px}
-.source-filters{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-top:10px;margin-top:4px;border-top:1px solid rgba(255,255,255,0.1);touch-action:pan-x}
+.source-filters-wrap{position:relative;margin-top:4px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.1)}
+.source-filters{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;touch-action:pan-x;padding-right:32px}
 .source-filters::-webkit-scrollbar{display:none}
+.scroll-hint{position:absolute;right:0;top:10px;bottom:0;width:48px;background:linear-gradient(90deg,transparent,rgba(27,42,74,0.9) 60%);display:flex;align-items:center;justify-content:flex-end;pointer-events:none;padding-right:4px;transition:opacity 0.3s}
+.scroll-hint.hidden{opacity:0}
+.scroll-hint svg{color:rgba(255,255,255,0.6);animation:nudge 1.5s ease-in-out infinite}
+@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
 .spill{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.65);padding:5px 14px 5px 10px;border-radius:20px;font-size:0.75rem;font-weight:500;white-space:nowrap;cursor:pointer;transition:background 0.15s,color 0.15s,border-color 0.15s}
 .spill:hover{background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.9);border-color:rgba(255,255,255,0.25)}
 .spill.active{background:#fff;border-color:#fff;color:var(--erie-navy);font-weight:600}
@@ -256,7 +261,7 @@ body.modal-open{overflow:hidden}
     <button class="pill" role="tab" data-qf="month" aria-selected="false">This Month</button>
     <button class="pill active" role="tab" data-qf="all" aria-selected="true">All</button>
   </div>
-  <div class="source-filters" id="source-filters"></div>
+  <div class="source-filters-wrap"><div class="source-filters" id="source-filters"></div><div class="scroll-hint" id="scroll-hint"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></div></div>
 </div></section>
 
 <div class="filter-bar">
@@ -535,6 +540,11 @@ function render(){
   // Source filter pills in hero
   const sfEl=document.getElementById('source-filters');
   sfEl.innerHTML='<button class="spill'+(selectedSrc==='all'?' active':'')+'" data-src="all">All Sources</button>'+Object.entries(S).filter(([k])=>sc[k]).map(([k,v])=>`<button class="spill${selectedSrc===k?' active':''}" data-src="${k}"><span class="sdot" style="background:${v.d}"></span>${esc(v.l)} <span style="opacity:0.6">${sc[k]||0}</span></button>`).join('');
+  // Show/hide scroll hint arrow based on scroll position
+  const hint=document.getElementById('scroll-hint');
+  function checkScroll(){const el=sfEl;hint.classList.toggle('hidden',el.scrollLeft+el.clientWidth>=el.scrollWidth-10)}
+  sfEl.addEventListener('scroll',checkScroll);
+  setTimeout(checkScroll,50);
   sfEl.querySelectorAll('.spill').forEach(b=>b.addEventListener('click',()=>{
     const s=b.dataset.src;
     if(s==='all'){selectedSrc='all';activeSrcs=new Set(Object.keys(S))}
