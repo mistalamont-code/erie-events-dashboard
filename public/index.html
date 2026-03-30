@@ -366,7 +366,7 @@ function genDesc(e){
 
 /* ===== HELPERS ===== */
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
-function normalize(ev){return ev.n?ev:{n:ev.name||'',d:ev.date||'',t:ev.time||'TBD',v:ev.venue||'',c:ev.category||'Community',s:ev.source||'',url:ev.url||''}}
+function normalize(ev){return ev.n?ev:{n:ev.name||'',d:ev.date||'',t:ev.time||'TBD',v:ev.venue||'',c:ev.category||'Community',s:ev.source||'',url:ev.url||'',img:ev.image||'',desc:ev.description||''}}
 function gMo(d){return new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'short'}).toUpperCase()}
 function gW(d){return new Date(d+'T12:00:00').toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()}
 function gD(d){return new Date(d+'T12:00:00').getDate()}
@@ -473,10 +473,11 @@ function renderList(items){
       const idx=items.indexOf(e);
       const icon=CAT_ICONS[e.c]||'\ud83d\udcc5';
       const grad=CAT_GRAD[e.c]||'linear-gradient(135deg,#f1f5f9,#e2e8f0)';
-      const desc=e.desc||genDesc(e);
+      const desc=e.desc&&e.desc.length>10?e.desc:genDesc(e);
+      const hasImg=e.img&&e.img.startsWith('http');
       h+=`<article class="event-card" data-idx="${idx}" onclick="toggleCard(this,event)" style="position:relative">
         <button class="card-close" onclick="closeCard(this.parentElement,event)" aria-label="Close">&times;</button>
-        <div class="card-img-placeholder" style="background:${grad}"><div class="card-date-badge"><span class="cb-month">${gMo(e.d)}</span><span class="cb-day">${gD(e.d)}</span></div><span style="font-size:2.5rem;opacity:0.5">${icon}</span></div>
+        ${hasImg?`<div style="position:relative"><img class="card-img" src="${esc(e.img)}" alt="${esc(e.n)}" loading="lazy" width="400" height="225" onerror="this.parentElement.outerHTML='<div class=\\'card-img-placeholder\\' style=\\'background:${grad}\\'><div class=\\'card-date-badge\\'><span class=\\'cb-month\\'>${gMo(e.d)}</span><span class=\\'cb-day\\'>${gD(e.d)}</span></div><span style=\\'font-size:2.5rem;opacity:0.5\\'>${icon}</span></div>'"><div class="card-date-badge"><span class="cb-month">${gMo(e.d)}</span><span class="cb-day">${gD(e.d)}</span></div></div>`:`<div class="card-img-placeholder" style="background:${grad}"><div class="card-date-badge"><span class="cb-month">${gMo(e.d)}</span><span class="cb-day">${gD(e.d)}</span></div><span style="font-size:2.5rem;opacity:0.5">${icon}</span></div>`}
         <div class="card-body">
           <div class="card-cat"><span class="badge-type" data-type="${esc(e.c)}">${esc(e.c)}</span></div>
           <h3 class="card-title">${esc(e.n)}</h3>

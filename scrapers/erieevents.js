@@ -3,7 +3,7 @@
  * Crawls the paginated CalendarSearchForm listings
  */
 
-import { fetchPage, parseDate, parseTime, makeId, inferCategory, sleep, now } from './utils.js';
+import { fetchPage, parseDate, parseTime, makeId, inferCategory, sleep, now, fetchEventDetail } from './utils.js';
 
 const BASE = 'https://www.erieevents.com/events/CalendarSearchForm';
 const SOURCE = 'ErieEvents';
@@ -77,6 +77,15 @@ export async function scrapeErieEvents() {
 
     console.log(`  Page ${page + 1}: found ${events.length} events so far`);
     await sleep(1500);
+  }
+
+  // Fetch detail pages for images/descriptions (up to 20 to avoid slowness)
+  const toFetch = events.filter(e => e.url).slice(0, 20);
+  for (const e of toFetch) {
+    const detail = await fetchEventDetail(e.url);
+    if (detail.image) e.image = detail.image;
+    if (detail.description) e.description = detail.description;
+    await sleep(1000);
   }
 
   console.log(`  ✓ ErieEvents: ${events.length} events`);

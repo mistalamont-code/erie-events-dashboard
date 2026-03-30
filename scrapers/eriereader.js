@@ -12,7 +12,7 @@
  *   - Description snippet
  */
 
-import { fetchPage, parseDate, parseTime, makeId, inferCategory, sleep, now } from './utils.js';
+import { fetchPage, parseDate, parseTime, makeId, inferCategory, sleep, now, extractImage } from './utils.js';
 
 const BASE = 'https://www.eriereader.com/calendar';
 const SOURCE = 'ErieReader';
@@ -131,6 +131,14 @@ export async function scrapeErieReader() {
       const eventUrl = href.startsWith('http') ? href : 
                        href ? `https://www.eriereader.com${href}` : '';
       
+      // Try to grab image from nearby content
+      const $img = $parent.find('img').first();
+      let image = '';
+      if ($img.length) {
+        image = $img.attr('src') || $img.attr('data-src') || '';
+        if (image && !image.startsWith('http')) image = 'https://www.eriereader.com' + image;
+      }
+
       events.push({
         id: makeId(SOURCE, date, name),
         name: name.slice(0, 120),
@@ -140,6 +148,7 @@ export async function scrapeErieReader() {
         category,
         source: SOURCE,
         url: eventUrl,
+        image,
         description: '',
         lastScraped: now(),
       });

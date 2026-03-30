@@ -3,7 +3,7 @@
  * Squarespace-based events calendar
  */
 
-import { fetchPage, parseDate, makeId, inferCategory, now } from './utils.js';
+import { fetchPage, parseDate, makeId, inferCategory, now, sleep, fetchEventDetail } from './utils.js';
 
 const URL = 'https://www.flagshipcitydistrict.com/events';
 const SOURCE = 'FlagshipCity';
@@ -89,6 +89,15 @@ export async function scrapeFlagshipCity() {
       });
     }
   });
+
+  // Fetch detail pages for images/descriptions (up to 15)
+  const toFetch = events.filter(e => e.url).slice(0, 15);
+  for (const e of toFetch) {
+    const detail = await fetchEventDetail(e.url);
+    if (detail.image) e.image = detail.image;
+    if (detail.description) e.description = detail.description;
+    await sleep(1000);
+  }
 
   console.log(`  ✓ FlagshipCity: ${events.length} events`);
   return events;

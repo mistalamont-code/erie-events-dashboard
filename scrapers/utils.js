@@ -138,6 +138,54 @@ export function isValidEvent(e) {
 }
 
 /**
+ * Extract the best image URL from a cheerio-loaded page
+ * Tries og:image, twitter:image, then common selectors
+ */
+export function extractImage($) {
+  if (!$) return '';
+  // Open Graph
+  const og = $('meta[property="og:image"]').attr('content');
+  if (og) return og;
+  // Twitter card
+  const tw = $('meta[name="twitter:image"]').attr('content');
+  if (tw) return tw;
+  // Common image selectors
+  const selectors = [
+    '.event-image img', '.event-banner img', '.hero-image img',
+    'article img', '.featured-image img', '.post-thumbnail img',
+    '.event img', '.eventlist-column-thumbnail img',
+    '.sqs-image img', 'img[class*="event"]', 'img[class*="banner"]',
+  ];
+  for (const sel of selectors) {
+    const src = $(sel).first().attr('src');
+    if (src && !src.includes('logo') && !src.includes('icon') && !src.includes('avatar')) return src;
+  }
+  return '';
+}
+
+/**
+ * Fetch a single event page to extract image and description
+ */
+export async function fetchEventDetail(url) {
+  if (!url) return { image: '', description: '' };
+  try {
+    const $ = await fetchPage(url);
+    if (!$) return { image: '', description: '' };
+    const image = extractImage($);
+    // Try to get description from meta or first paragraph
+    let description = $('meta[property="og:description"]').attr('content') ||
+                      $('meta[name="description"]').attr('content') || '';
+    if (!description) {
+      const $p = $('article p, .event-description, .entry-content p, .event-detail p, .eventlist-description p').first();
+      if ($p.length) description = $p.text().trim().slice(0, 200);
+    }
+    return { image, description };
+  } catch (e) {
+    return { image: '', description: '' };
+  }
+}
+
+/**
  * Format the current timestamp
  */
 export function now() {
