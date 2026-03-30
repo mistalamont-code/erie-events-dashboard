@@ -201,7 +201,17 @@ async function loadEvents() {
     const res = await fetch('events.json', { cache: 'no-cache' });
     if (!res.ok) throw new Error('No events.json found');
     const data = await res.json();
-    E = (data.events || []).map(normalize);
+    const scraped = (data.events || []).map(normalize);
+    // Merge scraped data with fallback data, then deduplicate
+    // This ensures manually-sourced future events (Oct-Dec) aren't lost
+    const all = [...scraped, ...FALLBACK_EVENTS];
+    const seen = new Set();
+    E = all.filter(e => {
+      const k = e.n.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,25) + e.d;
+      if (seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    });
     META = data.meta || META;
     const ts = META.lastUpdated ? new Date(META.lastUpdated) : null;
     const badge = document.getElementById('update-badge');
