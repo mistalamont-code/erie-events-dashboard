@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#1e3a5f">
 <meta name="color-scheme" content="light">
-<title>Erie Events &mdash; What&rsquo;s Happening in Downtown Erie</title>
+<title>Erie Community Events Calendar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap">
@@ -237,12 +237,12 @@ button{font-family:'Inter',sans-serif;cursor:pointer}
           <div class="hero-icon">&#9875;</div>
           <span class="hero-label">Erie Downtown Development Corporation</span>
         </div>
-        <h1>What&rsquo;s Happening in Downtown Erie</h1>
-        <p class="hero-sub">Every public event from 12 local sources, updated daily. Concerts, festivals, gallery nights, family fun &mdash; one calendar for all of Erie.</p>
+        <h1>Erie Community Events Calendar</h1>
+        <p class="hero-sub">Your guide to events in downtown Erie and the surrounding community. From live performances and festivals to family activities, markets, and neighborhood gatherings &mdash; discover what Erie has to offer.</p>
         <div class="trust-row">
-          <span class="trust-item"><span class="trust-dot"></span>Updated daily at 6&nbsp;AM</span>
-          <span class="trust-item"><span class="trust-dot"></span>12 verified sources</span>
-          <span class="trust-item"><span class="trust-dot"></span>Public events only</span>
+          <span class="trust-item"><span class="trust-dot"></span>Updated daily</span>
+          <span class="trust-item"><span class="trust-dot"></span>12 local sources</span>
+          <span class="trust-item"><span class="trust-dot"></span>Find local events, support local places</span>
         </div>
         <div class="hero-search">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -266,7 +266,7 @@ button{font-family:'Inter',sans-serif;cursor:pointer}
 <!-- ============ SOURCES ============ -->
 <div class="sources-section">
   <div class="sources-inner">
-    <span class="sources-tag">Filter by Source</span>
+    <span class="sources-tag">Event Sources</span>
     <span id="sp"></span>
   </div>
 </div>
@@ -297,14 +297,14 @@ button{font-family:'Inter',sans-serif;cursor:pointer}
 <div class="site-footer">
   <div class="footer-card">
     <div class="footer-top">
-      <span class="footer-title">Source Transparency</span>
-      <span class="footer-sync" id="footer-sync"><span class="sync-dot"></span>Auto-crawled daily</span>
+      <span class="footer-title">Event Sources</span>
+      <span class="footer-sync" id="footer-sync"><span class="sync-dot"></span>Updated daily</span>
     </div>
     <div class="footer-sources" id="footer-sources"></div>
   </div>
 </div>
 <div class="footer-bottom">
-  <p>Erie Downtown Development Corporation &middot; Flagship City District &middot; 419 State Street, Erie, PA</p>
+  <p>A community resource for downtown Erie and surrounding areas.<br>Supported by Erie Downtown Development Corporation and local event partners.</p>
 </div>
 
 <script>
@@ -333,7 +333,7 @@ function normalize(ev){
 }
 
 async function loadEvents(){
-  document.getElementById('c').innerHTML='<div class="loading-state"><div class="spinner"></div><p>Loading events\u2026</p></div>';
+  document.getElementById('c').innerHTML='<div class="loading-state"><div class="spinner"></div><p>Finding events near Erie\u2026</p></div>';
   try{
     const res=await fetch('events.json',{cache:'no-cache'});
     if(!res.ok)throw new Error('No events.json');
@@ -412,7 +412,7 @@ function rL(items){
   if(nx)h+=`<div class="upnext"><span class="upnext-badge">Up Next</span><div class="upnext-info"><h3>${esc(nx.n)}</h3><p>${gW(nx.d)}, ${gMo(nx.d)} ${gD(nx.d)} &middot; ${esc(nx.t)} &middot; ${esc(nx.v)}</p></div><span class="upnext-countdown">${dU(nx.d)}</span></div>`;
   if(!items.length){
     const hasFilters=F.cat!=='All'||F.month!=='All'||F.src!=='All'||F.q;
-    return h+`<div class="empty-state"><div class="empty-icon">&#128269;</div><h3>No Events Found</h3><p>${hasFilters?'No events match your current filters. Try broadening your search or resetting filters.':'There are no events to display right now. Check back soon \u2014 new events are added daily.'}</p>${hasFilters?'<button onclick="resetFilters()">Reset All Filters</button>':''}</div>`;
+    return h+`<div class="empty-state"><div class="empty-icon">&#128269;</div><h3>No Events Found</h3><p>${hasFilters?'No events match your current filters. Try broadening your search or clearing your selections.':'No events are showing right now. Please check back soon as new events are added from local sources.'}</p>${hasFilters?'<button onclick="resetFilters()">Reset All Filters</button>':''}</div>`;
   }
   Object.entries(g).forEach(([m,evts])=>{
     h+=`<div class="month-section"><div class="month-header"><h2>${m}</h2><span class="month-count">${evts.length} event${evts.length>1?'s':''}</span></div><div class="event-list">`;
