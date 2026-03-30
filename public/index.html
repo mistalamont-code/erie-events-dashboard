@@ -29,7 +29,7 @@
   --green:#059669;
   --shadow:0 1px 3px rgba(0,0,0,0.06);
 }
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.7}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.7;touch-action:manipulation}
 a{color:inherit;text-decoration:none}
 button{font-family:'Inter',sans-serif}
 
@@ -85,18 +85,18 @@ button{font-family:'Inter',sans-serif}
 .upnext:hover{border-color:#6ee7b7}
 .upnext-badge{background:var(--green);color:#fff;border-radius:8px;padding:8px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;white-space:nowrap}
 .upnext-info{flex:1;min-width:200px}
-.upnext-info h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--text)}
+.upnext-info h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--text);text-wrap:balance}
 .upnext-info p{font-size:12px;color:var(--text-muted);margin-top:3px}
 .upnext-countdown{font-size:13px;font-weight:600;color:var(--green);background:#fff;border:1px solid #a7f3d0;padding:6px 16px;border-radius:100px}
 
 /* === MONTH SECTIONS === */
 .month-section{margin-bottom:32px}
 .month-header{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;padding-bottom:10px;border-bottom:2px solid var(--text)}
-.month-header h2{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--text)}
+.month-header h2{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--text);text-wrap:balance}
 .month-count{font-size:12px;font-weight:500;color:var(--text-light)}
 
 /* === EVENT CARDS === */
-.event-list{display:flex;flex-direction:column;gap:5px}
+.event-list{display:flex;flex-direction:column;gap:5px;content-visibility:auto;contain-intrinsic-size:auto 500px}
 .event-card{display:grid;grid-template-columns:68px 1fr auto;gap:16px;align-items:center;background:var(--white);border:1px solid var(--border-light);border-radius:10px;padding:16px 20px;transition:border-color 0.3s, transform 0.3s, box-shadow 0.3s}
 .event-card:hover{border-color:var(--border);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,0.06)}
 .date-col{text-align:center}
@@ -140,6 +140,16 @@ button{font-family:'Inter',sans-serif}
   .filter-opts{flex-wrap:nowrap;overflow-x:auto}
 }
 
+/* === REDUCED MOTION === */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:0.01ms!important;animation-duration:0.01ms!important}
+  .event-card:hover{transform:none}
+}
+
+/* === SKIP LINK === */
+.skip-link{position:absolute;top:-100%;left:16px;background:var(--accent);color:#fff;padding:8px 16px;border-radius:0 0 6px 6px;font-size:13px;font-weight:600;z-index:100;transition:top 0.2s}
+.skip-link:focus{top:0}
+
 /* === PRINT === */
 @media print{
   .filters,.search-wrap,.view-toggle,.sources-bar{display:none!important}
@@ -149,6 +159,8 @@ button{font-family:'Inter',sans-serif}
 </style>
 </head>
 <body>
+
+<a href="#c" class="skip-link">Skip to Events</a>
 
 <header class="header">
   <div class="header-top"><div class="header-inner"><div class="header-row">
@@ -163,7 +175,7 @@ button{font-family:'Inter',sans-serif}
   <div class="filter-group"><span class="filter-label">Month</span><div class="filter-opts" id="mf" role="group" aria-label="Filter by month"></div></div>
   <div class="search-wrap">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-    <input type="text" id="q" placeholder="Search events, venues&hellip;" aria-label="Search events" autocomplete="off" spellcheck="false">
+    <input type="text" id="q" name="search" placeholder="Search events, venues&hellip;" aria-label="Search events" autocomplete="off" spellcheck="false">
   </div>
   <div class="view-toggle" role="group" aria-label="View mode">
     <button class="vbtn active" onclick="sv('list')" aria-label="List view">&#9776; List</button>
@@ -227,6 +239,27 @@ async function loadEvents() {
   init();
 }
 
+// HTML-escape to prevent XSS from scraped data
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+
+// Sync filters to/from URL params
+function pushFilters(){
+  const p=new URLSearchParams();
+  if(F.cat!=='All')p.set('cat',F.cat);
+  if(F.month!=='All')p.set('month',F.month);
+  if(F.src!=='All')p.set('src',F.src);
+  if(F.q)p.set('q',F.q);
+  const qs=p.toString();
+  history.replaceState(null,'',qs?'?'+qs:location.pathname);
+}
+function pullFilters(){
+  const p=new URLSearchParams(location.search);
+  if(p.has('cat'))F.cat=p.get('cat');
+  if(p.has('month'))F.month=p.get('month');
+  if(p.has('src'))F.src=p.get('src');
+  if(p.has('q'))F.q=p.get('q');
+}
+
 const S={ErieEvents:{l:"Erie Events",d:"#1e40af",bg:"#eff6ff"},FlagshipCity:{l:"Flagship City District",d:"#059669",bg:"#ecfdf5"},VisitErie:{l:"VisitErie",d:"#dc2626",bg:"#fef2f2"},ErieDowntown:{l:"Erie Downtown Partnership",d:"#d97706",bg:"#fffbeb"},ArtMuseum:{l:"Erie Art Museum",d:"#7c3aed",bg:"#f5f3ff"},ChildrensMuseum:{l:"Children\u2019s Museum",d:"#ea580c",bg:"#fff7ed"},CelebrateErie:{l:"CelebrateErie",d:"#db2777",bg:"#fdf2f8"},CityOfErie:{l:"City of Erie",d:"#0891b2",bg:"#ecfeff"},ErieReader:{l:"Erie Reader",d:"#16a34a",bg:"#f0fdf4"}};
 const CC={Music:"#1e40af",Sports:"#059669",Festival:"#dc2626",Comedy:"#7c3aed",Theater:"#db2777",Arts:"#ea580c",Community:"#0891b2",Family:"#d97706"};
 const CATS=["All","Music","Sports","Festival","Comedy","Theater","Arts","Community","Family"];
@@ -257,7 +290,7 @@ function rL(items){
   const g={};items.forEach(e=>{const m=gM(e.d);(g[m]=g[m]||[]).push(e)});
   const nx=items.find(e=>e.d>=TODAY);
   let h='';
-  if(nx)h+=`<div class="upnext"><span class="upnext-badge">Up Next</span><div class="upnext-info"><h3>${nx.n}</h3><p>${gW(nx.d)}, ${gMo(nx.d)} ${gD(nx.d)} &middot; ${nx.t} &middot; ${nx.v}</p></div><span class="upnext-countdown">${dU(nx.d)}</span></div>`;
+  if(nx)h+=`<div class="upnext"><span class="upnext-badge">Up Next</span><div class="upnext-info"><h3>${esc(nx.n)}</h3><p>${gW(nx.d)}, ${gMo(nx.d)} ${gD(nx.d)} &middot; ${esc(nx.t)} &middot; ${esc(nx.v)}</p></div><span class="upnext-countdown">${dU(nx.d)}</span></div>`;
   if(!items.length)return h+'<div class="empty">No events match your filters.</div>';
   Object.entries(g).forEach(([m,evts])=>{
     h+=`<div class="month-section"><div class="month-header"><h2>${m}</h2><span class="month-count">${evts.length} event${evts.length>1?"s":""}</span></div><div class="event-list">`;
@@ -265,7 +298,7 @@ function rL(items){
       const s=S[e.s]||{l:e.s,d:"#888"};
       const cc=CC[e.c]||"#6b7280";
       const up=e.d>=TODAY;
-      h+=`<div class="event-card"><div class="date-col"><div class="mon">${gMo(e.d)}</div><div class="day">${gD(e.d)}</div><div class="dow">${gW(e.d)}</div></div><div class="ev-info"><h3><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${cc};margin-right:7px;vertical-align:middle" aria-hidden="true"></span>${e.n}</h3><div class="ev-meta"><span class="tbadge">${e.t}</span><span class="venue">${e.v}</span><span style="color:${cc};font-weight:600;font-size:11px">${e.c}</span></div></div><div class="event-right"><div class="stag"><span class="dot" style="background:${s.d}" aria-hidden="true"></span>${s.l}</div><span class="cd${up?'':' past'}">${dU(e.d)}</span></div></div>`;
+      h+=`<div class="event-card"><div class="date-col"><div class="mon">${gMo(e.d)}</div><div class="day">${gD(e.d)}</div><div class="dow">${gW(e.d)}</div></div><div class="ev-info"><h3><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${cc};margin-right:7px;vertical-align:middle" aria-hidden="true"></span>${esc(e.n)}</h3><div class="ev-meta"><span class="tbadge">${esc(e.t)}</span><span class="venue">${esc(e.v)}</span><span style="color:${cc};font-weight:600;font-size:11px">${esc(e.c)}</span></div></div><div class="event-right"><div class="stag"><span class="dot" style="background:${s.d}" aria-hidden="true"></span>${esc(s.l)}</div><span class="cd${up?'':' past'}">${dU(e.d)}</span></div></div>`;
     });
     h+='</div></div>';
   });
@@ -285,7 +318,7 @@ function rC(items){
     const today=ds===TODAY;
     const ev=bd[ds]||[];
     h+=`<div class="cal-cell${today?' today':''}"><div class="dn">${d}</div>`;
-    ev.slice(0,3).forEach(e=>{const s=S[e.s]||{bg:"rgba(255,255,255,0.05)",d:"#ccc"};h+=`<div class="cal-ev" style="background:${s.bg};color:${s.d}" title="${e.n} \u2014 ${e.t} @ ${e.v}">${e.n}</div>`});
+    ev.slice(0,3).forEach(e=>{const s=S[e.s]||{bg:"rgba(255,255,255,0.05)",d:"#ccc"};h+=`<div class="cal-ev" style="background:${s.bg};color:${s.d}" title="${esc(e.n)} \u2014 ${esc(e.t)} @ ${esc(e.v)}">${esc(e.n)}</div>`});
     if(ev.length>3)h+=`<div class="cal-more">+${ev.length-3} more</div>`;
     h+='</div>';
   }
@@ -293,6 +326,7 @@ function rC(items){
 }
 
 function render(){
+  pushFilters();
   const items=gF();
   document.getElementById("tc").textContent=items.length;
   document.getElementById("c").innerHTML=V==="list"?rL(items):rC(items);
@@ -329,9 +363,12 @@ function mf(id,opts,key){
 }
 
 function init(){
+  pullFilters();
   mf("cf",CATS,"cat");
   mf("mf",MO,"month");
-  document.getElementById("q").addEventListener("input",e=>{F.q=e.target.value;render()});
+  const qInput=document.getElementById("q");
+  if(F.q)qInput.value=F.q;
+  qInput.addEventListener("input",e=>{F.q=e.target.value;render()});
   render();
 }
 
