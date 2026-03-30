@@ -111,22 +111,18 @@ button{font-family:var(--font-body);cursor:pointer}
 /* ===== MAIN CONTENT ===== */
 .main-content{max-width:var(--max-w);margin:0 auto;padding:1.5rem}
 
-/* ===== EVENT CARDS ===== */
-.event-list{display:flex;flex-direction:column;gap:10px;content-visibility:auto;contain-intrinsic-size:auto 600px}
-.event-card{display:flex;gap:1rem;padding:1rem 1.25rem;background:var(--erie-white);border:1px solid var(--erie-border);border-radius:var(--radius);transition:border-color 0.2s,box-shadow 0.2s;cursor:pointer;position:relative}
-.event-card:hover{border-color:var(--erie-border-hover);box-shadow:0 2px 8px rgba(0,0,0,0.06)}
-.event-card.expanded{border-color:var(--erie-blue);box-shadow:0 4px 16px rgba(37,99,235,0.1);cursor:default}
-.date-block{min-width:64px;text-align:center;padding:8px;background:var(--erie-sky);border-radius:8px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.date-block .month{font-size:0.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--erie-blue)}
-.date-block .day{font-size:1.5rem;font-weight:700;color:var(--erie-navy);line-height:1.2}
-.date-block .weekday{font-size:0.6875rem;font-weight:500;color:var(--erie-text-muted);text-transform:uppercase}
-.event-content{flex:1;min-width:0}
-.event-title{font-size:1rem;font-weight:600;color:var(--erie-text);margin:0 0 3px;line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.event-card.expanded .event-title{white-space:normal}
-.event-meta{font-size:0.8125rem;color:var(--erie-text-muted);margin:0 0 3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.event-meta .venue{font-weight:500;color:var(--erie-text)}
-.event-time{font-size:0.8125rem;color:var(--erie-text-light);margin:0 0 6px}
-.event-tags{display:flex;gap:6px;flex-wrap:wrap}
+/* ===== EVENT GRID ===== */
+.event-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;content-visibility:auto;contain-intrinsic-size:auto 800px}
+.event-card{background:var(--erie-white);border:1px solid var(--erie-border);border-radius:var(--radius);overflow:hidden;transition:border-color 0.2s,box-shadow 0.2s;cursor:pointer;display:flex;flex-direction:column}
+.event-card:hover{border-color:var(--erie-border-hover);box-shadow:0 4px 16px rgba(0,0,0,0.08)}
+.event-card.expanded{border-color:var(--erie-blue);box-shadow:0 4px 20px rgba(37,99,235,0.12);cursor:default}
+.card-img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--erie-surface);display:block;position:relative}
+.card-img-placeholder{width:100%;aspect-ratio:16/9;background:linear-gradient(135deg,var(--erie-sky) 0%,var(--erie-surface) 100%);display:flex;align-items:center;justify-content:center;font-size:2rem;color:var(--erie-text-light);position:relative}
+.card-date-badge{position:absolute;top:12px;left:12px;background:var(--erie-white);border-radius:var(--radius-sm);padding:6px 10px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.12);z-index:1;line-height:1}
+.card-date-badge .cb-month{font-size:0.625rem;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;color:var(--erie-blue);display:block}
+.card-date-badge .cb-day{font-size:1.125rem;font-weight:700;color:var(--erie-navy);display:block;line-height:1.2}
+.card-body{padding:14px 16px 16px;flex:1;display:flex;flex-direction:column}
+.card-cat{margin-bottom:8px}
 .badge-type{display:inline-block;padding:2px 10px;border-radius:12px;font-size:0.6875rem;font-weight:600;letter-spacing:0.3px}
 .badge-type[data-type="Music"]{background:#F3E8FF;color:#7C3AED}
 .badge-type[data-type="Sports"]{background:var(--erie-amber-light);color:var(--erie-amber)}
@@ -136,14 +132,22 @@ button{font-family:var(--font-body);cursor:pointer}
 .badge-type[data-type="Arts"]{background:var(--erie-sky);color:var(--erie-blue)}
 .badge-type[data-type="Community"]{background:#ECFDF5;color:#059669}
 .badge-type[data-type="Family"]{background:#ECFEFF;color:#0891B2}
-.event-detail{margin-top:12px;padding-top:12px;border-top:1px solid var(--erie-border);display:none}
-.event-card.expanded .event-detail{display:block}
-.event-description{font-size:0.875rem;color:var(--erie-text-muted);line-height:1.6;margin:0 0 12px}
+.card-title{font-size:1rem;font-weight:600;color:var(--erie-text);margin:0 0 6px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.event-card.expanded .card-title{-webkit-line-clamp:unset}
+.card-desc{font-size:0.8125rem;color:var(--erie-text-muted);line-height:1.55;margin:0 0 10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+.card-meta{font-size:0.75rem;color:var(--erie-text-light);display:flex;flex-direction:column;gap:3px;margin-top:auto;padding-top:10px;border-top:1px solid var(--erie-border)}
+.card-meta .cm-venue{font-weight:500;color:var(--erie-text-muted)}
+.card-meta .cm-time{font-variant-numeric:tabular-nums}
+.card-meta .cm-source{display:flex;align-items:center;gap:4px}
+.card-meta .cm-source .dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.event-detail{padding:0 16px 16px;border-top:1px solid var(--erie-border);margin-top:0;display:none}
+.event-card.expanded .event-detail{display:block;padding-top:12px}
+.event-detail p{font-size:0.8125rem;color:var(--erie-text-muted);line-height:1.6;margin:0 0 10px}
 .event-actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-.event-actions a,.event-actions button{font-size:0.8125rem;font-weight:600;color:var(--erie-blue);background:none;border:none;cursor:pointer;padding:0}
+.event-actions a,.event-actions button{font-size:0.8125rem;font-weight:600;color:var(--erie-blue);background:none;border:none;cursor:pointer;padding:0;text-decoration:none}
 .event-actions a:hover,.event-actions button:hover{text-decoration:underline}
-.card-close{position:absolute;top:12px;right:12px;width:28px;height:28px;border-radius:50%;border:none;background:var(--erie-surface);color:var(--erie-text-muted);font-size:16px;display:none;align-items:center;justify-content:center;cursor:pointer;transition:background 0.15s}
-.card-close:hover{background:var(--erie-border)}
+.card-close{position:absolute;top:12px;right:12px;width:28px;height:28px;border-radius:50%;border:none;background:rgba(255,255,255,0.9);color:var(--erie-text-muted);font-size:16px;display:none;align-items:center;justify-content:center;cursor:pointer;transition:background 0.15s;z-index:2;box-shadow:0 1px 4px rgba(0,0,0,0.15)}
+.card-close:hover{background:#fff}
 .event-card.expanded .card-close{display:flex}
 
 /* ===== CALENDAR VIEW ===== */
@@ -191,6 +195,9 @@ button{font-family:var(--font-body);cursor:pointer}
 .empty-state p{font-size:0.9375rem;color:var(--erie-text-muted);line-height:1.6;margin-bottom:16px}
 
 /* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .event-grid{grid-template-columns:repeat(2,1fr)}
+}
 @media(max-width:768px){
   .header{padding:0 1rem}
   .header-subtitle{display:none}
@@ -200,9 +207,7 @@ button{font-family:var(--font-body);cursor:pointer}
   .filter-bar{padding:10px 1rem}
   .search-bar{max-width:none;min-width:0}
   .main-content{padding:1rem}
-  .event-card{flex-direction:column;gap:0.75rem}
-  .date-block{flex-direction:row;gap:8px;min-width:auto;padding:6px 12px;justify-content:flex-start}
-  .date-block .day{font-size:1.125rem}
+  .event-grid{grid-template-columns:1fr}
   .calendar-day{min-height:48px;padding:4px}
   .event-dots{gap:2px}
   .filter-dropdown-inner{grid-template-columns:1fr}
@@ -231,7 +236,7 @@ button{font-family:var(--font-body);cursor:pointer}
   <div class="header-inner">
     <div class="header-brand">
       <span class="header-title">Erie Community Events</span>
-      <span class="header-subtitle">Powered by EDDC &amp; Erie Downtown Partnership</span>
+      <span class="header-subtitle">Erie Downtown Partnership &amp; EDDC</span>
     </div>
     <button class="btn-outline btn-submit" disabled title="Coming soon &mdash; Phase 3">Submit an Event</button>
   </div>
@@ -304,10 +309,10 @@ button{font-family:var(--font-body);cursor:pointer}
 <footer class="footer">
   <p class="footer-brand">Erie Community Events Calendar</p>
   <p class="footer-tagline">A community resource for downtown Erie and surrounding areas.</p>
-  <p class="footer-meta" id="footer-meta">Powered by Erie Downtown Development Corporation &amp; Erie Downtown Partnership</p>
+  <p class="footer-meta" id="footer-meta">Powered by Erie Downtown Partnership &amp; Erie Downtown Development Corporation</p>
   <div class="footer-links">
-    <a href="https://www.erieddc.org" target="_blank" rel="noopener">EDDC</a>
     <a href="https://www.eriedowntown.com" target="_blank" rel="noopener">Erie Downtown Partnership</a>
+    <a href="https://www.erieddc.org" target="_blank" rel="noopener">EDDC</a>
     <a href="https://www.visiterie.com" target="_blank" rel="noopener">VisitErie</a>
   </div>
   <p class="footer-legal">&copy; 2026 Erie Downtown Development Corporation &amp; local event partners</p>
@@ -336,6 +341,28 @@ const FALLBACK_EVENTS=[
 const S={ErieEvents:{l:"Erie Events",d:"#2563EB"},FlagshipCity:{l:"Flagship City District",d:"#059669"},VisitErie:{l:"VisitErie",d:"#DC2626"},ErieDowntown:{l:"Erie Downtown Partnership",d:"#D97706"},ArtMuseum:{l:"Erie Art Museum",d:"#7C3AED"},ChildrensMuseum:{l:"Children\u2019s Museum",d:"#EA580C"},CelebrateErie:{l:"CelebrateErie",d:"#DB2777"},CityOfErie:{l:"City of Erie",d:"#0891B2"},ErieReader:{l:"Erie Reader",d:"#16A34A"},ErieChamber:{l:"Erie Chamber",d:"#B45309"},GannonEvents:{l:"Gannon University",d:"#4338CA"},EriePlayhouse:{l:"Erie Playhouse",d:"#BE123C"}};
 const CATS=["Music","Sports","Festival","Comedy","Theater","Arts","Community","Family"];
 const TODAY=new Date().toISOString().slice(0,10);
+
+/* Category icon map for placeholder images */
+const CAT_ICONS={Music:'\ud83c\udfb5',Sports:'\u26bd',Festival:'\ud83c\udf89',Comedy:'\ud83d\ude02',Theater:'\ud83c\udfad',Arts:'\ud83c\udfa8',Community:'\ud83c\udfe4',Family:'\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66'};
+/* Category-based gradient backgrounds for cards without images */
+const CAT_GRAD={Music:'linear-gradient(135deg,#ede9fe,#c4b5fd)',Sports:'linear-gradient(135deg,#d1fae5,#6ee7b7)',Festival:'linear-gradient(135deg,#fee2e2,#fca5a5)',Comedy:'linear-gradient(135deg,#ede9fe,#c4b5fd)',Theater:'linear-gradient(135deg,#fce7f3,#f9a8d4)',Arts:'linear-gradient(135deg,#dbeafe,#93c5fd)',Community:'linear-gradient(135deg,#d1fae5,#6ee7b7)',Family:'linear-gradient(135deg,#cffafe,#67e8f9)'};
+/* Generate a short description if none exists */
+function genDesc(e){
+  const src=S[e.s]||{l:e.s};
+  const parts=[];
+  if(e.c==='Music')parts.push('Live music event');
+  else if(e.c==='Sports')parts.push('Sporting event');
+  else if(e.c==='Festival')parts.push('Festival');
+  else if(e.c==='Comedy')parts.push('Comedy show');
+  else if(e.c==='Theater')parts.push('Theater performance');
+  else if(e.c==='Arts')parts.push('Arts & culture event');
+  else if(e.c==='Family')parts.push('Family-friendly event');
+  else parts.push('Community event');
+  if(e.v)parts[0]+=` at ${e.v}`;
+  parts[0]+='.';
+  parts.push(`Presented by ${src.l}.`);
+  return parts.join(' ');
+}
 
 /* ===== HELPERS ===== */
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
@@ -437,27 +464,34 @@ function renderList(items){
     const hasFilters=QF!=='all'||activeCats.size<CATS.length||activeSrcs.size<Object.keys(S).length||searchQ;
     return `<div class="empty-state"><div class="empty-icon">&#128197;</div><h3>${hasFilters?'No Matching Events':'No Events Right Now'}</h3><p>${hasFilters?'No events match your current filters. Try broadening your search or clearing your selections.':'No events are showing right now. Please check back soon as new events are added from local sources.'}</p>${hasFilters?'<button class="btn-outline" onclick="resetAll()">Clear Filters</button>':''}</div>`;
   }
-  // Group by month
   const g={};items.forEach(e=>{const m=gMlong(e.d);(g[m]=g[m]||[]).push(e)});
   let h='';
   Object.entries(g).forEach(([month,evts])=>{
-    h+=`<div style="margin-bottom:2rem"><h2 style="font-family:var(--font-body);font-size:1.25rem;font-weight:700;color:var(--erie-navy);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--erie-border)">${month} <span style="font-weight:400;font-size:0.875rem;color:var(--erie-text-light)">${evts.length}</span></h2><div class="event-list">`;
+    h+=`<div style="margin-bottom:2.5rem"><h2 style="font-family:var(--font-body);font-size:1.25rem;font-weight:700;color:var(--erie-navy);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--erie-border)">${month} <span style="font-weight:400;font-size:0.875rem;color:var(--erie-text-light)">${evts.length}</span></h2><div class="event-grid">`;
     evts.forEach((e,i)=>{
       const src=S[e.s]||{l:e.s,d:'#888'};
       const idx=items.indexOf(e);
-      h+=`<article class="event-card" data-idx="${idx}" onclick="toggleCard(this,event)">
+      const icon=CAT_ICONS[e.c]||'\ud83d\udcc5';
+      const grad=CAT_GRAD[e.c]||'linear-gradient(135deg,#f1f5f9,#e2e8f0)';
+      const desc=e.desc||genDesc(e);
+      h+=`<article class="event-card" data-idx="${idx}" onclick="toggleCard(this,event)" style="position:relative">
         <button class="card-close" onclick="closeCard(this.parentElement,event)" aria-label="Close">&times;</button>
-        <div class="date-block"><div class="month">${gMo(e.d)}</div><div class="day">${gD(e.d)}</div><div class="weekday">${gW(e.d)}</div></div>
-        <div class="event-content">
-          <h3 class="event-title">${esc(e.n)}</h3>
-          <p class="event-meta"><span class="venue">${esc(e.v)}</span> &middot; ${esc(src.l)}</p>
-          <p class="event-time">${esc(e.t)}</p>
-          <div class="event-tags"><span class="badge-type" data-type="${esc(e.c)}">${esc(e.c)}</span></div>
-          <div class="event-detail">
-            <div class="event-actions">
-              ${e.url?`<a href="${esc(e.url)}" target="_blank" rel="noopener">View on ${esc(src.l)} &rarr;</a>`:''}
-              <button onclick="downloadICS(E.filter(x=>x.d>='${TODAY}')[${idx}]);event.stopPropagation()">Add to Calendar</button>
-            </div>
+        <div class="card-img-placeholder" style="background:${grad}"><div class="card-date-badge"><span class="cb-month">${gMo(e.d)}</span><span class="cb-day">${gD(e.d)}</span></div><span style="font-size:2.5rem;opacity:0.5">${icon}</span></div>
+        <div class="card-body">
+          <div class="card-cat"><span class="badge-type" data-type="${esc(e.c)}">${esc(e.c)}</span></div>
+          <h3 class="card-title">${esc(e.n)}</h3>
+          <p class="card-desc">${esc(desc)}</p>
+          <div class="card-meta">
+            <span class="cm-venue">${esc(e.v)}</span>
+            <span class="cm-time">${gW(e.d)} &middot; ${esc(e.t)}</span>
+            <span class="cm-source"><span class="dot" style="background:${src.d}"></span>${esc(src.l)}</span>
+          </div>
+        </div>
+        <div class="event-detail">
+          <p>${esc(desc)}</p>
+          <div class="event-actions">
+            ${e.url?`<a href="${esc(e.url)}" target="_blank" rel="noopener">View on ${esc(src.l)} &rarr;</a>`:''}
+            <button onclick="downloadICS(getFiltered()[${idx}]);event.stopPropagation()">Add to Calendar</button>
           </div>
         </div>
       </article>`;
