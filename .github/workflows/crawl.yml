@@ -1,0 +1,68 @@
+# .github/workflows/crawl.yml
+# Runs the Erie Events scraper daily at 6 AM ET (11:00 UTC)
+# Commits updated events.json back to the repo
+# The static site (public/index.html) loads events.json at runtime
+
+name: Daily Event Crawl
+
+on:
+  schedule:
+    # 6:00 AM Eastern Time (11:00 UTC during EDT, 11:00 UTC during EST)
+    - cron: '0 11 * * *'
+  
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run scrapers
+        run: npm run scrape
+        continue-on-error: true
+
+      - name: Copy events.json to public/
+        run: cp data/events.json public/events.json
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet data/events.json public/events.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Erie Events Bot"
+          git add data/events.json public/events.json
+          git commit -m "🔄 Daily event crawl — $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Summary
+        run: |
+          echo "## 📊 Crawl Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/events.json ]; then
+            TOTAL=$(cat data/events.json | python3 -c "import sys,json; print(json.load(sys.stdin)['meta']['totalEvents'])")
+            echo "**Total events:** $TOTAL" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "**Last updated:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️ No events.json produced" >> $GITHUB_STEP_SUMMARY
+          fi
