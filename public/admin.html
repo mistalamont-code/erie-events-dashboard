@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Moderation &mdash; Downtown Erie Events</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --erie-navy:#1B2A4A;--erie-blue:#2563EB;--erie-sky:#EFF6FF;--erie-white:#FFFFFF;
+  --erie-amber:#D97706;--erie-amber-light:#FEF3C7;
+  --erie-text:#1E293B;--erie-text-muted:#64748B;--erie-text-light:#94A3B8;
+  --erie-border:#E2E8F0;--erie-border-hover:#CBD5E1;--erie-surface:#F8FAFC;
+  --font-display:'DM Serif Display',serif;--font-body:'DM Sans',sans-serif;
+  --max-w:960px;--radius:10px;--radius-sm:6px;
+}
+body{font-family:var(--font-body);background:var(--erie-surface);color:var(--erie-text);min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:var(--erie-blue);text-decoration:none}a:hover{text-decoration:underline}
+button{font-family:var(--font-body);cursor:pointer}
+
+/* Header */
+.header{background:var(--erie-white);border-bottom:1px solid var(--erie-border);padding:0 1.5rem;height:56px;display:flex;align-items:center}
+.header-inner{max-width:var(--max-w);margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between}
+.header-title{font-size:1rem;font-weight:700;color:var(--erie-navy)}
+.header-right{display:flex;align-items:center;gap:12px}
+.header-email{font-size:0.8125rem;color:var(--erie-text-muted)}
+.btn-sm{padding:6px 14px;border-radius:var(--radius-sm);font-size:0.8125rem;font-weight:600;border:1px solid var(--erie-border);background:var(--erie-white);color:var(--erie-text-muted);transition:all 0.15s}
+.btn-sm:hover{border-color:var(--erie-border-hover);color:var(--erie-text)}
+
+/* Login */
+.login-wrap{max-width:380px;margin:80px auto;padding:2rem;background:var(--erie-white);border-radius:var(--radius);border:1px solid var(--erie-border);box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.login-wrap h1{font-family:var(--font-display);font-size:1.5rem;color:var(--erie-navy);margin-bottom:4px}
+.login-wrap .subtitle{font-size:0.875rem;color:var(--erie-text-muted);margin-bottom:1.5rem}
+.form-group{display:flex;flex-direction:column;gap:4px;margin-bottom:16px}
+.form-group label{font-size:0.8125rem;font-weight:500;color:var(--erie-text-muted)}
+.form-group input{width:100%;background:var(--erie-surface);border:1px solid var(--erie-border);border-radius:var(--radius-sm);padding:9px 12px;color:var(--erie-text);font-size:0.875rem;font-family:var(--font-body);outline:none;transition:border-color 0.2s}
+.form-group input:focus{border-color:var(--erie-blue)}
+.login-error{font-size:0.8125rem;color:#DC2626;margin-bottom:12px;display:none}
+.btn-primary{width:100%;background:var(--erie-blue);color:#fff;border:none;padding:10px 20px;border-radius:var(--radius-sm);font-size:0.875rem;font-weight:600;transition:background 0.2s}
+.btn-primary:hover{background:#1d4ed8}
+.btn-primary:disabled{opacity:0.6;cursor:not-allowed}
+
+/* Dashboard */
+.dash{max-width:var(--max-w);margin:0 auto;padding:1.5rem}
+.dash-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;flex-wrap:wrap;gap:12px}
+.dash-title{font-family:var(--font-display);font-size:1.375rem;color:var(--erie-navy)}
+.tabs{display:flex;gap:4px;background:var(--erie-white);border:1px solid var(--erie-border);border-radius:var(--radius-sm);padding:3px}
+.tab{padding:6px 16px;border-radius:4px;font-size:0.8125rem;font-weight:500;color:var(--erie-text-muted);background:none;border:none;transition:all 0.15s}
+.tab:hover{color:var(--erie-text)}
+.tab.active{background:var(--erie-blue);color:#fff;font-weight:600}
+.stat-row{display:flex;gap:12px;margin-bottom:1.5rem;flex-wrap:wrap}
+.stat{flex:1;min-width:120px;background:var(--erie-white);border:1px solid var(--erie-border);border-radius:var(--radius);padding:16px;text-align:center}
+.stat-num{font-size:1.5rem;font-weight:700;color:var(--erie-navy)}
+.stat-label{font-size:0.75rem;color:var(--erie-text-muted);text-transform:uppercase;letter-spacing:0.5px;margin-top:2px}
+
+/* Table */
+.table-wrap{background:var(--erie-white);border:1px solid var(--erie-border);border-radius:var(--radius);overflow:hidden}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:0.6875rem;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;color:var(--erie-text-light);padding:10px 14px;background:var(--erie-surface);border-bottom:1px solid var(--erie-border)}
+td{padding:12px 14px;border-bottom:1px solid var(--erie-border);font-size:0.8125rem;color:var(--erie-text);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:hover{background:var(--erie-sky)}
+.td-name{font-weight:600;max-width:200px}
+.td-meta{color:var(--erie-text-muted);font-size:0.75rem;margin-top:2px}
+.td-desc{max-width:220px;color:var(--erie-text-muted);font-size:0.75rem;line-height:1.5;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.6875rem;font-weight:600;letter-spacing:0.2px}
+.badge-pending{background:var(--erie-amber-light);color:var(--erie-amber)}
+.badge-approved{background:#ECFDF5;color:#059669}
+.badge-rejected{background:#FEF2F2;color:#DC2626}
+.action-btns{display:flex;gap:6px;white-space:nowrap}
+.btn-approve{background:#ECFDF5;border:1px solid #BBF7D0;color:#059669;padding:5px 12px;border-radius:var(--radius-sm);font-size:0.75rem;font-weight:600;transition:all 0.15s}
+.btn-approve:hover{background:#059669;color:#fff}
+.btn-reject{background:#FEF2F2;border:1px solid #FECACA;color:#DC2626;padding:5px 12px;border-radius:var(--radius-sm);font-size:0.75rem;font-weight:600;transition:all 0.15s}
+.btn-reject:hover{background:#DC2626;color:#fff}
+
+.empty-msg{text-align:center;padding:3rem 1rem;color:var(--erie-text-muted)}
+.empty-msg h3{font-size:1rem;font-weight:600;margin-bottom:4px}
+
+/* Detail modal */
+.detail-overlay{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,0.5);display:none;align-items:center;justify-content:center;padding:1rem}
+.detail-overlay.open{display:flex}
+.detail-modal{background:var(--erie-white);border-radius:12px;max-width:520px;width:100%;padding:2rem;position:relative;max-height:calc(100vh - 2rem);overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.15)}
+.detail-modal h2{font-family:var(--font-display);font-size:1.25rem;color:var(--erie-navy);margin-bottom:16px}
+.detail-row{display:flex;gap:8px;margin-bottom:10px;font-size:0.8125rem}
+.detail-label{font-weight:600;color:var(--erie-text-muted);min-width:80px;flex-shrink:0}
+.detail-value{color:var(--erie-text)}
+.detail-actions{display:flex;gap:8px;margin-top:20px;padding-top:16px;border-top:1px solid var(--erie-border)}
+.detail-close{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:var(--radius-sm);border:1px solid var(--erie-border);background:var(--erie-white);color:var(--erie-text-muted);display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer}
+.detail-close:hover{color:var(--erie-text);border-color:var(--erie-border-hover)}
+
+.note-input{width:100%;background:var(--erie-surface);border:1px solid var(--erie-border);border-radius:var(--radius-sm);padding:8px 12px;font-size:0.8125rem;font-family:var(--font-body);margin-top:8px;resize:vertical;min-height:60px;outline:none}
+.note-input:focus{border-color:var(--erie-blue)}
+
+@media(max-width:768px){
+  .stat-row{flex-direction:column}
+  .table-wrap{overflow-x:auto}
+  table{min-width:600px}
+  .dash{padding:1rem}
+  .login-wrap{margin:40px 1rem}
+}
+</style>
+</head>
+<body>
+
+<!-- Login Screen -->
+<div id="login-screen">
+  <div class="login-wrap">
+    <h1>Event Moderation</h1>
+    <p class="subtitle">Sign in to review community event submissions.</p>
+    <div class="login-error" id="login-error"></div>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required placeholder="moderator@erieddc.org">
+      </div>
+      <div class="form-group">
+        <label for="login-pass">Password</label>
+        <input type="password" id="login-pass" required placeholder="Password">
+      </div>
+      <button type="submit" class="btn-primary" id="login-btn">Sign In</button>
+    </form>
+  </div>
+</div>
+
+<!-- Dashboard (hidden until auth) -->
+<div id="dash-screen" style="display:none">
+  <header class="header"><div class="header-inner">
+    <span class="header-title">Event Moderation</span>
+    <div class="header-right">
+      <a href="index.html" class="btn-sm">View Dashboard</a>
+      <span class="header-email" id="user-email"></span>
+      <button class="btn-sm" id="btn-logout">Sign Out</button>
+    </div>
+  </div></header>
+
+  <div class="dash">
+    <div class="dash-header">
+      <h1 class="dash-title">Submissions</h1>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="pending" role="tab">Pending</button>
+        <button class="tab" data-tab="approved" role="tab">Approved</button>
+        <button class="tab" data-tab="rejected" role="tab">Rejected</button>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="stat-num" id="stat-pending">0</div><div class="stat-label">Pending</div></div>
+      <div class="stat"><div class="stat-num" id="stat-approved">0</div><div class="stat-label">Approved</div></div>
+      <div class="stat"><div class="stat-num" id="stat-rejected">0</div><div class="stat-label">Rejected</div></div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Event</th>
+          <th>Date</th>
+          <th>Venue</th>
+          <th>Category</th>
+          <th>Submitted</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr></thead>
+        <tbody id="queue-body"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Detail Modal -->
+<div class="detail-overlay" id="detail-overlay">
+  <div class="detail-modal" id="detail-modal">
+    <button class="detail-close" id="detail-close">&times;</button>
+    <div id="detail-body"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+// Supabase config — must match index.html values
+const SUPABASE_URL = 'https://czksefxuctuaqlbwedg.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN6a3NlZnh1Y3R1YWxxbGJ3ZWRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5ODg1MDksImV4cCI6MjA5MDU2NDUwOX0.TYw3PS8uJV_JydEDcz3PDLRntSFA0tA8_x-haPuXtf4';
+
+if(SUPABASE_URL === 'YOUR_SUPABASE_URL'){
+  document.getElementById('login-screen').innerHTML='<div class="login-wrap"><h1>Setup Required</h1><p class="subtitle">Supabase is not configured yet. Update <code>SUPABASE_URL</code> and <code>SUPABASE_ANON_KEY</code> in both <code>index.html</code> and <code>admin.html</code>, then run the SQL migration.</p><a href="index.html">&larr; Back to dashboard</a></div>';
+}
+
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+let currentTab = 'pending';
+let allSubmissions = [];
+let currentDetail = null;
+
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function fmtDate(d){if(!d)return'';return new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}
+function fmtTs(ts){if(!ts)return'';return new Date(ts).toLocaleDateString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})}
+
+// --- Auth ---
+async function checkSession(){
+  const {data:{session}}=await sb.auth.getSession();
+  if(session){showDash(session.user);return}
+  document.getElementById('login-screen').style.display='';
+}
+
+document.getElementById('login-form').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const errEl=document.getElementById('login-error');
+  const btn=document.getElementById('login-btn');
+  errEl.style.display='none';
+  btn.disabled=true;btn.textContent='Signing in\u2026';
+
+  const email=document.getElementById('login-email').value.trim();
+  const pass=document.getElementById('login-pass').value;
+  const {data,error}=await sb.auth.signInWithPassword({email,password:pass});
+
+  btn.disabled=false;btn.textContent='Sign In';
+  if(error){errEl.textContent=error.message;errEl.style.display='block';return}
+  showDash(data.user);
+});
+
+document.getElementById('btn-logout').addEventListener('click',async()=>{
+  await sb.auth.signOut();
+  document.getElementById('dash-screen').style.display='none';
+  document.getElementById('login-screen').style.display='';
+});
+
+function showDash(user){
+  document.getElementById('login-screen').style.display='none';
+  document.getElementById('dash-screen').style.display='';
+  document.getElementById('user-email').textContent=user.email;
+  loadSubmissions();
+}
+
+// --- Data ---
+async function loadSubmissions(){
+  const {data,error}=await sb.from('submissions').select('*').order('submitted_at',{ascending:false});
+  if(error){console.error(error);return}
+  allSubmissions=data||[];
+  renderStats();
+  renderTable();
+}
+
+function renderStats(){
+  const counts={pending:0,approved:0,rejected:0};
+  allSubmissions.forEach(s=>counts[s.status]=(counts[s.status]||0)+1);
+  document.getElementById('stat-pending').textContent=counts.pending;
+  document.getElementById('stat-approved').textContent=counts.approved;
+  document.getElementById('stat-rejected').textContent=counts.rejected;
+}
+
+function renderTable(){
+  const filtered=allSubmissions.filter(s=>s.status===currentTab);
+  const tbody=document.getElementById('queue-body');
+
+  if(!filtered.length){
+    tbody.innerHTML=`<tr><td colspan="7"><div class="empty-msg"><h3>No ${currentTab} submissions</h3><p>${currentTab==='pending'?'New community submissions will appear here for review.':'Nothing here yet.'}</p></div></td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML=filtered.map(s=>`<tr>
+    <td>
+      <div class="td-name">${esc(s.name)}</div>
+      <div class="td-meta">${esc(s.organizer||'')} &middot; ${esc(s.email||'')}</div>
+    </td>
+    <td>${fmtDate(s.date)}<br><span style="color:var(--erie-text-light);font-size:0.75rem">${esc(s.time||'TBD')}</span></td>
+    <td>${esc(s.venue)}</td>
+    <td><span class="badge badge-${s.category==='Music'?'approved':'pending'}" style="background:var(--erie-sky);color:var(--erie-blue)">${esc(s.category)}</span></td>
+    <td style="font-size:0.75rem;color:var(--erie-text-muted)">${fmtTs(s.submitted_at)}</td>
+    <td><span class="badge badge-${s.status}">${s.status.charAt(0).toUpperCase()+s.status.slice(1)}</span></td>
+    <td class="action-btns">
+      <button class="btn-sm" onclick="showDetail('${s.id}')">View</button>
+      ${s.status==='pending'?`<button class="btn-approve" onclick="updateStatus('${s.id}','approved',event)">Approve</button><button class="btn-reject" onclick="updateStatus('${s.id}','rejected',event)">Reject</button>`:''}
+      ${s.status!=='pending'?`<button class="btn-sm" onclick="updateStatus('${s.id}','pending',event)">Requeue</button>`:''}
+    </td>
+  </tr>`).join('');
+}
+
+// --- Actions ---
+async function updateStatus(id,status,ev){
+  if(ev){const btn=ev.target;btn.disabled=true;btn.textContent='...';}
+  const {error}=await sb.from('submissions').update({status,reviewed_at:new Date().toISOString()}).eq('id',id);
+  if(error){alert('Error: '+error.message);return}
+  // Update local state
+  const item=allSubmissions.find(s=>s.id===id);
+  if(item){item.status=status;item.reviewed_at=new Date().toISOString()}
+  renderStats();
+  renderTable();
+  // Close detail modal if open
+  if(currentDetail===id)closeDetail();
+}
+
+// --- Detail Modal ---
+function showDetail(id){
+  const s=allSubmissions.find(x=>x.id===id);
+  if(!s)return;
+  currentDetail=id;
+  document.getElementById('detail-body').innerHTML=`
+    <h2>${esc(s.name)}</h2>
+    <div class="detail-row"><span class="detail-label">Date</span><span class="detail-value">${fmtDate(s.date)} at ${esc(s.time||'TBD')}</span></div>
+    <div class="detail-row"><span class="detail-label">Venue</span><span class="detail-value">${esc(s.venue)}</span></div>
+    <div class="detail-row"><span class="detail-label">Category</span><span class="detail-value">${esc(s.category)}</span></div>
+    <div class="detail-row"><span class="detail-label">Organizer</span><span class="detail-value">${esc(s.organizer||'N/A')}</span></div>
+    <div class="detail-row"><span class="detail-label">Email</span><span class="detail-value"><a href="mailto:${esc(s.email)}">${esc(s.email||'N/A')}</a></span></div>
+    ${s.url?`<div class="detail-row"><span class="detail-label">URL</span><span class="detail-value"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a></span></div>`:''}
+    ${s.description?`<div class="detail-row"><span class="detail-label">Description</span><span class="detail-value">${esc(s.description)}</span></div>`:''}
+    <div class="detail-row"><span class="detail-label">Submitted</span><span class="detail-value">${fmtTs(s.submitted_at)}</span></div>
+    <div class="detail-row"><span class="detail-label">Status</span><span class="detail-value"><span class="badge badge-${s.status}">${s.status.charAt(0).toUpperCase()+s.status.slice(1)}</span></span></div>
+    ${s.reviewer_note?`<div class="detail-row"><span class="detail-label">Note</span><span class="detail-value">${esc(s.reviewer_note)}</span></div>`:''}
+    <label style="font-size:0.8125rem;font-weight:500;color:var(--erie-text-muted);margin-top:8px;display:block">Reviewer note (optional)</label>
+    <textarea class="note-input" id="reviewer-note" placeholder="Add a note...">${esc(s.reviewer_note||'')}</textarea>
+    <div class="detail-actions">
+      ${s.status!=='approved'?`<button class="btn-approve" onclick="saveNoteAndUpdate('${s.id}','approved')">Approve</button>`:''}
+      ${s.status!=='rejected'?`<button class="btn-reject" onclick="saveNoteAndUpdate('${s.id}','rejected')">Reject</button>`:''}
+      ${s.status!=='pending'?`<button class="btn-sm" onclick="saveNoteAndUpdate('${s.id}','pending')">Requeue</button>`:''}
+    </div>`;
+  document.getElementById('detail-overlay').classList.add('open');
+}
+
+async function saveNoteAndUpdate(id,status){
+  const note=document.getElementById('reviewer-note').value.trim();
+  const {error}=await sb.from('submissions').update({status,reviewed_at:new Date().toISOString(),reviewer_note:note}).eq('id',id);
+  if(error){alert('Error: '+error.message);return}
+  const item=allSubmissions.find(s=>s.id===id);
+  if(item){item.status=status;item.reviewed_at=new Date().toISOString();item.reviewer_note=note}
+  renderStats();
+  renderTable();
+  closeDetail();
+}
+
+function closeDetail(){
+  document.getElementById('detail-overlay').classList.remove('open');
+  currentDetail=null;
+}
+
+document.getElementById('detail-close').addEventListener('click',closeDetail);
+document.getElementById('detail-overlay').addEventListener('click',e=>{if(e.target.id==='detail-overlay')closeDetail()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDetail()});
+
+// --- Tabs ---
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  currentTab=t.dataset.tab;
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  t.classList.add('active');
+  renderTable();
+}));
+
+// --- Init ---
+checkSession();
+</script>
+</body>
+</html>

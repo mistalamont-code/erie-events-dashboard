@@ -315,7 +315,7 @@ body.modal-open{overflow:hidden}
 
 <header class="header"><div class="header-inner">
   <div class="header-brand"><span class="header-title">Downtown Erie Events</span><span class="header-subtitle">by Erie Downtown Partnership &amp; EDDC</span></div>
-  <button class="btn-submit" id="btn-submit-event">Submit an Event</button>
+  <!-- <button class="btn-submit" id="btn-submit-event">Submit an Event</button> -->
 </div></header>
 
 <section class="hero"><div class="hero-inner">
@@ -374,6 +374,7 @@ body.modal-open{overflow:hidden}
     <a href="https://www.erieddc.org" target="_blank" rel="noopener">EDDC</a>
     <a href="https://www.eriedowntown.com" target="_blank" rel="noopener">Erie Downtown Partnership</a>
     <a href="https://www.visiterie.com" target="_blank" rel="noopener">VisitErie</a>
+    <a href="admin.html">Event Moderation</a>
   </div>
   <p class="footer-meta" id="footer-meta">Auto-updated daily from local sources.</p>
   <p class="footer-legal">&copy; 2026 Erie Downtown Development Corporation</p>
@@ -456,7 +457,15 @@ body.modal-open{overflow:hidden}
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script>
+// ⚙️ Supabase config — replace with your project values
+const SUPABASE_URL = 'https://czksefxuctuaqlbwedg.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN6a3NlZnh1Y3R1YWxxbGJ3ZWRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5ODg1MDksImV4cCI6MjA5MDU2NDUwOX0.TYw3PS8uJV_JydEDcz3PDLRntSFA0tA8_x-haPuXtf4';
+const sb = (SUPABASE_URL !== 'YOUR_SUPABASE_URL' && typeof supabase !== 'undefined')
+  ? supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+  : null;
+
 let E=[],META={lastUpdated:'',totalEvents:0};
 const FALLBACK_EVENTS=[
 {n:"Erie SeaWolves Opening Night vs Richmond",d:"2026-04-03",t:"6:05 PM",v:"UPMC Park",c:"Sports",s:"ErieEvents"},{n:"Colin Mochrie & Brad Sherwood: Asking for Trouble",d:"2026-04-10",t:"7:00 PM",v:"Warner Theatre",c:"Comedy",s:"ErieEvents"},{n:"Hotel California \u2014 A Salute To The Eagles",d:"2026-04-11",t:"8:00 PM",v:"Warner Theatre",c:"Music",s:"ErieEvents"},{n:"Spring Craft & Gift Festival",d:"2026-04-11",t:"10:00 AM",v:"Bayfront Convention Center",c:"Festival",s:"ErieEvents"},{n:"Harlem Globetrotters",d:"2026-04-15",t:"7:00 PM",v:"Erie Insurance Arena",c:"Sports",s:"ErieEvents"},{n:"Bat Out Of Hell: The Musical",d:"2026-04-20",t:"7:30 PM",v:"Warner Theatre",c:"Theater",s:"ErieEvents"},{n:"Jerry Seinfeld",d:"2026-05-15",t:"7:00 PM",v:"Warner Theatre",c:"Comedy",s:"ErieEvents"},{n:"The Book Of Mormon",d:"2026-06-17",t:"7:30 PM",v:"Warner Theatre",c:"Theater",s:"ErieEvents"},{n:"\"Weird Al\" Yankovic: Bigger & Weirder Tour",d:"2026-07-08",t:"7:30 PM",v:"Erie Insurance Arena",c:"Music",s:"ErieEvents"},
@@ -473,7 +482,7 @@ const FALLBACK_EVENTS=[
 {n:"Creative Connections: Teaching Artists with Disabilities",d:"2026-04-10",t:"5:00 PM",v:"EAC Gallery + Erie Art Museum",c:"Arts",s:"ErieArtsCulture",desc:"Visit the EAC Gallery from 5:00\u20136:00 PM then proceed to the Erie Art Museum for a panel discussion from 6:00\u20137:00 PM."},{n:"Arts & Culture Community Mixer",d:"2026-05-15",t:"5:30 PM",v:"Erie Arts & Culture",c:"Community",s:"ErieArtsCulture",desc:"Networking event for local artists, arts organizations, and culture supporters in the Erie region."},{n:"Bridge Studios Open House",d:"2026-06-07",t:"12:00 PM",v:"Erie Arts & Culture",c:"Arts",s:"ErieArtsCulture",desc:"Tour the Bridge Studios space and meet teaching artists connecting people to purpose through music and art."},{n:"EAC Annual Showcase",d:"2026-09-12",t:"6:00 PM",v:"Erie Arts & Culture",c:"Arts",s:"ErieArtsCulture",desc:"Annual showcase of Erie\u2019s arts and culture community featuring performances, exhibitions, and awards."},{n:"Arts Education Workshop Series",d:"2026-04-22",t:"10:00 AM",v:"Erie Arts & Culture",c:"Arts",s:"ErieArtsCulture",desc:"Workshop for teaching artists on grant opportunities and arts education best practices in Northwestern PA."}
 ];
 
-const S={ErieEvents:{l:"Erie Events",d:"#2563EB"},FlagshipCity:{l:"Flagship City District",d:"#059669"},VisitErie:{l:"VisitErie",d:"#DC2626"},ErieDowntown:{l:"Erie Downtown Partnership",d:"#D97706"},ArtMuseum:{l:"Erie Art Museum",d:"#7C3AED"},ChildrensMuseum:{l:"Children\u2019s Museum",d:"#EA580C"},CelebrateErie:{l:"CelebrateErie",d:"#DB2777"},CityOfErie:{l:"City of Erie",d:"#0891B2"},ErieReader:{l:"Erie Reader",d:"#16A34A"},ErieChamber:{l:"Erie Chamber",d:"#B45309"},GannonEvents:{l:"Gannon University",d:"#4338CA"},EriePlayhouse:{l:"Erie Playhouse",d:"#BE123C"},ErieZoo:{l:"Erie Zoo",d:"#15803d"},ErieArtsCulture:{l:"Erie Arts & Culture",d:"#6d28d9"}};
+const S={ErieEvents:{l:"Erie Events",d:"#2563EB"},FlagshipCity:{l:"Flagship City District",d:"#059669"},VisitErie:{l:"VisitErie",d:"#DC2626"},ErieDowntown:{l:"Erie Downtown Partnership",d:"#D97706"},ArtMuseum:{l:"Erie Art Museum",d:"#7C3AED"},ChildrensMuseum:{l:"Children\u2019s Museum",d:"#EA580C"},CelebrateErie:{l:"CelebrateErie",d:"#DB2777"},CityOfErie:{l:"City of Erie",d:"#0891B2"},ErieReader:{l:"Erie Reader",d:"#16A34A"},ErieChamber:{l:"Erie Chamber",d:"#B45309"},GannonEvents:{l:"Gannon University",d:"#4338CA"},EriePlayhouse:{l:"Erie Playhouse",d:"#BE123C"},ErieZoo:{l:"Erie Zoo",d:"#15803d"},ErieArtsCulture:{l:"Erie Arts & Culture",d:"#6d28d9"},Community:{l:"Community Submitted",d:"#F59E0B"}};
 const CATS=["Music","Sports","Festival","Comedy","Theater","Arts","Community","Family"];
 const TODAY=new Date().toISOString().slice(0,10);
 
@@ -635,7 +644,16 @@ async function loadEvents(){
     if(!res.ok)throw new Error('fail');
     const data=await res.json();
     const scraped=(data.events||[]).map(norm);
-    const all=[...scraped,...FALLBACK_EVENTS];
+    // Fetch approved community submissions from Supabase
+    let community=[];
+    if(sb){
+      try{
+        const today=new Date().toISOString().slice(0,10);
+        const {data:rows}=await sb.from('submissions').select('name,date,time,venue,category,description,url').gte('date',today);
+        if(rows)community=rows.map(r=>({n:r.name,d:r.date,t:r.time||'TBD',v:r.venue,c:r.category,s:'Community',desc:r.description||'',url:r.url||''}));
+      }catch(e){console.warn('Community events fetch failed:',e)}
+    }
+    const all=[...scraped,...community,...FALLBACK_EVENTS];
     const today=new Date().toISOString().slice(0,10);
     const seen=new Set();
     E=all.filter(e=>{if(e.d<today)return false;const k=e.n.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,25)+e.d;if(seen.has(k))return false;seen.add(k);return true});
@@ -801,7 +819,6 @@ loadEvents();
 
     // Collect form data
     const submission={
-      id:Date.now()+'_'+Math.random().toString(36).slice(2,8),
       name:f.event_name.value.trim(),
       date:f.event_date.value,
       time:f.event_time.value.trim()||'TBD',
@@ -811,20 +828,36 @@ loadEvents();
       organizer:f.organizer_name.value.trim(),
       email:f.contact_email.value.trim(),
       url:f.event_url.value.trim(),
-      submittedAt:new Date().toISOString(),
       status:'pending'
     };
 
-    // Store in localStorage queue
-    try{
-      const queue=JSON.parse(localStorage.getItem('erie_event_submissions')||'[]');
-      queue.push(submission);
-      localStorage.setItem('erie_event_submissions',JSON.stringify(queue));
-    }catch(err){
-      // localStorage may be full or unavailable — proceed anyway
-    }
+    // Submit to Supabase (or fall back to localStorage)
+    const submitBtn=f.querySelector('[type="submit"]');
+    submitBtn.disabled=true;
+    submitBtn.textContent='Submitting\u2026';
 
-    showSuccess();
+    if(sb){
+      sb.from('submissions').insert([submission]).then(({error})=>{
+        submitBtn.disabled=false;
+        submitBtn.textContent='Submit Event';
+        if(error){
+          alert('Error: '+error.message+' (code: '+error.code+', hint: '+(error.hint||'none')+')');
+          console.error('Supabase insert error:',error);
+          return;
+        }
+        showSuccess();
+      });
+    }else{
+      // Fallback: localStorage when Supabase isn't configured
+      try{
+        const queue=JSON.parse(localStorage.getItem('erie_event_submissions')||'[]');
+        queue.push({...submission,id:Date.now()+'_'+Math.random().toString(36).slice(2,8),submittedAt:new Date().toISOString()});
+        localStorage.setItem('erie_event_submissions',JSON.stringify(queue));
+      }catch(err){}
+      submitBtn.disabled=false;
+      submitBtn.textContent='Submit Event';
+      showSuccess();
+    }
   }
 
   function bindFormEvents(){
@@ -840,13 +873,13 @@ loadEvents();
   }
 
   // Open modal
-  openBtn.addEventListener('click',openModal);
+  if(openBtn)openBtn.addEventListener('click',openModal);
 
   // Close via X button
-  closeBtn.addEventListener('click',closeModal);
+  if(closeBtn)closeBtn.addEventListener('click',closeModal);
 
   // Close via Cancel button
-  cancelBtn.addEventListener('click',closeModal);
+  if(cancelBtn)cancelBtn.addEventListener('click',closeModal);
 
   // Close on overlay click
   overlay.addEventListener('click',function(e){
@@ -859,10 +892,10 @@ loadEvents();
   });
 
   // Character counter
-  descField.addEventListener('input',updateCharCounter);
+  if(descField)descField.addEventListener('input',updateCharCounter);
 
   // Form submit
-  form.addEventListener('submit',handleSubmit);
+  if(form)form.addEventListener('submit',handleSubmit);
 })();
 </script>
 </body>
