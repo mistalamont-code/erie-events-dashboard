@@ -1,199 +1,18 @@
 {
   "meta": {
-    "lastUpdated": "2026-04-03T11:49:04.511Z",
-    "totalEvents": 297,
+    "lastUpdated": "2026-04-04T11:57:11.437Z",
+    "totalEvents": 296,
     "sources": [
-      "ErieEvents",
       "ErieReader",
       "FlagshipCity",
-      "VisitErie",
       "ErieDowntown",
+      "ErieEvents",
+      "VisitErie",
       "CityOfErie",
       "CelebrateErie"
     ]
   },
   "events": [
-    {
-      "id": "ErieEvents-2026-04-03-erie-seawolves-opening-night-vs-richmond",
-      "name": "Erie SeaWolves Opening Night vs Richmond",
-      "date": "2026-04-03",
-      "time": "06:05 PM",
-      "venue": "UPMC Park",
-      "category": "Sports",
-      "source": "ErieEvents",
-      "url": "https://www.erieevents.com/events/event/04/03/2026/erie-seawolves-opening-night-vs-richmond",
-      "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.771Z",
-      "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
-    },
-    {
-      "id": "ErieReader-2026-04-03-virtual-birds-of-presque-isle",
-      "name": "Virtual: Birds of Presque Isle",
-      "date": "2026-04-03",
-      "time": "1:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.451Z"
-    },
-    {
-      "id": "ErieReader-2026-04-03-crochet-course",
-      "name": "Crochet Course",
-      "date": "2026-04-03",
-      "time": "10:00 AM",
-      "venue": "6 from 10 AM to 12 PMGrounded Print and Paper Shop",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.450Z"
-    },
-    {
-      "id": "ErieReader-2026-04-03-virtual-natures-symphony",
-      "name": "Virtual: Natures Symphony",
-      "date": "2026-04-03",
-      "time": "11:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.451Z"
-    },
-    {
-      "id": "ErieReader-2026-04-03-good-friday-tenebrae-worship",
-      "name": "Good Friday Tenebrae Worship",
-      "date": "2026-04-03",
-      "time": "12:00 PM",
-      "venue": "/2026 from 12 PM to 1 PMSt. Paul's Lutheran Church",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.451Z"
-    },
-    {
-      "id": "ErieReader-2026-04-03-lip-balm-making-class",
-      "name": "Lip Balm Making Class",
-      "date": "2026-04-03",
-      "time": "5:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.452Z"
-    },
-    {
-      "id": "ErieReader-2026-04-03-live-music-at-arundel-cellars-brewing",
-      "name": "Live Music at Arundel Cellars & Brewing",
-      "date": "2026-04-03",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.452Z"
-    },
-    {
-      "id": "ErieReader-2026-04-03-serve-it-up-make-your-own-charcuterie-tr",
-      "name": "Serve It Up: Make Your Own Charcuterie Trays",
-      "date": "2026-04-03",
-      "time": "6:00 PM",
-      "venue": "Interests4/3/2026 from 6 PM to 8 PMErie ClaySpace",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.452Z"
-    },
-    {
-      "id": "ErieReader-2026-04-03-free-comedy-the-monk",
-      "name": "Free Comedy @ The Monk",
-      "date": "2026-04-03",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Comedy",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.452Z"
-    },
-    {
-      "id": "FlagshipCity-2026-04-03-erie-seawolves-home-game",
-      "name": "Erie Seawolves Home Game",
-      "date": "2026-04-03",
-      "time": "6:05 PM",
-      "venue": "Downtown Erie",
-      "category": "Sports",
-      "source": "FlagshipCity",
-      "url": "https://www.flagshipcitydistrict.com/events/erie-seawolves-home-game-apr-3",
-      "description": "Erie Seawolves Home Game",
-      "lastScraped": "2026-04-03T11:44:49.505Z",
-      "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9c38639bead4606cb117b/1774830896968/Erie_SeaWolves_logo.svg+%281%29.png?format=1500w"
-    },
-    {
-      "id": "ErieReader-2026-04-03-live-music-at-bigbar",
-      "name": "Live Music at BIGBAR",
-      "date": "2026-04-03",
-      "time": "7:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.453Z"
-    },
-    {
-      "id": "ErieReader-2026-04-03-comedian-jackie-flynn",
-      "name": "Comedian Jackie Flynn",
-      "date": "2026-04-03",
-      "time": "7:00 PM",
-      "venue": "26 at 7 PMKellar's: A Modern Magic and Comedy Club",
-      "category": "Comedy",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.453Z"
-    },
-    {
-      "id": "ErieReader-2026-04-03-ethan-foulk-jen-meyer-and-friends-more-t",
-      "name": "Ethan Foulk, Jen Meyer ( and friends) + MORE TBA!!!",
-      "date": "2026-04-03",
-      "time": "9:00 PM",
-      "venue": "+ MORE TBA!!!Music4/3/2026 at 9 PMKings Rook Club",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:17.453Z"
-    },
-    {
-      "id": "VisitErie-2026-04-03-erie-seawolves-opening-night",
-      "name": "Erie SeaWolves Opening Night",
-      "date": "2026-04-03",
-      "time": "TBD",
-      "venue": "UPMC Park",
-      "category": "Sports",
-      "source": "VisitErie",
-      "url": "https://www.visiterie.com/events/event/04/03/2026/erie-seawolves-opening-night",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:07.597Z"
-    },
     {
       "id": "ErieReader-2026-04-04-peter-cottontail-express",
       "name": "Peter Cottontail Express",
@@ -205,7 +24,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.667Z"
+      "lastScraped": "2026-04-04T11:37:28.480Z"
+    },
+    {
+      "id": "FlagshipCity-2026-04-04-downtown-erie-events",
+      "name": "DOWNTOWN ERIE EVENTS",
+      "date": "2026-04-04",
+      "time": "1:35 PM",
+      "venue": "Flagship City Food Hall",
+      "category": "Community",
+      "source": "FlagshipCity",
+      "url": "https://www.flagshipcitydistrict.com/home",
+      "description": "Visit Flagship City District in Downtown Erie! Enjoy a meal from the Food Hall, explore one-of-a-kind shops, and make new memories our vibrant neighborhood!",
+      "lastScraped": "2026-04-04T11:36:58.341Z",
+      "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/t/64b170d5a63c71647bd4a697/1689350357853/downtownerie_06302023-7.jpg?format=1500w"
     },
     {
       "id": "FlagshipCity-2026-04-04-erie-seawolves-home-game",
@@ -217,7 +49,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/erie-seawolves-home-game-apr-4",
       "description": "Erie Seawolves Home Game",
-      "lastScraped": "2026-04-03T11:44:49.505Z",
+      "lastScraped": "2026-04-04T11:36:58.342Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9c503c1553c12db391a2c/1774832873244/Erie_SeaWolves_logo.svg+%281%29.png?format=1500w"
     },
     {
@@ -231,7 +63,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:17.453Z"
+      "lastScraped": "2026-04-04T11:37:28.478Z"
     },
     {
       "id": "ErieReader-2026-04-04-spring-egg-venture",
@@ -244,7 +76,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:17.453Z"
+      "lastScraped": "2026-04-04T11:37:28.478Z"
     },
     {
       "id": "ErieReader-2026-04-04-try-it-beginner-wheel-throwing",
@@ -257,7 +89,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.665Z"
+      "lastScraped": "2026-04-04T11:37:28.479Z"
     },
     {
       "id": "ErieReader-2026-04-04-family-fun-day-at-werner-books-easter-th",
@@ -270,7 +102,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.666Z"
+      "lastScraped": "2026-04-04T11:37:28.479Z"
     },
     {
       "id": "ErieReader-2026-04-04-toddler-time-workshop-the-tale-of-peter-",
@@ -283,7 +115,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.666Z"
+      "lastScraped": "2026-04-04T11:37:28.479Z"
     },
     {
       "id": "ErieReader-2026-04-04-yahn-planetarium-show-general-audience",
@@ -296,7 +128,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.666Z"
+      "lastScraped": "2026-04-04T11:37:28.479Z"
     },
     {
       "id": "ErieReader-2026-04-04-compton-s-closet",
@@ -309,7 +141,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.666Z"
+      "lastScraped": "2026-04-04T11:37:28.479Z"
     },
     {
       "id": "ErieReader-2026-04-04-funeral-for-jesus",
@@ -322,7 +154,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.667Z"
+      "lastScraped": "2026-04-04T11:37:28.480Z"
     },
     {
       "id": "ErieReader-2026-04-04-live-music-at-bigbar",
@@ -335,7 +167,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.667Z"
+      "lastScraped": "2026-04-04T11:37:28.480Z"
     },
     {
       "id": "ErieReader-2026-04-04-actor-comedian-jackie-flynn",
@@ -348,7 +180,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.667Z"
+      "lastScraped": "2026-04-04T11:37:28.480Z"
     },
     {
       "id": "ErieReader-2026-04-04-first-day-of-trout-fishing",
@@ -361,7 +193,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:17.453Z"
+      "lastScraped": "2026-04-04T11:37:28.478Z"
     },
     {
       "id": "ErieReader-2026-04-04-consider-the-source-w-the-ish-after-part",
@@ -374,7 +206,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.667Z"
+      "lastScraped": "2026-04-04T11:37:28.480Z"
     },
     {
       "id": "FlagshipCity-2026-04-05-erie-seawolves-home-game",
@@ -386,7 +218,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/erie-seawolves-home-game-apr-5",
       "description": "Erie Seawolves Home Game",
-      "lastScraped": "2026-04-03T11:44:49.506Z",
+      "lastScraped": "2026-04-04T11:36:58.342Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9c54cc21ace1aad47ffc4/1774832880914/Erie_SeaWolves_logo.svg+%281%29.png?format=1500w"
     },
     {
@@ -400,7 +232,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.668Z"
+      "lastScraped": "2026-04-04T11:37:30.676Z"
     },
     {
       "id": "ErieReader-2026-04-05-easter-sunday-worship",
@@ -413,7 +245,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.668Z"
+      "lastScraped": "2026-04-04T11:37:28.480Z"
     },
     {
       "id": "ErieReader-2026-04-06-coloring-classics-iroquois-",
@@ -426,7 +258,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.888Z"
+      "lastScraped": "2026-04-04T11:37:30.677Z"
     },
     {
       "id": "ErieReader-2026-04-06-lincoln-stay-play",
@@ -439,7 +271,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.888Z"
+      "lastScraped": "2026-04-04T11:37:30.677Z"
     },
     {
       "id": "ErieReader-2026-04-06-open-studio",
@@ -452,7 +284,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.888Z"
+      "lastScraped": "2026-04-04T11:37:30.677Z"
     },
     {
       "id": "ErieReader-2026-04-06-intro-to-relief-carving",
@@ -465,7 +297,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.888Z"
+      "lastScraped": "2026-04-04T11:37:30.677Z"
     },
     {
       "id": "ErieReader-2026-04-06-monday-makers-ceramic-tiles",
@@ -478,7 +310,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.888Z"
+      "lastScraped": "2026-04-04T11:37:30.678Z"
     },
     {
       "id": "ErieReader-2026-04-06-art-for-wellness-emotionally-fueled-",
@@ -491,7 +323,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.888Z"
+      "lastScraped": "2026-04-04T11:37:30.678Z"
     },
     {
       "id": "ErieReader-2026-04-06-bridge-classes",
@@ -504,7 +336,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.888Z"
+      "lastScraped": "2026-04-04T11:37:30.678Z"
     },
     {
       "id": "ErieReader-2026-04-06-intro-to-excel-part-2",
@@ -517,7 +349,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:19.668Z"
+      "lastScraped": "2026-04-04T11:37:30.677Z"
     },
     {
       "id": "ErieDowntown-2026-04-07-apr-07-karaoke-the-food-hall-06-00-pm-08",
@@ -529,7 +361,7 @@
       "source": "ErieDowntown",
       "url": "https://www.eriedowntown.com/events/events/calendar/event/04/07/2026/karaoke-the-food-hall-2",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:11.742Z"
+      "lastScraped": "2026-04-04T11:37:23.280Z"
     },
     {
       "id": "ErieReader-2026-04-07-first-tuesday-book-club",
@@ -542,7 +374,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.889Z"
+      "lastScraped": "2026-04-04T11:37:30.679Z"
     },
     {
       "id": "ErieReader-2026-04-07-millcreek-family-storytime",
@@ -555,7 +387,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.889Z"
+      "lastScraped": "2026-04-04T11:37:30.678Z"
     },
     {
       "id": "ErieReader-2026-04-07-therapy-dogs-united-library-visit",
@@ -568,7 +400,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.889Z"
+      "lastScraped": "2026-04-04T11:37:30.678Z"
     },
     {
       "id": "ErieReader-2026-04-07-pennwriters-group",
@@ -581,7 +413,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.889Z"
+      "lastScraped": "2026-04-04T11:37:30.679Z"
     },
     {
       "id": "ErieReader-2026-04-07-read-to-a-therapy-dog",
@@ -594,7 +426,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.889Z"
+      "lastScraped": "2026-04-04T11:37:30.679Z"
     },
     {
       "id": "ErieReader-2026-04-07-spoon-carving-meet-up",
@@ -607,7 +439,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.889Z"
+      "lastScraped": "2026-04-04T11:37:32.898Z"
     },
     {
       "id": "ErieReader-2026-04-07-how-to-be-a-highly-effective-leader-a-pr",
@@ -620,7 +452,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:21.889Z"
+      "lastScraped": "2026-04-04T11:37:32.899Z"
     },
     {
       "id": "FlagshipCity-2026-04-07-karaoke-the-food-hall",
@@ -632,7 +464,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-apr-7",
       "description": "Get ready to rock the mic with local music legend Preach Freedom for an electrifying and uplifting karaoke night!",
-      "lastScraped": "2026-04-03T11:44:49.506Z",
+      "lastScraped": "2026-04-04T11:36:58.342Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9d750cd6b9e6160f06801/1774835570420/KARAOKE+%281%29.png?format=1500w"
     },
     {
@@ -646,7 +478,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.117Z"
+      "lastScraped": "2026-04-04T11:37:32.899Z"
     },
     {
       "id": "ErieDowntown-2026-04-08-apr-08-jack-stevenson-the-food-hall-06-0",
@@ -658,7 +490,7 @@
       "source": "ErieDowntown",
       "url": "https://www.eriedowntown.com/events/events/calendar/event/04/08/2026/jack-stevenson-the-food-hall",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:11.742Z"
+      "lastScraped": "2026-04-04T11:37:23.280Z"
     },
     {
       "id": "ErieReader-2026-04-08-bridge-classes",
@@ -671,7 +503,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.118Z"
+      "lastScraped": "2026-04-04T11:37:32.899Z"
     },
     {
       "id": "ErieReader-2026-04-08-building-buddies-brigade",
@@ -684,7 +516,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.117Z"
+      "lastScraped": "2026-04-04T11:37:32.899Z"
     },
     {
       "id": "ErieReader-2026-04-08-iroquois-family-storytime",
@@ -697,7 +529,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.117Z"
+      "lastScraped": "2026-04-04T11:37:32.899Z"
     },
     {
       "id": "ErieReader-2026-04-08-preschool-storytime",
@@ -710,7 +542,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.118Z"
+      "lastScraped": "2026-04-04T11:37:32.899Z"
     },
     {
       "id": "ErieReader-2026-04-08-it-was-just-an-accident-watershed-lake-e",
@@ -723,7 +555,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.118Z"
+      "lastScraped": "2026-04-04T11:37:32.900Z"
     },
     {
       "id": "ErieReader-2026-04-08-shorthand-stories-experimental-flash-fic",
@@ -736,7 +568,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.118Z"
+      "lastScraped": "2026-04-04T11:37:32.900Z"
     },
     {
       "id": "ErieReader-2026-04-08-starting-a-business-with-a-purpose-b-cor",
@@ -749,7 +581,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.118Z"
+      "lastScraped": "2026-04-04T11:37:32.900Z"
     },
     {
       "id": "FlagshipCity-2026-04-08-jack-stevenson-the-food-hall",
@@ -761,7 +593,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/jack-stevenson-apr",
       "description": "Local legend, Jack Stevenson, stops by the Food Hall for a great time! Jack will bring his guitar and you bring your appetites. Deal?  Come on by for great drink and food specials! Music starts at 6.",
-      "lastScraped": "2026-04-03T11:44:49.506Z",
+      "lastScraped": "2026-04-04T11:36:58.342Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69cac5f538d4b37a8781dfef/1774897276063/LIVE+MUSIC+%282%29.png?format=1500w"
     },
     {
@@ -775,7 +607,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.118Z"
+      "lastScraped": "2026-04-04T11:37:32.900Z"
     },
     {
       "id": "ErieReader-2026-04-09-lincoln-family-storytime",
@@ -788,7 +620,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.118Z"
+      "lastScraped": "2026-04-04T11:37:32.900Z"
     },
     {
       "id": "ErieReader-2026-04-09-preschool-storytime",
@@ -801,7 +633,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.118Z"
+      "lastScraped": "2026-04-04T11:37:32.900Z"
     },
     {
       "id": "ErieReader-2026-04-09-spring-dining-series",
@@ -814,7 +646,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.118Z"
+      "lastScraped": "2026-04-04T11:37:35.141Z"
     },
     {
       "id": "ErieReader-2026-04-09-spring-awakenings-blooms-in-paint-and-cl",
@@ -827,7 +659,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.119Z"
+      "lastScraped": "2026-04-04T11:37:35.141Z"
     },
     {
       "id": "ErieReader-2026-04-09-smith-creative-writers-reading-series-ni",
@@ -840,7 +672,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:24.119Z"
+      "lastScraped": "2026-04-04T11:37:35.141Z"
     },
     {
       "id": "ErieReader-2026-04-09-singo-the-monk",
@@ -853,7 +685,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.374Z"
+      "lastScraped": "2026-04-04T11:37:35.141Z"
     },
     {
       "id": "ErieReader-2026-04-09-unexploded-ordance-with-dr-catharina-coe",
@@ -866,7 +698,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.374Z"
+      "lastScraped": "2026-04-04T11:37:35.143Z"
     },
     {
       "id": "ErieReader-2026-04-09-alex-harding-lucian-ban-duo-live",
@@ -879,7 +711,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.374Z"
+      "lastScraped": "2026-04-04T11:37:35.143Z"
     },
     {
       "id": "ErieReader-2026-04-09-comedian-ryan-goodcase",
@@ -892,7 +724,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.374Z"
+      "lastScraped": "2026-04-04T11:37:35.143Z"
     },
     {
       "id": "ErieReader-2026-04-09-the-first-hundred-days-the-state-of-the-",
@@ -905,7 +737,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.374Z"
+      "lastScraped": "2026-04-04T11:37:35.144Z"
     },
     {
       "id": "ErieReader-2026-04-09-mean-girls",
@@ -918,7 +750,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.376Z"
+      "lastScraped": "2026-04-04T11:37:35.144Z"
     },
     {
       "id": "ErieReader-2026-04-09-king-s-rook-jackbox-games-tournament",
@@ -931,7 +763,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.377Z"
+      "lastScraped": "2026-04-04T11:37:35.144Z"
     },
     {
       "id": "ErieEvents-2026-04-10-colin-mochrie-brad-sherwood-asking-for-t",
@@ -943,7 +775,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/10/2026/colin-mochrie-and-brad-sherwood-asking-for-trouble",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.771Z",
+      "lastScraped": "2026-04-04T11:36:12.118Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -957,7 +789,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.377Z"
+      "lastScraped": "2026-04-04T11:37:35.144Z"
     },
     {
       "id": "ErieReader-2026-04-10-super-science-weather-stories-and-statio",
@@ -970,7 +802,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.377Z"
+      "lastScraped": "2026-04-04T11:37:35.144Z"
     },
     {
       "id": "ErieReader-2026-04-10-addressing-population-decline-in-erie-co",
@@ -983,7 +815,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.377Z"
+      "lastScraped": "2026-04-04T11:37:35.144Z"
     },
     {
       "id": "ErieReader-2026-04-10-senior-art-thesis",
@@ -996,7 +828,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.377Z"
+      "lastScraped": "2026-04-04T11:37:35.144Z"
     },
     {
       "id": "ErieReader-2026-04-10-catholic-charities-bingo",
@@ -1009,7 +841,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.378Z"
+      "lastScraped": "2026-04-04T11:37:35.145Z"
     },
     {
       "id": "ErieReader-2026-04-10-live-music-at-bigbar",
@@ -1022,7 +854,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.378Z"
+      "lastScraped": "2026-04-04T11:37:37.345Z"
     },
     {
       "id": "ErieReader-2026-04-10-live-music-at-arundel-cellars-brewing",
@@ -1035,7 +867,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.378Z"
+      "lastScraped": "2026-04-04T11:37:37.346Z"
     },
     {
       "id": "ErieReader-2026-04-10-make-your-own-terra-cotta-planters",
@@ -1048,7 +880,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:26.378Z"
+      "lastScraped": "2026-04-04T11:37:37.346Z"
     },
     {
       "id": "ErieReader-2026-04-10-live-music-the-monk-featuring-twisted-li",
@@ -1061,7 +893,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.598Z"
+      "lastScraped": "2026-04-04T11:37:37.346Z"
     },
     {
       "id": "ErieReader-2026-04-10-comedian-ryan-goodcase",
@@ -1074,7 +906,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.599Z"
+      "lastScraped": "2026-04-04T11:37:37.346Z"
     },
     {
       "id": "ErieReader-2026-04-10-mean-girls",
@@ -1087,7 +919,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.599Z"
+      "lastScraped": "2026-04-04T11:37:37.346Z"
     },
     {
       "id": "ErieReader-2026-04-10-a-doll-s-house",
@@ -1100,7 +932,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.599Z"
+      "lastScraped": "2026-04-04T11:37:37.346Z"
     },
     {
       "id": "ErieEvents-2026-04-11-boys-girls-club-bids-for-kids",
@@ -1112,7 +944,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/11/2026/boys-and-girls-club-bids-for-kids-3",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.772Z",
+      "lastScraped": "2026-04-04T11:36:12.119Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -1125,7 +957,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/11/2026/hotel-california-a-salute-to-the-eagles-2",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.772Z",
+      "lastScraped": "2026-04-04T11:36:12.118Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -1138,7 +970,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/11/2026/spring-craft-and-gift-festival-4",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.772Z",
+      "lastScraped": "2026-04-04T11:36:12.119Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -1151,7 +983,7 @@
       "source": "ErieDowntown",
       "url": "https://www.eriedowntown.com/events/events/calendar/event/04/11/2026/second-saturday-rain-and-flowers",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:11.742Z"
+      "lastScraped": "2026-04-04T11:37:23.280Z"
     },
     {
       "id": "ErieReader-2026-04-11-erie-spring-craft-gift-festival",
@@ -1164,7 +996,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.600Z"
+      "lastScraped": "2026-04-04T11:37:37.347Z"
     },
     {
       "id": "ErieReader-2026-04-11-second-science-saturday",
@@ -1177,7 +1009,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.600Z"
+      "lastScraped": "2026-04-04T11:37:37.347Z"
     },
     {
       "id": "ErieReader-2026-04-11-try-it-beginner-wheel-throwing",
@@ -1190,7 +1022,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.600Z"
+      "lastScraped": "2026-04-04T11:37:37.347Z"
     },
     {
       "id": "ErieReader-2026-04-11-second-saturday-rain-flowers",
@@ -1203,7 +1035,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.600Z"
+      "lastScraped": "2026-04-04T11:37:37.348Z"
     },
     {
       "id": "ErieReader-2026-04-11-family-fun-day-at-werner-books-coffee-bi",
@@ -1216,7 +1048,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.600Z"
+      "lastScraped": "2026-04-04T11:37:37.348Z"
     },
     {
       "id": "ErieReader-2026-04-11-craft-connect",
@@ -1229,7 +1061,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.600Z"
+      "lastScraped": "2026-04-04T11:37:39.548Z"
     },
     {
       "id": "ErieReader-2026-04-11-mahjong",
@@ -1242,7 +1074,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.600Z"
+      "lastScraped": "2026-04-04T11:37:39.548Z"
     },
     {
       "id": "ErieReader-2026-04-11-intro-to-collagraph-printing",
@@ -1255,7 +1087,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.600Z"
+      "lastScraped": "2026-04-04T11:37:39.548Z"
     },
     {
       "id": "ErieReader-2026-04-11-chess-club",
@@ -1268,7 +1100,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.831Z"
+      "lastScraped": "2026-04-04T11:37:39.549Z"
     },
     {
       "id": "ErieReader-2026-04-11-erie-craft-beer-fest",
@@ -1281,7 +1113,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.832Z"
+      "lastScraped": "2026-04-04T11:37:39.549Z"
     },
     {
       "id": "ErieReader-2026-04-11-sip-spin",
@@ -1294,7 +1126,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.832Z"
+      "lastScraped": "2026-04-04T11:37:39.549Z"
     },
     {
       "id": "ErieReader-2026-04-11-soap-making-melt-and-pour-kids-and-adult",
@@ -1307,7 +1139,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.832Z"
+      "lastScraped": "2026-04-04T11:37:39.549Z"
     },
     {
       "id": "ErieReader-2026-04-11-erie-slam-writing-jam",
@@ -1320,7 +1152,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.832Z"
+      "lastScraped": "2026-04-04T11:37:39.549Z"
     },
     {
       "id": "ErieReader-2026-04-11-teen-mythology-guild",
@@ -1333,7 +1165,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.832Z"
+      "lastScraped": "2026-04-04T11:37:39.549Z"
     },
     {
       "id": "ErieReader-2026-04-11-wings-of-spring",
@@ -1346,7 +1178,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.833Z"
+      "lastScraped": "2026-04-04T11:37:39.550Z"
     },
     {
       "id": "ErieReader-2026-04-11-live-music-at-bigbar",
@@ -1359,7 +1191,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.833Z"
+      "lastScraped": "2026-04-04T11:37:39.550Z"
     },
     {
       "id": "ErieReader-2026-04-11-comedian-ryan-goodcase",
@@ -1372,7 +1204,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.833Z"
+      "lastScraped": "2026-04-04T11:37:39.550Z"
     },
     {
       "id": "ErieReader-2026-04-11-live-music-the-monk-featuring-shani-bill",
@@ -1385,7 +1217,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.833Z"
+      "lastScraped": "2026-04-04T11:37:39.550Z"
     },
     {
       "id": "ErieReader-2026-04-11-mean-girls",
@@ -1398,7 +1230,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.833Z"
+      "lastScraped": "2026-04-04T11:37:39.550Z"
     },
     {
       "id": "ErieReader-2026-04-11-a-doll-s-house",
@@ -1411,7 +1243,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.833Z"
+      "lastScraped": "2026-04-04T11:37:41.788Z"
     },
     {
       "id": "ErieReader-2026-04-11-rummage-sale",
@@ -1424,7 +1256,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.599Z"
+      "lastScraped": "2026-04-04T11:37:37.347Z"
     },
     {
       "id": "ErieReader-2026-04-11-chestnut-grove-steely-mac-deja-blue-live",
@@ -1437,7 +1269,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.058Z"
+      "lastScraped": "2026-04-04T11:37:41.788Z"
     },
     {
       "id": "ErieReader-2026-04-11-intro-to-computers-and-the-internet-part",
@@ -1450,7 +1282,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:28.599Z"
+      "lastScraped": "2026-04-04T11:37:37.347Z"
     },
     {
       "id": "ErieReader-2026-04-11-a-wake-in-the-west-an-irish-comedy",
@@ -1463,7 +1295,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:30.831Z"
+      "lastScraped": "2026-04-04T11:37:39.548Z"
     },
     {
       "id": "ErieReader-2026-04-12--go-fish-educational-series",
@@ -1476,7 +1308,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.059Z"
+      "lastScraped": "2026-04-04T11:37:41.789Z"
     },
     {
       "id": "ErieReader-2026-04-12-arundel-sunday-music-series",
@@ -1489,7 +1321,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.059Z"
+      "lastScraped": "2026-04-04T11:37:41.789Z"
     },
     {
       "id": "ErieReader-2026-04-12-erie-spring-craft-gift-festival",
@@ -1502,7 +1334,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.058Z"
+      "lastScraped": "2026-04-04T11:37:41.788Z"
     },
     {
       "id": "ErieReader-2026-04-12-try-it-beginner-wheel-throwing",
@@ -1515,7 +1347,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.059Z"
+      "lastScraped": "2026-04-04T11:37:41.788Z"
     },
     {
       "id": "ErieReader-2026-04-12-the-menzingers-i-am-the-avalanche",
@@ -1528,7 +1360,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.059Z"
+      "lastScraped": "2026-04-04T11:37:41.789Z"
     },
     {
       "id": "ErieReader-2026-04-12-gem-city-flea-market",
@@ -1541,7 +1373,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.058Z"
+      "lastScraped": "2026-04-04T11:37:41.788Z"
     },
     {
       "id": "ErieReader-2026-04-12-a-wake-in-the-west-an-irish-comedy",
@@ -1554,7 +1386,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.059Z"
+      "lastScraped": "2026-04-04T11:37:41.788Z"
     },
     {
       "id": "ErieReader-2026-04-12-community-science-series-go-fish-",
@@ -1567,7 +1399,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.059Z"
+      "lastScraped": "2026-04-04T11:37:41.788Z"
     },
     {
       "id": "ErieReader-2026-04-13-puzzle-pals",
@@ -1580,7 +1412,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.060Z"
+      "lastScraped": "2026-04-04T11:37:43.998Z"
     },
     {
       "id": "ErieReader-2026-04-13-lincoln-stay-play",
@@ -1593,7 +1425,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.060Z"
+      "lastScraped": "2026-04-04T11:37:41.789Z"
     },
     {
       "id": "ErieReader-2026-04-13-the-usa-250-great-america-trivia-challen",
@@ -1606,7 +1438,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.060Z"
+      "lastScraped": "2026-04-04T11:37:43.998Z"
     },
     {
       "id": "ErieReader-2026-04-13-intro-to-papermaking",
@@ -1619,7 +1451,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.060Z"
+      "lastScraped": "2026-04-04T11:37:43.998Z"
     },
     {
       "id": "ErieReader-2026-04-13-open-studio",
@@ -1632,7 +1464,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.297Z"
+      "lastScraped": "2026-04-04T11:37:43.998Z"
     },
     {
       "id": "ErieReader-2026-04-13-collage-open-studio-with-nikki",
@@ -1645,7 +1477,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.298Z"
+      "lastScraped": "2026-04-04T11:37:43.998Z"
     },
     {
       "id": "ErieReader-2026-04-13-the-feather-wars-presentation-and-book-s",
@@ -1658,7 +1490,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.298Z"
+      "lastScraped": "2026-04-04T11:37:43.998Z"
     },
     {
       "id": "ErieReader-2026-04-13-monday-makers-fabric-flowers",
@@ -1671,7 +1503,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.298Z"
+      "lastScraped": "2026-04-04T11:37:43.999Z"
     },
     {
       "id": "ErieReader-2026-04-13-leading-organizations-how-boomers-millen",
@@ -1684,7 +1516,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.298Z"
+      "lastScraped": "2026-04-04T11:37:43.999Z"
     },
     {
       "id": "ErieReader-2026-04-13-virtual-fantastic-flora-tour-of-erie-blu",
@@ -1697,7 +1529,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.298Z"
+      "lastScraped": "2026-04-04T11:37:43.999Z"
     },
     {
       "id": "ErieReader-2026-04-13-working-with-mail-merge",
@@ -1710,7 +1542,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.059Z"
+      "lastScraped": "2026-04-04T11:37:41.789Z"
     },
     {
       "id": "ErieReader-2026-04-13-friends-of-mccord-memorial-library-sprin",
@@ -1723,7 +1555,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:33.060Z"
+      "lastScraped": "2026-04-04T11:37:41.789Z"
     },
     {
       "id": "ErieEvents-2026-04-14-erie-seawolves-vs-harrisburg",
@@ -1735,7 +1567,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/14/2026/erie-seawolves-vs-harrisburg-5",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.773Z",
+      "lastScraped": "2026-04-04T11:36:12.119Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -1749,7 +1581,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.299Z"
+      "lastScraped": "2026-04-04T11:37:43.999Z"
     },
     {
       "id": "ErieReader-2026-04-14-master-builders-block-party",
@@ -1762,7 +1594,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.299Z"
+      "lastScraped": "2026-04-04T11:37:43.999Z"
     },
     {
       "id": "ErieReader-2026-04-14-board-game-night-for-grown-ups-",
@@ -1775,7 +1607,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.299Z"
+      "lastScraped": "2026-04-04T11:37:43.999Z"
     },
     {
       "id": "FlagshipCity-2026-04-14-karaoke-the-food-hall",
@@ -1787,7 +1619,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-apr-14",
       "description": "Get ready to rock the mic with local music legend Preach Freedom for an electrifying and uplifting karaoke night!",
-      "lastScraped": "2026-04-03T11:44:49.506Z",
+      "lastScraped": "2026-04-04T11:36:58.342Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9d7766fd2c7616e90b1d0/1774835595480/KARAOKE+%281%29.png?format=1500w"
     },
     {
@@ -1800,7 +1632,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/erie-seawolves-home-game-apr-14",
       "description": "Erie Seawolves Home Game",
-      "lastScraped": "2026-04-03T11:44:49.506Z",
+      "lastScraped": "2026-04-04T11:36:58.343Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9c59279b9805b51e165a7/1774832889982/Erie_SeaWolves_logo.svg+%281%29.png?format=1500w"
     },
     {
@@ -1814,7 +1646,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.299Z"
+      "lastScraped": "2026-04-04T11:37:44.000Z"
     },
     {
       "id": "ErieReader-2026-04-14-the-first-hundred-days-the-state-of-the-",
@@ -1827,7 +1659,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.299Z"
+      "lastScraped": "2026-04-04T11:37:44.000Z"
     },
     {
       "id": "ErieReader-2026-04-14-presque-isle-after-dark-graveyard-pond-t",
@@ -1840,7 +1672,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.300Z"
+      "lastScraped": "2026-04-04T11:37:46.227Z"
     },
     {
       "id": "ErieEvents-2026-04-15-harlem-globetrotters",
@@ -1852,7 +1684,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/15/2026/harlem-globetrotters-4",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.773Z",
+      "lastScraped": "2026-04-04T11:36:12.120Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -1866,7 +1698,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.300Z"
+      "lastScraped": "2026-04-04T11:37:46.227Z"
     },
     {
       "id": "ErieReader-2026-04-15-iroquois-family-storytime",
@@ -1879,7 +1711,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:35.300Z"
+      "lastScraped": "2026-04-04T11:37:46.227Z"
     },
     {
       "id": "ErieReader-2026-04-15-preschool-storytime",
@@ -1892,7 +1724,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.536Z"
+      "lastScraped": "2026-04-04T11:37:46.227Z"
     },
     {
       "id": "ErieReader-2026-04-15-learn-to-3d-print",
@@ -1905,7 +1737,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.536Z"
+      "lastScraped": "2026-04-04T11:37:46.227Z"
     },
     {
       "id": "ErieReader-2026-04-15-misery-bay-spinners",
@@ -1918,7 +1750,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.537Z"
+      "lastScraped": "2026-04-04T11:37:46.227Z"
     },
     {
       "id": "ErieReader-2026-04-15-shorthand-stories-experimental-flash-fic",
@@ -1931,7 +1763,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.537Z"
+      "lastScraped": "2026-04-04T11:37:46.227Z"
     },
     {
       "id": "ErieReader-2026-04-15-the-secret-agent-open-screen-happy-hour-",
@@ -1944,7 +1776,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.537Z"
+      "lastScraped": "2026-04-04T11:37:46.228Z"
     },
     {
       "id": "ErieReader-2026-04-15-leilani-kilgore",
@@ -1957,7 +1789,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.537Z"
+      "lastScraped": "2026-04-04T11:37:46.228Z"
     },
     {
       "id": "ErieReader-2026-04-15-in-the-cards-book-club",
@@ -1970,7 +1802,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.537Z"
+      "lastScraped": "2026-04-04T11:37:46.228Z"
     },
     {
       "id": "FlagshipCity-2026-04-15-reflect-reform-the-food-hall",
@@ -1982,7 +1814,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/reflect-and-reform-apr",
       "description": "Reflect and Reform heads to the Food Hall for an all around perfect vibes night. Come hungry, grab a bite to eat, and check out all of the great food and drink specials at the Food Hall!",
-      "lastScraped": "2026-04-03T11:44:49.506Z",
+      "lastScraped": "2026-04-04T11:36:58.343Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69cac796ec37fe5976f44a4c/1774897455037/LIVE+MUSIC+%283%29.png?format=1500w"
     },
     {
@@ -1995,7 +1827,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/erie-seawolves-home-game-apr-15",
       "description": "Erie Seawolves Home Game",
-      "lastScraped": "2026-04-03T11:44:49.507Z",
+      "lastScraped": "2026-04-04T11:36:58.343Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9c5c0a2ba2c13d2450768/1774832896727/Erie_SeaWolves_logo.svg+%281%29.png?format=1500w"
     },
     {
@@ -2009,7 +1841,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.537Z"
+      "lastScraped": "2026-04-04T11:37:46.228Z"
     },
     {
       "id": "ErieReader-2026-04-16-r-sum-workshop",
@@ -2022,7 +1854,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.779Z"
+      "lastScraped": "2026-04-04T11:37:48.459Z"
     },
     {
       "id": "ErieReader-2026-04-16-edinboro-family-storytime",
@@ -2035,7 +1867,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.538Z"
+      "lastScraped": "2026-04-04T11:37:48.459Z"
     },
     {
       "id": "ErieReader-2026-04-16-lincoln-family-storytime",
@@ -2048,7 +1880,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.538Z"
+      "lastScraped": "2026-04-04T11:37:48.459Z"
     },
     {
       "id": "ErieReader-2026-04-16-preschool-storytime",
@@ -2061,7 +1893,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.538Z"
+      "lastScraped": "2026-04-04T11:37:48.459Z"
     },
     {
       "id": "ErieReader-2026-04-16-pa-skillup-overview-workshop",
@@ -2074,7 +1906,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.779Z"
+      "lastScraped": "2026-04-04T11:37:48.459Z"
     },
     {
       "id": "ErieReader-2026-04-16-spring-dining-series",
@@ -2087,7 +1919,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.780Z"
+      "lastScraped": "2026-04-04T11:37:48.460Z"
     },
     {
       "id": "ErieReader-2026-04-16-how-to-write-a-screenplay",
@@ -2100,7 +1932,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.780Z"
+      "lastScraped": "2026-04-04T11:37:48.460Z"
     },
     {
       "id": "ErieReader-2026-04-16-sweet-sorrow-senior-readings",
@@ -2113,7 +1945,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.780Z"
+      "lastScraped": "2026-04-04T11:37:48.460Z"
     },
     {
       "id": "ErieReader-2026-04-16-compton-s-table-queer-open-mic",
@@ -2126,7 +1958,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.780Z"
+      "lastScraped": "2026-04-04T11:37:48.460Z"
     },
     {
       "id": "ErieReader-2026-04-16-proof",
@@ -2139,7 +1971,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.780Z"
+      "lastScraped": "2026-04-04T11:37:48.463Z"
     },
     {
       "id": "ErieReader-2026-04-16-play-singo-the-monk",
@@ -2152,7 +1984,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.781Z"
+      "lastScraped": "2026-04-04T11:37:48.464Z"
     },
     {
       "id": "ErieReader-2026-04-16-east-erie-satellite-strategic-convergenc",
@@ -2165,7 +1997,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.781Z"
+      "lastScraped": "2026-04-04T11:37:48.464Z"
     },
     {
       "id": "FlagshipCity-2026-04-16-erie-seawolves-home-game",
@@ -2177,7 +2009,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/erie-seawolves-home-game-apr-16",
       "description": "Erie Seawolves Home Game",
-      "lastScraped": "2026-04-03T11:44:49.507Z",
+      "lastScraped": "2026-04-04T11:36:58.343Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9c5d3b6cd1551c8054828/1774832906073/Erie_SeaWolves_logo.svg+%281%29.png?format=1500w"
     },
     {
@@ -2191,7 +2023,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.785Z"
+      "lastScraped": "2026-04-04T11:37:48.465Z"
     },
     {
       "id": "ErieReader-2026-04-16-49th-annual-gannon-writing-awards-night-",
@@ -2204,7 +2036,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.785Z"
+      "lastScraped": "2026-04-04T11:37:48.465Z"
     },
     {
       "id": "ErieReader-2026-04-16-mean-girls",
@@ -2217,7 +2049,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.785Z"
+      "lastScraped": "2026-04-04T11:37:48.465Z"
     },
     {
       "id": "ErieReader-2026-04-16-dead-cassette-featherweight-fastfall-and",
@@ -2230,7 +2062,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.785Z"
+      "lastScraped": "2026-04-04T11:37:50.712Z"
     },
     {
       "id": "ErieReader-2026-04-16-rummage-and-bake-sale",
@@ -2243,7 +2075,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:37.538Z"
+      "lastScraped": "2026-04-04T11:37:46.229Z"
     },
     {
       "id": "ErieReader-2026-04-17-careerlink-open-hours",
@@ -2256,7 +2088,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.022Z"
+      "lastScraped": "2026-04-04T11:37:50.712Z"
     },
     {
       "id": "ErieReader-2026-04-17-crochet-course",
@@ -2269,7 +2101,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.785Z"
+      "lastScraped": "2026-04-04T11:37:50.712Z"
     },
     {
       "id": "ErieReader-2026-04-17-collaboration-and-physical-location-of-h",
@@ -2282,7 +2114,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:39.786Z"
+      "lastScraped": "2026-04-04T11:37:50.712Z"
     },
     {
       "id": "ErieReader-2026-04-17-soap-making-cold-process-method-with-nat",
@@ -2295,7 +2127,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.023Z"
+      "lastScraped": "2026-04-04T11:37:50.713Z"
     },
     {
       "id": "ErieReader-2026-04-17-build-your-own-bird-abode",
@@ -2308,7 +2140,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.023Z"
+      "lastScraped": "2026-04-04T11:37:50.713Z"
     },
     {
       "id": "ErieReader-2026-04-17-live-music-at-bigbar",
@@ -2321,7 +2153,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.023Z"
+      "lastScraped": "2026-04-04T11:37:50.713Z"
     },
     {
       "id": "ErieReader-2026-04-17-live-music-at-arundel-cellars-brewing",
@@ -2334,7 +2166,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.023Z"
+      "lastScraped": "2026-04-04T11:37:50.713Z"
     },
     {
       "id": "ErieReader-2026-04-17-felix-and-fingers-dueling-pianos",
@@ -2347,7 +2179,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.023Z"
+      "lastScraped": "2026-04-04T11:37:50.713Z"
     },
     {
       "id": "ErieReader-2026-04-17-live-music-the-monk-featuring-american-f",
@@ -2360,7 +2192,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.024Z"
+      "lastScraped": "2026-04-04T11:37:50.713Z"
     },
     {
       "id": "FlagshipCity-2026-04-17-erie-seawolves-home-game",
@@ -2372,7 +2204,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/erie-seawolves-home-game-apr-17",
       "description": "Erie Seawolves Home Game",
-      "lastScraped": "2026-04-03T11:44:49.507Z",
+      "lastScraped": "2026-04-04T11:36:58.343Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9c5e9cb1ab90b27cf9ee2/1774832914587/Erie_SeaWolves_logo.svg+%281%29.png?format=1500w"
     },
     {
@@ -2386,7 +2218,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.024Z"
+      "lastScraped": "2026-04-04T11:37:50.714Z"
     },
     {
       "id": "ErieReader-2026-04-17-betty-buckley",
@@ -2399,7 +2231,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.024Z"
+      "lastScraped": "2026-04-04T11:37:50.714Z"
     },
     {
       "id": "ErieReader-2026-04-17-mean-girls",
@@ -2412,7 +2244,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.024Z"
+      "lastScraped": "2026-04-04T11:37:50.714Z"
     },
     {
       "id": "ErieReader-2026-04-17-a-doll-s-house",
@@ -2425,7 +2257,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.024Z"
+      "lastScraped": "2026-04-04T11:37:50.714Z"
     },
     {
       "id": "ErieReader-2026-04-17-urinetown-the-musical",
@@ -2438,7 +2270,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.024Z"
+      "lastScraped": "2026-04-04T11:37:50.714Z"
     },
     {
       "id": "ErieReader-2026-04-17-dread-fest",
@@ -2451,7 +2283,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.024Z"
+      "lastScraped": "2026-04-04T11:37:52.921Z"
     },
     {
       "id": "ErieEvents-2026-04-18-echa-golden-gatsby-gala",
@@ -2463,7 +2295,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/18/2026/echa-golden-gatsby-gala",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.774Z",
+      "lastScraped": "2026-04-04T11:36:12.121Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -2476,7 +2308,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/18/2026/professional-championship-bull-riders-boot-barn-invitational",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.774Z",
+      "lastScraped": "2026-04-04T11:36:12.120Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -2490,7 +2322,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.240Z"
+      "lastScraped": "2026-04-04T11:37:52.923Z"
     },
     {
       "id": "FlagshipCity-2026-04-18-erie-seawolves-home-game",
@@ -2502,7 +2334,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/erie-seawolves-home-game-apr-18",
       "description": "Erie Seawolves Home Game",
-      "lastScraped": "2026-04-03T11:44:49.507Z",
+      "lastScraped": "2026-04-04T11:36:58.344Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9c5fcef341d2703cd20cd/1774832922923/Erie_SeaWolves_logo.svg+%281%29.png?format=1500w"
     },
     {
@@ -2516,7 +2348,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.238Z"
+      "lastScraped": "2026-04-04T11:37:52.922Z"
     },
     {
       "id": "ErieReader-2026-04-18-block-party",
@@ -2529,7 +2361,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.239Z"
+      "lastScraped": "2026-04-04T11:37:52.922Z"
     },
     {
       "id": "ErieReader-2026-04-18-bike-safety-with-frank-disalvo",
@@ -2542,7 +2374,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.239Z"
+      "lastScraped": "2026-04-04T11:37:52.922Z"
     },
     {
       "id": "ErieReader-2026-04-18-library-loops-book-club",
@@ -2555,7 +2387,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.239Z"
+      "lastScraped": "2026-04-04T11:37:52.922Z"
     },
     {
       "id": "ErieReader-2026-04-18-family-fun-day-at-werner-books-coffee-te",
@@ -2568,7 +2400,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.239Z"
+      "lastScraped": "2026-04-04T11:37:52.923Z"
     },
     {
       "id": "ErieReader-2026-04-18-mahjong",
@@ -2581,7 +2413,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.239Z"
+      "lastScraped": "2026-04-04T11:37:52.923Z"
     },
     {
       "id": "ErieReader-2026-04-18-yahn-planetarium-show-general-audience",
@@ -2594,7 +2426,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.239Z"
+      "lastScraped": "2026-04-04T11:37:52.923Z"
     },
     {
       "id": "ErieReader-2026-04-18-dread-fest",
@@ -2607,7 +2439,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.240Z"
+      "lastScraped": "2026-04-04T11:37:52.923Z"
     },
     {
       "id": "ErieReader-2026-04-18-book-signing-with-janet-roberts",
@@ -2620,7 +2452,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.240Z"
+      "lastScraped": "2026-04-04T11:37:52.923Z"
     },
     {
       "id": "ErieReader-2026-04-18-pok-mon-club-spring-2026",
@@ -2633,7 +2465,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.240Z"
+      "lastScraped": "2026-04-04T11:37:52.924Z"
     },
     {
       "id": "ErieReader-2026-04-18-build-your-own-lantern",
@@ -2646,7 +2478,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.240Z"
+      "lastScraped": "2026-04-04T11:37:52.924Z"
     },
     {
       "id": "ErieReader-2026-04-18-national-water-dance",
@@ -2659,7 +2491,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.240Z"
+      "lastScraped": "2026-04-04T11:37:52.924Z"
     },
     {
       "id": "ErieReader-2026-04-18-live-music-at-bigbar",
@@ -2672,7 +2504,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.240Z"
+      "lastScraped": "2026-04-04T11:37:55.119Z"
     },
     {
       "id": "ErieReader-2026-04-18-2bs-acoustic-hosted-by-cellar-54",
@@ -2685,7 +2517,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:44.241Z"
+      "lastScraped": "2026-04-04T11:37:55.119Z"
     },
     {
       "id": "ErieReader-2026-04-18-live-music-the-monk-featuring-intersect",
@@ -2698,7 +2530,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.448Z"
+      "lastScraped": "2026-04-04T11:37:55.120Z"
     },
     {
       "id": "ErieReader-2026-04-18-dinner-for-the-children",
@@ -2711,7 +2543,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.120Z"
     },
     {
       "id": "ErieReader-2026-04-18-comedy-juggler-ivan-pecel",
@@ -2724,7 +2556,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.120Z"
     },
     {
       "id": "ErieReader-2026-04-18-mean-girls",
@@ -2737,7 +2569,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.120Z"
     },
     {
       "id": "ErieReader-2026-04-18-a-doll-s-house",
@@ -2750,7 +2582,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.120Z"
     },
     {
       "id": "ErieReader-2026-04-18-urinetown-the-musical",
@@ -2763,7 +2595,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.120Z"
     },
     {
       "id": "ErieReader-2026-04-18-asbury-woods-chirp-chat",
@@ -2776,20 +2608,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:42.025Z"
-    },
-    {
-      "id": "ErieReader-2026-04-18-dodge-for-a-cause",
-      "name": "Dodge For A Cause",
-      "date": "2026-04-18",
-      "time": "9:00 AM",
-      "venue": "Sports4/18/2026 from 9 AM to 5 PMLECOM Sports Park",
-      "category": "Sports",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-04-03T11:45:42.025Z"
+      "lastScraped": "2026-04-04T11:37:52.922Z"
     },
     {
       "id": "ErieReader-2026-04-18-sophistafunk-and-after-party-with-sanis",
@@ -2802,7 +2621,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.120Z"
     },
     {
       "id": "ErieReader-2026-04-19--the-critter-corner-series",
@@ -2815,7 +2634,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.450Z"
+      "lastScraped": "2026-04-04T11:37:55.121Z"
     },
     {
       "id": "ErieReader-2026-04-19-arundel-sunday-music-series",
@@ -2828,7 +2647,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.450Z"
+      "lastScraped": "2026-04-04T11:37:57.333Z"
     },
     {
       "id": "FlagshipCity-2026-04-19-erie-seawolves-home-game",
@@ -2839,8 +2658,9 @@
       "category": "Sports",
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/erie-seawolves-home-game-apr-19",
-      "description": "",
-      "lastScraped": "2026-04-03T11:44:49.508Z"
+      "description": "Erie Seawolves Home Game",
+      "lastScraped": "2026-04-04T11:36:58.344Z",
+      "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9c61b38973b02e8275a9e/1774832932955/Erie_SeaWolves_logo.svg+%281%29.png?format=1500w"
     },
     {
       "id": "ErieReader-2026-04-19-trine-dance-church",
@@ -2853,7 +2673,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.120Z"
     },
     {
       "id": "ErieReader-2026-04-19-wedly-wedding-resale-market",
@@ -2866,7 +2686,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.121Z"
     },
     {
       "id": "ErieReader-2026-04-19-medicinal-plant-walk",
@@ -2879,7 +2699,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.121Z"
     },
     {
       "id": "ErieReader-2026-04-19-a-doll-s-house",
@@ -2892,7 +2712,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.450Z"
+      "lastScraped": "2026-04-04T11:37:57.333Z"
     },
     {
       "id": "ErieReader-2026-04-19-urinetown-the-musical",
@@ -2905,7 +2725,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.683Z"
+      "lastScraped": "2026-04-04T11:37:57.333Z"
     },
     {
       "id": "ErieReader-2026-04-19-community-science-series-the-critter-cor",
@@ -2918,7 +2738,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:46.449Z"
+      "lastScraped": "2026-04-04T11:37:55.121Z"
     },
     {
       "id": "ErieEvents-2026-04-20-bat-out-of-hell-the-musical",
@@ -2930,7 +2750,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/20/2026/bat-out-of-hell-the-musical",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.774Z",
+      "lastScraped": "2026-04-04T11:36:12.121Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -2944,7 +2764,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.333Z"
     },
     {
       "id": "ErieReader-2026-04-20-coloring-classics",
@@ -2957,7 +2777,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.333Z"
     },
     {
       "id": "ErieReader-2026-04-20-lincoln-stay-play",
@@ -2970,7 +2790,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.333Z"
     },
     {
       "id": "ErieReader-2026-04-20-open-studio",
@@ -2983,7 +2803,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.333Z"
     },
     {
       "id": "ErieReader-2026-04-20-don-t-talk-about-money-addressing-the-fi",
@@ -2996,7 +2816,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.333Z"
     },
     {
       "id": "ErieReader-2026-04-20-intro-to-bookmaking",
@@ -3009,7 +2829,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.334Z"
     },
     {
       "id": "ErieReader-2026-04-20-monday-makers-engrave-your-own-custom-pl",
@@ -3022,7 +2842,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.334Z"
     },
     {
       "id": "ErieReader-2026-04-20-national-creativity-and-innovation-day-b",
@@ -3035,7 +2855,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.334Z"
     },
     {
       "id": "ErieReader-2026-04-20-out-there-a-national-parks-story-film-sc",
@@ -3048,7 +2868,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.334Z"
     },
     {
       "id": "ErieReader-2026-04-20-urinetown-the-musical",
@@ -3061,7 +2881,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.334Z"
     },
     {
       "id": "ErieReader-2026-04-20-active-older-adult-week-aging-with-attit",
@@ -3074,7 +2894,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.684Z"
+      "lastScraped": "2026-04-04T11:37:57.333Z"
     },
     {
       "id": "ErieReader-2026-04-21-millcreek-family-storytime",
@@ -3087,7 +2907,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.685Z"
+      "lastScraped": "2026-04-04T11:37:59.536Z"
     },
     {
       "id": "ErieReader-2026-04-21-read-to-a-therapy-dog",
@@ -3100,7 +2920,33 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:48.685Z"
+      "lastScraped": "2026-04-04T11:37:59.536Z"
+    },
+    {
+      "id": "ErieReader-2026-04-21-comedian-jamie-lissow",
+      "name": "Comedian Jamie Lissow",
+      "date": "2026-04-21",
+      "time": "6:00 PM",
+      "venue": "26 at 6 PMKellar's: A Modern Magic and Comedy Club",
+      "category": "Comedy",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.536Z"
+    },
+    {
+      "id": "ErieReader-2026-04-21-one-more-chapter-dear-mothman",
+      "name": "One More Chapter: Dear Mothman",
+      "date": "2026-04-21",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Arts",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.536Z"
     },
     {
       "id": "FlagshipCity-2026-04-21-karaoke-the-food-hall",
@@ -3111,8 +2957,126 @@
       "category": "Music",
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-apr-21",
+      "description": "Get ready to rock the mic with local music legend Preach Freedom for an electrifying and uplifting karaoke night!",
+      "lastScraped": "2026-04-04T11:36:58.344Z",
+      "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69c9d78fc21ace1aad4d6830/1774835620328/KARAOKE+%281%29.png?format=1500w"
+    },
+    {
+      "id": "ErieReader-2026-04-21-lincoln-and-davis-triumphs-and-tragedies",
+      "name": "Lincoln And Davis: Triumphs And Tragedies",
+      "date": "2026-04-21",
+      "time": "7:00 PM",
+      "venue": "from 7 PM to 8:30 PMJefferson Educational Society",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:49.508Z"
+      "lastScraped": "2026-04-04T11:37:59.537Z"
+    },
+    {
+      "id": "ErieReader-2026-04-22-building-buddies-brigade",
+      "name": "Building Buddies Brigade",
+      "date": "2026-04-22",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Family",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.537Z"
+    },
+    {
+      "id": "ErieReader-2026-04-22-iroquois-family-storytime",
+      "name": "Iroquois Family Storytime",
+      "date": "2026-04-22",
+      "time": "10:00 AM",
+      "venue": "from 10 AM to 11 AMIroquois Avenue Branch Library",
+      "category": "Family",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.537Z"
+    },
+    {
+      "id": "ErieReader-2026-04-22-preschool-storytime",
+      "name": "Preschool Storytime",
+      "date": "2026-04-22",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Family",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.537Z"
+    },
+    {
+      "id": "ErieReader-2026-04-22-shorthand-stories-experimental-flash-fic",
+      "name": "Shorthand Stories — Experimental Flash Fiction",
+      "date": "2026-04-22",
+      "time": "5:00 PM",
+      "venue": "Erie Art Museum",
+      "category": "Arts",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.537Z"
+    },
+    {
+      "id": "ErieReader-2026-04-22-women-s-wellness-and-employment-fair",
+      "name": "Women's Wellness And Employment Fair",
+      "date": "2026-04-22",
+      "time": "5:30 PM",
+      "venue": "Women's Wellness And Employment FairHealth & Wellness4/22/2026 from 5:30 PM to 7",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.537Z"
+    },
+    {
+      "id": "ErieReader-2026-04-22-release-your-body-story-workshop",
+      "name": "Release Your Body Story Workshop",
+      "date": "2026-04-22",
+      "time": "5:30 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.537Z"
+    },
+    {
+      "id": "ErieReader-2026-04-22-comedian-jamie-lissow",
+      "name": "Comedian Jamie Lissow",
+      "date": "2026-04-22",
+      "time": "6:00 PM",
+      "venue": "26 at 6 PMKellar's: A Modern Magic and Comedy Club",
+      "category": "Comedy",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.538Z"
+    },
+    {
+      "id": "ErieReader-2026-04-22-tattoo-comedy-show-fccf26",
+      "name": "Tattoo Comedy Show FCCF26",
+      "date": "2026-04-22",
+      "time": "6:00 PM",
+      "venue": "y Show FCCF26Comedy4/22/2026 from 6 PM to 8 PMPACA",
+      "category": "Comedy",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:59.538Z"
     },
     {
       "id": "FlagshipCity-2026-04-22-r-b-night-feat-brittany-morton-the-food-",
@@ -3123,8 +3087,22 @@
       "category": "Community",
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/r-and-b-night-feat-brittany-morton",
+      "description": "It’s R&amp;B Night at the Food Hall! The incredibly talented Brittany Morton stops by the Food Hall to treat everyone to a night of soul passion through amazing music.  Get there early to guarantee  a seat at the bar and we’ll see you there!",
+      "lastScraped": "2026-04-04T11:36:58.345Z",
+      "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69cac92f3bd0075a38c92a32/1774897835920/LIVE+MUSIC+%284%29.png?format=1500w"
+    },
+    {
+      "id": "ErieReader-2026-04-22-weave-a-mug-rug-",
+      "name": "Weave A Mug Rug!",
+      "date": "2026-04-22",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:49.508Z"
+      "lastScraped": "2026-04-04T11:37:59.537Z"
     },
     {
       "id": "ErieEvents-2026-04-25-mutt-gala",
@@ -3136,7 +3114,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/25/2026/mutt-gala",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:04.220Z",
+      "lastScraped": "2026-04-04T11:36:12.121Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -3149,7 +3127,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/25/2026/ashley-brown-spoonful-of-sugar",
       "description": "Browse upcoming events going on around Erie! Looking for a specific event? filter by venue, category or use the calendar. It's all right here!",
-      "lastScraped": "2026-04-03T11:44:01.774Z",
+      "lastScraped": "2026-04-04T11:36:12.121Z",
       "image": "/assets/BannerImages/5c00ba79fa/CMS149_CommunityProgramAd_150res.jpg"
     },
     {
@@ -3162,7 +3140,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/28/2026/erie-seawolves-vs-chesapeake-3",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:04.220Z"
+      "lastScraped": "2026-04-04T11:36:14.611Z"
     },
     {
       "id": "ErieEvents-2026-04-28-bruce-in-the-usa",
@@ -3174,7 +3152,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/04/28/2026/bruce-in-the-usa",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:04.220Z"
+      "lastScraped": "2026-04-04T11:36:14.611Z"
     },
     {
       "id": "FlagshipCity-2026-04-28-karaoke-the-food-hall",
@@ -3186,7 +3164,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-apr-28",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:49.508Z"
+      "lastScraped": "2026-04-04T11:36:58.345Z"
     },
     {
       "id": "ErieEvents-2026-05-01-the-stars-tour-featuring-anne-wilson",
@@ -3198,7 +3176,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/01/2026/the-stars-tour-featuring-anne-wilson",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:04.220Z"
+      "lastScraped": "2026-04-04T11:36:14.612Z"
     },
     {
       "id": "ErieEvents-2026-05-05-world-ballet-company-presents-cinderella",
@@ -3210,7 +3188,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/05/2026/world-ballet-company-presents-cinderella",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:04.221Z"
+      "lastScraped": "2026-04-04T11:36:14.612Z"
     },
     {
       "id": "ErieEvents-2026-05-09-britten-s-war-requiem",
@@ -3222,7 +3200,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/09/2026/brittens-war-requiem",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:04.221Z"
+      "lastScraped": "2026-04-04T11:36:14.612Z"
     },
     {
       "id": "ErieEvents-2026-05-12-erie-seawolves-vs-richmond",
@@ -3234,7 +3212,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/12/2026/erie-seawolves-vs-richmond-7",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:04.221Z"
+      "lastScraped": "2026-04-04T11:36:14.612Z"
     },
     {
       "id": "VisitErie-2026-05-14-edinboro-art-music-festival-2026",
@@ -3246,7 +3224,7 @@
       "source": "VisitErie",
       "url": "https://www.visiterie.com/events/event/05/14/2026/edinboro-art-and-music-festival-2026",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:07.597Z"
+      "lastScraped": "2026-04-04T11:37:19.332Z"
     },
     {
       "id": "ErieEvents-2026-05-15-jerry-seinfeld",
@@ -3258,7 +3236,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/15/2026/jerry-seinfeld-2",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:04.221Z"
+      "lastScraped": "2026-04-04T11:36:14.612Z"
     },
     {
       "id": "VisitErie-2026-05-15-erie-seawolves-vs-richmond-flying-squirr",
@@ -3270,7 +3248,7 @@
       "source": "VisitErie",
       "url": "https://www.visiterie.com/events/event/05/15/2026/erie-seawolves-vs-richmond-flying-squirrels-fireworks-first-show-of-2026",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:07.597Z"
+      "lastScraped": "2026-04-04T11:37:19.332Z"
     },
     {
       "id": "ErieEvents-2026-05-17-an-evening-with-larry-the-cable-guy",
@@ -3282,7 +3260,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/17/2026/an-evening-with-larry-the-cable-guy",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:04.221Z"
+      "lastScraped": "2026-04-04T11:36:14.612Z"
     },
     {
       "id": "ErieEvents-2026-05-21-broadway-by-the-bay",
@@ -3294,7 +3272,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/21/2026/broadway-by-the-bay-2",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:06.749Z"
+      "lastScraped": "2026-04-04T11:36:14.613Z"
     },
     {
       "id": "VisitErie-2026-05-22-16th-annual-troika-russian-festival",
@@ -3306,7 +3284,7 @@
       "source": "VisitErie",
       "url": "https://www.visiterie.com/events/event/05/22/2026/16th-annual-troika-russian-festival",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:07.597Z"
+      "lastScraped": "2026-04-04T11:37:19.333Z"
     },
     {
       "id": "ErieEvents-2026-05-26-erie-seawolves-vs-chesapeake",
@@ -3318,7 +3296,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/26/2026/erie-seawolves-vs-chesapeake-4",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:06.749Z"
+      "lastScraped": "2026-04-04T11:36:16.894Z"
     },
     {
       "id": "ErieEvents-2026-05-27-clue",
@@ -3330,7 +3308,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/27/2026/clue",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:06.749Z"
+      "lastScraped": "2026-04-04T11:36:16.895Z"
     },
     {
       "id": "ErieEvents-2026-05-29-bayfront-quilt-fest",
@@ -3342,7 +3320,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/05/29/2026/bayfront-quilt-fest",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:06.750Z"
+      "lastScraped": "2026-04-04T11:36:16.895Z"
     },
     {
       "id": "VisitErie-2026-05-29-erie-seawolves-vs-chesapeake-baysox-erie",
@@ -3354,7 +3332,7 @@
       "source": "VisitErie",
       "url": "https://www.visiterie.com/events/event/05/29/2026/erie-seawolves-vs-chesapeake-baysox-erie-moon-mammoths-night",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:07.597Z"
+      "lastScraped": "2026-04-04T11:37:19.333Z"
     },
     {
       "id": "ErieEvents-2026-06-01-erie-county-senior-expo",
@@ -3366,7 +3344,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/06/01/2026/erie-county-senior-expo-2",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:06.750Z"
+      "lastScraped": "2026-04-04T11:36:16.895Z"
     },
     {
       "id": "ErieEvents-2026-06-03-cinderella-s-tom-keifer-with-special-gue",
@@ -3378,7 +3356,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/06/03/2026/cinderellas-tom-keifer-with-special-guest-la-guns",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:06.750Z"
+      "lastScraped": "2026-04-04T11:36:16.895Z"
     },
     {
       "id": "ErieEvents-2026-06-07-aaron-lewis-and-the-stateliners-2026-ame",
@@ -3390,7 +3368,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/06/07/2026/aaron-lewis-and-the-stateliners-2026-american-tour",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:06.750Z"
+      "lastScraped": "2026-04-04T11:36:16.896Z"
     },
     {
       "id": "ErieEvents-2026-06-09-erie-seawolves-vs-akron",
@@ -3402,7 +3380,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/06/09/2026/erie-seawolves-vs-akron-7",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:06.750Z"
+      "lastScraped": "2026-04-04T11:36:16.896Z"
     },
     {
       "id": "ErieEvents-2026-06-12-long-s-school-of-dance",
@@ -3414,7 +3392,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/06/12/2026/longs-school-of-dance-2",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:06.750Z"
+      "lastScraped": "2026-04-04T11:36:16.896Z"
     },
     {
       "id": "VisitErie-2026-06-14-2026-erie-pride-parade",
@@ -3426,7 +3404,7 @@
       "source": "VisitErie",
       "url": "https://www.visiterie.com/events/event/06/14/2026/2026-erie-pride-parade",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:07.597Z"
+      "lastScraped": "2026-04-04T11:37:19.333Z"
     },
     {
       "id": "ErieEvents-2026-06-17-the-book-of-mormon",
@@ -3438,7 +3416,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/06/17/2026/the-book-of-mormon",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:09.361Z"
+      "lastScraped": "2026-04-04T11:36:19.269Z"
     },
     {
       "id": "ErieEvents-2026-06-20-spotlight-dance-spectacular",
@@ -3450,7 +3428,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/06/20/2026/spotlight-dance-spectacular",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:09.361Z"
+      "lastScraped": "2026-04-04T11:36:19.269Z"
     },
     {
       "id": "FlagshipCity-2026-06-20-erie-s-juneteenth-celebration",
@@ -3462,7 +3440,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/eries-juneteenth-celebration",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:49.508Z"
+      "lastScraped": "2026-04-04T11:36:58.345Z"
     },
     {
       "id": "VisitErie-2026-06-20-erie-s-juneteenth-celebration-2026",
@@ -3474,7 +3452,7 @@
       "source": "VisitErie",
       "url": "https://www.visiterie.com/events/event/06/20/2026/eries-juneteenth-celebration-2026",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:07.597Z"
+      "lastScraped": "2026-04-04T11:37:19.333Z"
     },
     {
       "id": "ErieEvents-2026-06-23-erie-seawolves-vs-binghamton",
@@ -3486,7 +3464,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/06/23/2026/erie-seawolves-vs-binghamton-3",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:09.361Z"
+      "lastScraped": "2026-04-04T11:36:19.269Z"
     },
     {
       "id": "ErieEvents-2026-06-26-marguerite-s-academy-of-dance",
@@ -3498,7 +3476,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/06/26/2026/marguerites-academy-of-dance-3",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:09.361Z"
+      "lastScraped": "2026-04-04T11:36:19.269Z"
     },
     {
       "id": "VisitErie-2026-06-30-flying-legends-of-victory-warbird-tour",
@@ -3510,7 +3488,7 @@
       "source": "VisitErie",
       "url": "https://www.visiterie.com/events/event/06/30/2026/flying-legends-of-victory-warbird-tour",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:07.597Z"
+      "lastScraped": "2026-04-04T11:37:19.333Z"
     },
     {
       "id": "VisitErie-2026-07-03-lights-over-lake-erie-2026",
@@ -3522,7 +3500,7 @@
       "source": "VisitErie",
       "url": "https://www.visiterie.com/events/event/07/03/2026/lights-over-lake-erie-2026",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:07.597Z"
+      "lastScraped": "2026-04-04T11:37:19.333Z"
     },
     {
       "id": "CityOfErie-2026-07-03-lights-over-lake-erie-july-3rd-fireworks",
@@ -3534,7 +3512,7 @@
       "source": "CityOfErie",
       "url": "https://www.erie.pa.us/",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:17.073Z"
+      "lastScraped": "2026-04-04T11:37:28.051Z"
     },
     {
       "id": "ErieEvents-2026-07-07-erie-seawolves-vs-harrisburg",
@@ -3546,7 +3524,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/07/07/2026/erie-seawolves-vs-harrisburg-6",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:09.361Z"
+      "lastScraped": "2026-04-04T11:36:19.270Z"
     },
     {
       "id": "ErieEvents-2026-07-07-the-clarks",
@@ -3558,7 +3536,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/07/07/2026/the-clarks-2",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:09.362Z"
+      "lastScraped": "2026-04-04T11:36:19.270Z"
     },
     {
       "id": "ErieEvents-2026-07-08--weird-al-yankovic-the-bigger-weirder-20",
@@ -3570,7 +3548,19 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/07/08/2026/weird-al-yankovic-the-bigger-and-weirder-2026-tour",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:09.362Z"
+      "lastScraped": "2026-04-04T11:36:19.270Z"
+    },
+    {
+      "id": "VisitErie-2026-07-10-38th-annual-panegyri-greek-festival",
+      "name": "38th Annual Panegyri Greek Festival",
+      "date": "2026-07-10",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Festival",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/07/10/2026/38th-annual-panegyri-greek-festival",
+      "description": "",
+      "lastScraped": "2026-04-04T11:37:19.333Z"
     },
     {
       "id": "ErieEvents-2026-07-14-killer-queen-a-tribute-to-queen-ft-patri",
@@ -3582,7 +3572,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/07/14/2026/killer-queen-a-tribute-to-queen-ft-patrick-myers-as-freddie-mercury",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:11.843Z"
+      "lastScraped": "2026-04-04T11:36:21.673Z"
     },
     {
       "id": "ErieEvents-2026-07-18-erie-humane-society-rock-rescue-charity-",
@@ -3594,7 +3584,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/07/18/2026/erie-humane-society-rock-and-rescue-charity-concert-featuring-parmalee",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:11.843Z"
+      "lastScraped": "2026-04-04T11:36:21.673Z"
     },
     {
       "id": "ErieEvents-2026-07-21-a1a-the-official-and-original-jimmy-buff",
@@ -3606,7 +3596,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/07/21/2026/a1a-the-official-and-original-jimmy-buffet-tribute-show",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:11.843Z"
+      "lastScraped": "2026-04-04T11:36:21.674Z"
     },
     {
       "id": "ErieEvents-2026-07-28-boys-in-the-band-the-alabama-tribute",
@@ -3618,7 +3608,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/07/28/2026/boys-in-the-band-the-alabama-tribute",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:11.843Z"
+      "lastScraped": "2026-04-04T11:36:21.674Z"
     },
     {
       "id": "ErieEvents-2026-07-28-erie-seawolves-vs-akron",
@@ -3630,7 +3620,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/07/28/2026/erie-seawolves-vs-akron-8",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:11.843Z"
+      "lastScraped": "2026-04-04T11:36:21.674Z"
     },
     {
       "id": "ErieEvents-2026-08-01-an-evening-of-classic-hits-from-the-70s-",
@@ -3642,7 +3632,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/01/2026/an-evening-of-classic-hits-from-the-70s-featuring-orleans-pure-prairie-league-firefall-and-atlanta-rhythm-section",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:11.844Z"
+      "lastScraped": "2026-04-04T11:36:21.674Z"
     },
     {
       "id": "ErieEvents-2026-08-04-erie-seawolves-vs-altoona",
@@ -3654,7 +3644,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/04/2026/erie-seawolves-vs-altoona-7",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:11.846Z"
+      "lastScraped": "2026-04-04T11:36:21.674Z"
     },
     {
       "id": "ErieEvents-2026-08-04-chris-higbee",
@@ -3666,7 +3656,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/04/2026/chris-higbee",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:11.846Z"
+      "lastScraped": "2026-04-04T11:36:21.675Z"
     },
     {
       "id": "ErieEvents-2026-08-05-old-crow-medicine-show",
@@ -3678,7 +3668,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/05/2026/old-crow-medicine-show",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:11.846Z"
+      "lastScraped": "2026-04-04T11:36:21.675Z"
     },
     {
       "id": "ErieEvents-2026-08-11-songbirds-a-tribute-to-fleetwood-mac",
@@ -3690,7 +3680,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/11/2026/songbirds-a-tribute-to-fleetwood-mac",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:14.294Z"
+      "lastScraped": "2026-04-04T11:36:21.675Z"
     },
     {
       "id": "CelebrateErie-2026-08-14-celebrateerie-day-1",
@@ -3702,7 +3692,7 @@
       "source": "CelebrateErie",
       "url": "https://www.celebrateerie.com/",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:16.646Z"
+      "lastScraped": "2026-04-04T11:37:27.718Z"
     },
     {
       "id": "CelebrateErie-2026-08-15-celebrateerie-day-2",
@@ -3714,7 +3704,7 @@
       "source": "CelebrateErie",
       "url": "https://www.celebrateerie.com/",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:16.646Z"
+      "lastScraped": "2026-04-04T11:37:27.718Z"
     },
     {
       "id": "CelebrateErie-2026-08-16-celebrateerie-day-3",
@@ -3726,7 +3716,7 @@
       "source": "CelebrateErie",
       "url": "https://www.celebrateerie.com/",
       "description": "",
-      "lastScraped": "2026-04-03T11:45:16.646Z"
+      "lastScraped": "2026-04-04T11:37:27.718Z"
     },
     {
       "id": "ErieEvents-2026-08-18-erie-seawolves-vs-new-hampshire",
@@ -3738,7 +3728,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/18/2026/erie-seawolves-vs-new-hampshire-2",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:14.294Z"
+      "lastScraped": "2026-04-04T11:36:24.091Z"
     },
     {
       "id": "ErieEvents-2026-08-18-first-to-eleven",
@@ -3750,7 +3740,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/18/2026/first-to-eleven",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:14.294Z"
+      "lastScraped": "2026-04-04T11:36:24.091Z"
     },
     {
       "id": "ErieEvents-2026-08-23-travis-tritt",
@@ -3762,7 +3752,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/23/2026/travis-tritt",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:14.294Z"
+      "lastScraped": "2026-04-04T11:36:24.091Z"
     },
     {
       "id": "ErieEvents-2026-08-25-boat-house-row-a-yacht-rock-experience",
@@ -3774,7 +3764,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/25/2026/boat-house-row-a-yacht-rock-experience",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:14.294Z"
+      "lastScraped": "2026-04-04T11:36:24.091Z"
     },
     {
       "id": "ErieEvents-2026-08-27-the-worlds-greatest-tribute-to-the-trave",
@@ -3786,7 +3776,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/08/27/2026/the-worlds-greatest-tribute-to-the-traveling-wilburys",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:14.294Z"
+      "lastScraped": "2026-04-04T11:36:24.092Z"
     },
     {
       "id": "ErieEvents-2026-09-01-erie-seawolves-vs-somerset",
@@ -3798,7 +3788,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/09/01/2026/erie-seawolves-vs-somerset-4",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:14.294Z"
+      "lastScraped": "2026-04-04T11:36:24.092Z"
     },
     {
       "id": "ErieEvents-2026-09-10-brad-williams-tall-tales-tour",
@@ -3810,7 +3800,7 @@
       "source": "ErieEvents",
       "url": "https://www.erieevents.com/events/event/09/10/2026/brad-williams-tall-tales-tour",
       "description": "",
-      "lastScraped": "2026-04-03T11:44:14.295Z"
+      "lastScraped": "2026-04-04T11:36:24.092Z"
     }
   ]
 }
