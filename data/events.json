@@ -1,404 +1,15 @@
 {
   "meta": {
-    "lastUpdated": "2026-08-08T11:37:10.837Z",
-    "totalEvents": 246,
+    "lastUpdated": "2026-08-09T11:44:48.008Z",
+    "totalEvents": 253,
     "sources": [
       "ErieReader",
+      "VisitErie",
       "FlagshipCity",
       "CelebrateErie"
     ]
   },
   "events": [
-    {
-      "id": "ErieReader-2026-08-08-community-open-house",
-      "name": "Community Open House",
-      "date": "2026-08-08",
-      "time": "1:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.340Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-youth-fishing-program",
-      "name": "Youth Fishing Program",
-      "date": "2026-08-08",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.026Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-leaf-open-market",
-      "name": "LEAF Open Market",
-      "date": "2026-08-08",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.027Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-second-saturday",
-      "name": "Second Saturday",
-      "date": "2026-08-08",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.027Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-yahn-planetarium-children-s-show",
-      "name": "Yahn Planetarium: Children's show",
-      "date": "2026-08-08",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.027Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-second-science-saturday",
-      "name": "Second Science Saturday",
-      "date": "2026-08-08",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.027Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-downtown-erie-food-tour",
-      "name": "Downtown Erie Food Tour",
-      "date": "2026-08-08",
-      "time": "11:00 AM",
-      "venue": "Erie, PA",
-      "category": "Festival",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.027Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-ec3-pathway-to-success-open-house",
-      "name": "EC3 Pathway To Success Open House",
-      "date": "2026-08-08",
-      "time": "11:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.027Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-create-for-change-art-exhibition-auction",
-      "name": "Create For Change Art Exhibition & Auction Fundraiser",
-      "date": "2026-08-08",
-      "time": "11:00 AM",
-      "venue": "Erie, PA",
-      "category": "Arts",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.028Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-pathways-to-success-open-house",
-      "name": "Pathways to Success Open House",
-      "date": "2026-08-08",
-      "time": "11:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.028Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-asbury-woods-fish-field-day",
-      "name": "Asbury Woods Fish Field Day",
-      "date": "2026-08-08",
-      "time": "11:00 AM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.028Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-global-neighbors-syria",
-      "name": "Global Neighbors: Syria",
-      "date": "2026-08-08",
-      "time": "11:00 AM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.028Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-yahn-planetarium-show-general-audience",
-      "name": "Yahn Planetarium Show: General Audience",
-      "date": "2026-08-08",
-      "time": "11:30 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.028Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-kickoff-with-garry-gilliam",
-      "name": "Kickoff With Garry Gilliam",
-      "date": "2026-08-08",
-      "time": "11:30 AM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.029Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-sip-spin",
-      "name": "Sip & Spin",
-      "date": "2026-08-08",
-      "time": "3:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.340Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-luau-at-the-library",
-      "name": "Luau At The Library",
-      "date": "2026-08-08",
-      "time": "3:00 PM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.341Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-highland-games-bingo-night-fundraiser",
-      "name": "Highland Games Bingo Night Fundraiser",
-      "date": "2026-08-08",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.341Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-live-music-the-monk-featuring-the-cows",
-      "name": "Live Music @the Monk Featuring The Cows",
-      "date": "2026-08-08",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.341Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-attack-of-the-paca",
-      "name": "Attack of the PACA",
-      "date": "2026-08-08",
-      "time": "7:00 PM",
-      "venue": "ack of the PACAPerforming Arts8/8/2026 at 7 PMPACA",
-      "category": "Theater",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.342Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-comedian-april-macie-at-kellar-s-",
-      "name": "Comedian April Macie At Kellar's!",
-      "date": "2026-08-08",
-      "time": "7:00 PM",
-      "venue": "Erie, PA",
-      "category": "Comedy",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.342Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-live-music-at-bigbar",
-      "name": "Live Music at BIGBAR",
-      "date": "2026-08-08",
-      "time": "7:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.342Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-live-music-at-altered-state-distillery",
-      "name": "Live Music at Altered State Distillery",
-      "date": "2026-08-08",
-      "time": "7:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.342Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-hairspray-",
-      "name": "Hairspray!",
-      "date": "2026-08-08",
-      "time": "7:30 PM",
-      "venue": "Erie, PA",
-      "category": "Theater",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.342Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-ann-hampton-callaway",
-      "name": "Ann Hampton Callaway",
-      "date": "2026-08-08",
-      "time": "7:30 PM",
-      "venue": "Erie, PA",
-      "category": "Theater",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:51.674Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-speeder-train-rides",
-      "name": "Speeder Train Rides",
-      "date": "2026-08-08",
-      "time": "9:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.026Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-yoga-in-the-park",
-      "name": "Yoga in the Park",
-      "date": "2026-08-08",
-      "time": "9:00 AM",
-      "venue": "he ParkHealth & Wellness8/8/2026 at 9 AMMorse Park",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:47.026Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-lagoon-by-pontoon",
-      "name": "Lagoon By Pontoon",
-      "date": "2026-08-08",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.339Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-98th-annual-cochranton-community-fair",
-      "name": "98th Annual Cochranton Community Fair",
-      "date": "2026-08-08",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.340Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-lucille-ball-comedy-festival",
-      "name": "Lucille Ball Comedy Festival",
-      "date": "2026-08-08",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Comedy",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.340Z"
-    },
-    {
-      "id": "ErieReader-2026-08-08-st-paul-s-italian-festival",
-      "name": "St. Paul's Italian Festival",
-      "date": "2026-08-08",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:49.340Z"
-    },
     {
       "id": "ErieReader-2026-08-09-fun-in-the-sun-sensational-sand-activity",
       "name": "Fun in the Sun - Sensational Sand! (Activity Station)",
@@ -410,7 +21,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.675Z"
+      "lastScraped": "2026-08-09T11:43:24.542Z"
     },
     {
       "id": "ErieReader-2026-08-09-corgi-fest",
@@ -423,7 +34,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.675Z"
+      "lastScraped": "2026-08-09T11:43:24.539Z"
     },
     {
       "id": "ErieReader-2026-08-09-hairspray-",
@@ -436,33 +47,19 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.675Z"
+      "lastScraped": "2026-08-09T11:43:24.542Z"
     },
     {
-      "id": "ErieReader-2026-08-09-st-paul-s-italian-festival",
-      "name": "St. Paul's Italian Festival",
+      "id": "VisitErie-2026-08-09-girard-sunflower-festival",
+      "name": "Girard Sunflower Festival",
       "date": "2026-08-09",
       "time": "TBD",
       "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
+      "category": "Festival",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/08/09/2026/girard-sunflower-festival",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.674Z"
-    },
-    {
-      "id": "ErieReader-2026-08-09-lagoon-by-pontoon",
-      "name": "Lagoon By Pontoon",
-      "date": "2026-08-09",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:51.674Z"
+      "lastScraped": "2026-08-09T11:36:24.804Z"
     },
     {
       "id": "ErieReader-2026-08-09-lucille-ball-comedy-festival",
@@ -475,7 +72,33 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.675Z"
+      "lastScraped": "2026-08-09T11:43:24.540Z"
+    },
+    {
+      "id": "ErieReader-2026-08-09-lagoon-by-pontoon",
+      "name": "Lagoon By Pontoon",
+      "date": "2026-08-09",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:24.540Z"
+    },
+    {
+      "id": "ErieReader-2026-08-09-st-paul-s-italian-festival",
+      "name": "St. Paul's Italian Festival",
+      "date": "2026-08-09",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:24.540Z"
     },
     {
       "id": "ErieReader-2026-08-10-escape-room-history-mysteries",
@@ -488,7 +111,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.676Z"
+      "lastScraped": "2026-08-09T11:43:24.543Z"
     },
     {
       "id": "ErieReader-2026-08-10-ssjnn-little-italy-farmers-market",
@@ -501,7 +124,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.676Z"
+      "lastScraped": "2026-08-09T11:43:24.543Z"
     },
     {
       "id": "ErieReader-2026-08-10-pay-what-you-can-farm-stand-unity-in-edi",
@@ -514,7 +137,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.676Z"
+      "lastScraped": "2026-08-09T11:43:24.543Z"
     },
     {
       "id": "ErieReader-2026-08-10-sounds-of-summer-concert-series",
@@ -527,20 +150,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.676Z"
-    },
-    {
-      "id": "ErieReader-2026-08-10-monday-makers-pom-pom-cactus",
-      "name": "Monday Makers: Pom Pom Cactus",
-      "date": "2026-08-10",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:51.676Z"
+      "lastScraped": "2026-08-09T11:43:24.543Z"
     },
     {
       "id": "ErieReader-2026-08-10-celebrating-america-s-freedom-holidays-m",
@@ -553,7 +163,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.676Z"
+      "lastScraped": "2026-08-09T11:43:24.543Z"
+    },
+    {
+      "id": "ErieReader-2026-08-10-monday-makers-pom-pom-cactus",
+      "name": "Monday Makers: Pom Pom Cactus",
+      "date": "2026-08-10",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:24.543Z"
     },
     {
       "id": "ErieReader-2026-08-10-working-with-windows-part-1",
@@ -566,7 +189,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.675Z"
+      "lastScraped": "2026-08-09T11:43:24.542Z"
     },
     {
       "id": "ErieReader-2026-08-10-95th-annual-warren-county-fair",
@@ -579,7 +202,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:51.676Z"
+      "lastScraped": "2026-08-09T11:43:24.543Z"
     },
     {
       "id": "ErieReader-2026-08-11-outside-the-window-magnificent-mammals",
@@ -592,7 +215,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.978Z"
+      "lastScraped": "2026-08-09T11:43:26.878Z"
     },
     {
       "id": "ErieReader-2026-08-11-pay-what-you-can-farm-stand-15th-and-par",
@@ -605,7 +228,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.980Z"
+      "lastScraped": "2026-08-09T11:43:26.879Z"
     },
     {
       "id": "ErieReader-2026-08-11-annual-member-picnic-and-meeting",
@@ -618,7 +241,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.980Z"
+      "lastScraped": "2026-08-09T11:43:26.879Z"
     },
     {
       "id": "ErieReader-2026-08-11-founding-stories-family-book-club-rebell",
@@ -631,7 +254,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.981Z"
+      "lastScraped": "2026-08-09T11:43:26.879Z"
     },
     {
       "id": "FlagshipCity-2026-08-11-downtown-erie-events",
@@ -643,7 +266,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/home",
       "description": "Visit Flagship City District in Downtown Erie! Enjoy a meal from the Food Hall, explore one-of-a-kind shops, and make new memories our vibrant neighborhood!",
-      "lastScraped": "2026-08-08T11:35:20.976Z",
+      "lastScraped": "2026-08-09T11:36:03.937Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/t/64b170d5a63c71647bd4a697/1689350357853/downtownerie_06302023-7.jpg?format=1500w"
     },
     {
@@ -656,7 +279,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-aug-11",
       "description": "Karaoke night in Downtown Erie at Flagship City Food Hall featuring local host Preach Freedom. Enjoy Happy Hour at IPPA and a high-energy night of music, food, and fun.",
-      "lastScraped": "2026-08-08T11:35:20.977Z",
+      "lastScraped": "2026-08-09T11:36:03.938Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e7d820c3efed4ed48081d5/1776801864492/KARAOKE+%281%29.png?format=1500w"
     },
     {
@@ -670,7 +293,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.981Z"
+      "lastScraped": "2026-08-09T11:43:26.879Z"
     },
     {
       "id": "FlagshipCity-2026-08-11-8-great-tuesdays",
@@ -682,7 +305,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/8-great-tuesdays-6",
       "description": "8 Great Tuesdays presented by PNC Bank is a FREE community concert series that takes place at the Rebich Investments Amphitheater throughout July and August featuring a variety of local and regional bands.",
-      "lastScraped": "2026-08-08T11:35:20.977Z",
+      "lastScraped": "2026-08-09T11:36:03.938Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e44212126fbf28f7bde404/1776566819524/2820501-NWPA-8-Great-Tuesdays-Logo-Lockups_StackedJPGsPNCxNWPA_Presented-By_8-Great-Tuesdays_Color.jpg?format=1500w"
     },
     {
@@ -696,7 +319,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.981Z"
+      "lastScraped": "2026-08-09T11:43:26.879Z"
     },
     {
       "id": "ErieReader-2026-08-11-sunflower-painting-class",
@@ -709,20 +332,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.978Z"
-    },
-    {
-      "id": "ErieReader-2026-08-11-95th-annual-warren-county-fair",
-      "name": "95th Annual Warren County Fair",
-      "date": "2026-08-11",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:53.979Z"
+      "lastScraped": "2026-08-09T11:43:24.543Z"
     },
     {
       "id": "ErieReader-2026-08-11-moe-s-brings-summer-celebration-to-erie-",
@@ -735,7 +345,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.979Z"
+      "lastScraped": "2026-08-09T11:43:26.878Z"
     },
     {
       "id": "ErieReader-2026-08-11-inter-church-ministries",
@@ -748,7 +358,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.979Z"
+      "lastScraped": "2026-08-09T11:43:26.878Z"
+    },
+    {
+      "id": "ErieReader-2026-08-11-95th-annual-warren-county-fair",
+      "name": "95th Annual Warren County Fair",
+      "date": "2026-08-11",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:26.879Z"
     },
     {
       "id": "ErieReader-2026-08-12-junior-gardeners-trellises",
@@ -761,7 +384,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:56.324Z"
+      "lastScraped": "2026-08-09T11:43:26.880Z"
     },
     {
       "id": "ErieReader-2026-08-12-futuristic-fair",
@@ -774,7 +397,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.982Z"
+      "lastScraped": "2026-08-09T11:43:26.880Z"
     },
     {
       "id": "ErieReader-2026-08-12-pay-what-you-can-farm-stand-ecat",
@@ -787,7 +410,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:56.324Z"
+      "lastScraped": "2026-08-09T11:43:29.266Z"
     },
     {
       "id": "ErieReader-2026-08-12-happy-appy-food-tour-in-downtown-erie",
@@ -800,7 +423,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:56.325Z"
+      "lastScraped": "2026-08-09T11:43:29.266Z"
     },
     {
       "id": "ErieReader-2026-08-12-careers-in-play-hiring-event",
@@ -813,7 +436,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:56.325Z"
+      "lastScraped": "2026-08-09T11:43:29.266Z"
     },
     {
       "id": "ErieReader-2026-08-12-free-sunrise-yoga",
@@ -826,46 +449,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.981Z"
-    },
-    {
-      "id": "ErieReader-2026-08-12-asbury-woods-brush-board-at-the-woods-ad",
-      "name": "Asbury Woods Brush & Board At The Woods: Adults Edition",
-      "date": "2026-08-12",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:56.326Z"
-    },
-    {
-      "id": "ErieReader-2026-08-12-west-bayfit-and-farmers-market",
-      "name": "West Bayfit and Farmers Market",
-      "date": "2026-08-12",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:56.326Z"
-    },
-    {
-      "id": "ErieReader-2026-08-12-revolutionary-journalism",
-      "name": "Revolutionary Journalism",
-      "date": "2026-08-12",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:56.326Z"
+      "lastScraped": "2026-08-09T11:43:26.879Z"
     },
     {
       "id": "ErieReader-2026-08-12-live-music-at-the-flagship-city-food-hal",
@@ -878,7 +462,46 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:56.326Z"
+      "lastScraped": "2026-08-09T11:43:29.266Z"
+    },
+    {
+      "id": "ErieReader-2026-08-12-revolutionary-journalism",
+      "name": "Revolutionary Journalism",
+      "date": "2026-08-12",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:29.266Z"
+    },
+    {
+      "id": "ErieReader-2026-08-12-asbury-woods-brush-board-at-the-woods-ad",
+      "name": "Asbury Woods Brush & Board At The Woods: Adults Edition",
+      "date": "2026-08-12",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:29.266Z"
+    },
+    {
+      "id": "ErieReader-2026-08-12-west-bayfit-and-farmers-market",
+      "name": "West Bayfit and Farmers Market",
+      "date": "2026-08-12",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:29.266Z"
     },
     {
       "id": "FlagshipCity-2026-08-12-ethan-foulk-the-food-hall",
@@ -890,34 +513,8 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/live-music-aug-12",
       "description": "Enjoy live music in Downtown Erie every week at Flagship City Food Hall. Featuring local musicians across genres like R&B, folk rock, jazz, pop, and more. Try some food from multiple kitchens, drink specials, and a relaxed atmosphere.",
-      "lastScraped": "2026-08-08T11:35:20.978Z",
+      "lastScraped": "2026-08-09T11:36:03.938Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e7d476e9f7713d2e168f9a/1786047843847/LIVE+MUSIC+%2813%29.png?format=1500w"
-    },
-    {
-      "id": "ErieReader-2026-08-12-broke-boland-s-state-street-open-mic-nig",
-      "name": "Broke Boland's State Street Open Mic Night",
-      "date": "2026-08-12",
-      "time": "7:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:56.327Z"
-    },
-    {
-      "id": "ErieReader-2026-08-12-trivia-night-at-luminary",
-      "name": "Trivia Night at Luminary",
-      "date": "2026-08-12",
-      "time": "7:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:56.327Z"
     },
     {
       "id": "ErieReader-2026-08-12-comedian-fumi-abe",
@@ -930,7 +527,33 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:56.327Z"
+      "lastScraped": "2026-08-09T11:43:29.267Z"
+    },
+    {
+      "id": "ErieReader-2026-08-12-broke-boland-s-state-street-open-mic-nig",
+      "name": "Broke Boland's State Street Open Mic Night",
+      "date": "2026-08-12",
+      "time": "7:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:29.267Z"
+    },
+    {
+      "id": "ErieReader-2026-08-12-trivia-night-at-luminary",
+      "name": "Trivia Night at Luminary",
+      "date": "2026-08-12",
+      "time": "7:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:29.267Z"
     },
     {
       "id": "ErieReader-2026-08-12-adopt-a-student",
@@ -943,7 +566,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.981Z"
+      "lastScraped": "2026-08-09T11:43:26.880Z"
     },
     {
       "id": "ErieReader-2026-08-12-95th-annual-warren-county-fair",
@@ -956,7 +579,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:53.982Z"
+      "lastScraped": "2026-08-09T11:43:26.880Z"
     },
     {
       "id": "ErieReader-2026-08-13-command-courage-oliver-hazard-perry-day-",
@@ -969,20 +592,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.615Z"
-    },
-    {
-      "id": "ErieReader-2026-08-13-patio-chair-yoga",
-      "name": "Patio Chair Yoga",
-      "date": "2026-08-13",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:56.328Z"
+      "lastScraped": "2026-08-09T11:43:31.626Z"
     },
     {
       "id": "ErieReader-2026-08-13-yahn-planetarium-children-s-show",
@@ -995,7 +605,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:56.328Z"
+      "lastScraped": "2026-08-09T11:43:29.267Z"
     },
     {
       "id": "ErieReader-2026-08-13-try-it-beginner-wheel-throwing",
@@ -1008,7 +618,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:56.328Z"
+      "lastScraped": "2026-08-09T11:43:29.267Z"
+    },
+    {
+      "id": "ErieReader-2026-08-13-patio-chair-yoga",
+      "name": "Patio Chair Yoga",
+      "date": "2026-08-13",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:29.267Z"
     },
     {
       "id": "ErieReader-2026-08-13-yahn-planetarium-show-general-audience",
@@ -1021,7 +644,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.615Z"
+      "lastScraped": "2026-08-09T11:43:29.268Z"
     },
     {
       "id": "ErieReader-2026-08-13-pay-what-you-can-farm-stand-4th-street-f",
@@ -1034,7 +657,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.615Z"
+      "lastScraped": "2026-08-09T11:43:31.624Z"
     },
     {
       "id": "ErieReader-2026-08-13-evening-bicycle-tour",
@@ -1047,72 +670,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.615Z"
-    },
-    {
-      "id": "ErieReader-2026-08-13-teen-everyone-is-john-trapped-in-time",
-      "name": "Teen: Everyone Is John - Trapped In Time",
-      "date": "2026-08-13",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:58.615Z"
-    },
-    {
-      "id": "ErieReader-2026-08-13-thrifty-thursday-workshop",
-      "name": "Thrifty Thursday Workshop",
-      "date": "2026-08-13",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:58.616Z"
-    },
-    {
-      "id": "ErieReader-2026-08-13-autumn-lies-buried-with-let-it-rot-and-m",
-      "name": "Autumn Lies Buried with Let It Rot and Mantra of Morta",
-      "date": "2026-08-13",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:58.616Z"
-    },
-    {
-      "id": "ErieReader-2026-08-13-pick-your-project-workshop",
-      "name": "Pick Your Project Workshop",
-      "date": "2026-08-13",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:58.616Z"
-    },
-    {
-      "id": "ErieReader-2026-08-13-live-music-the-monk-featuring-jack-steve",
-      "name": "Live Music @the Monk Featuring Jack Stevenson Open Mic Night.",
-      "date": "2026-08-13",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:35:58.616Z"
+      "lastScraped": "2026-08-09T11:43:31.626Z"
     },
     {
       "id": "ErieReader-2026-08-13-futuremakers-how-every-community-member-",
@@ -1125,46 +683,72 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.616Z"
+      "lastScraped": "2026-08-09T11:43:31.626Z"
     },
     {
-      "id": "ErieReader-2026-08-13-gazebo-concerts-in-the-park",
-      "name": "Gazebo Concerts in the Park",
+      "id": "ErieReader-2026-08-13-teen-everyone-is-john-trapped-in-time",
+      "name": "Teen: Everyone Is John - Trapped In Time",
       "date": "2026-08-13",
-      "time": "7:00 PM",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:31.626Z"
+    },
+    {
+      "id": "ErieReader-2026-08-13-pick-your-project-workshop",
+      "name": "Pick Your Project Workshop",
+      "date": "2026-08-13",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:31.627Z"
+    },
+    {
+      "id": "ErieReader-2026-08-13-autumn-lies-buried-with-let-it-rot-and-m",
+      "name": "Autumn Lies Buried with Let It Rot and Mantra of Morta",
+      "date": "2026-08-13",
+      "time": "6:00 PM",
       "venue": "Erie, PA",
       "category": "Music",
       "source": "ErieReader",
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.617Z"
+      "lastScraped": "2026-08-09T11:43:31.627Z"
     },
     {
-      "id": "ErieReader-2026-08-13-summer-carillon-concert-series",
-      "name": "Summer Carillon Concert Series",
+      "id": "ErieReader-2026-08-13-thrifty-thursday-workshop",
+      "name": "Thrifty Thursday Workshop",
       "date": "2026-08-13",
-      "time": "7:00 PM",
-      "venue": "iesMusic8/13/2026 at 7 PMSmith Chapel and Carillon",
-      "category": "Music",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
       "source": "ErieReader",
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.617Z"
+      "lastScraped": "2026-08-09T11:43:31.627Z"
     },
     {
-      "id": "ErieReader-2026-08-13-live-music-at-altered-state-distillery",
-      "name": "Live Music at Altered State Distillery",
+      "id": "ErieReader-2026-08-13-live-music-the-monk-featuring-jack-steve",
+      "name": "Live Music @the Monk Featuring Jack Stevenson Open Mic Night.",
       "date": "2026-08-13",
-      "time": "7:00 PM",
+      "time": "6:00 PM",
       "venue": "Erie, PA",
       "category": "Music",
       "source": "ErieReader",
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.617Z"
+      "lastScraped": "2026-08-09T11:43:31.627Z"
     },
     {
       "id": "ErieReader-2026-08-13-behrend-smith-chapel-carillon-concert-se",
@@ -1177,7 +761,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.617Z"
+      "lastScraped": "2026-08-09T11:43:31.627Z"
     },
     {
       "id": "ErieReader-2026-08-13-dj-bill-page-s-trivia-night",
@@ -1190,7 +774,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.946Z"
+      "lastScraped": "2026-08-09T11:43:31.627Z"
     },
     {
       "id": "ErieReader-2026-08-13-thursday-night-trivia-with-adam",
@@ -1203,7 +787,46 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.946Z"
+      "lastScraped": "2026-08-09T11:43:31.628Z"
+    },
+    {
+      "id": "ErieReader-2026-08-13-summer-carillon-concert-series",
+      "name": "Summer Carillon Concert Series",
+      "date": "2026-08-13",
+      "time": "7:00 PM",
+      "venue": "iesMusic8/13/2026 at 7 PMSmith Chapel and Carillon",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:31.628Z"
+    },
+    {
+      "id": "ErieReader-2026-08-13-live-music-at-altered-state-distillery",
+      "name": "Live Music at Altered State Distillery",
+      "date": "2026-08-13",
+      "time": "7:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:31.628Z"
+    },
+    {
+      "id": "ErieReader-2026-08-13-gazebo-concerts-in-the-park",
+      "name": "Gazebo Concerts in the Park",
+      "date": "2026-08-13",
+      "time": "7:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:33.946Z"
     },
     {
       "id": "ErieReader-2026-08-13-mystic-mingle-a-summertime-speed-dating-",
@@ -1216,7 +839,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.946Z"
+      "lastScraped": "2026-08-09T11:43:33.946Z"
     },
     {
       "id": "ErieReader-2026-08-13-95th-annual-warren-county-fair",
@@ -1229,7 +852,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:58.615Z"
+      "lastScraped": "2026-08-09T11:43:31.624Z"
     },
     {
       "id": "ErieReader-2026-08-14-building-the-fleet-in-the-wilderness",
@@ -1242,7 +865,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.946Z"
+      "lastScraped": "2026-08-09T11:43:33.947Z"
     },
     {
       "id": "ErieReader-2026-08-14-cyrus-tiffany",
@@ -1255,7 +878,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.947Z"
+      "lastScraped": "2026-08-09T11:43:33.947Z"
     },
     {
       "id": "ErieReader-2026-08-14-free-water-taxi-fridays",
@@ -1268,7 +891,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.947Z"
+      "lastScraped": "2026-08-09T11:43:33.947Z"
     },
     {
       "id": "ErieReader-2026-08-14-you-are-not-alone",
@@ -1281,7 +904,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.947Z"
+      "lastScraped": "2026-08-09T11:43:33.947Z"
     },
     {
       "id": "ErieReader-2026-08-14-stem-tastic-butterflies-and-bugs-",
@@ -1294,7 +917,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.950Z"
+      "lastScraped": "2026-08-09T11:43:33.948Z"
     },
     {
       "id": "ErieReader-2026-08-14-pay-what-you-can-farm-stand-perry-square",
@@ -1307,20 +930,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.950Z"
-    },
-    {
-      "id": "ErieReader-2026-08-14-delta-blues-with-rodger-montgomery-and-m",
-      "name": "Delta Blues With Rodger Montgomery And Mark Dolak",
-      "date": "2026-08-14",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:03.467Z"
+      "lastScraped": "2026-08-09T11:43:33.948Z"
     },
     {
       "id": "ErieReader-2026-08-14--wine-tasting-train-ride",
@@ -1333,7 +943,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.467Z"
+      "lastScraped": "2026-08-09T11:43:33.948Z"
     },
     {
       "id": "ErieReader-2026-08-14-save-ferris",
@@ -1346,7 +956,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.467Z"
+      "lastScraped": "2026-08-09T11:43:36.316Z"
+    },
+    {
+      "id": "ErieReader-2026-08-14-delta-blues-with-rodger-montgomery-and-m",
+      "name": "Delta Blues With Rodger Montgomery And Mark Dolak",
+      "date": "2026-08-14",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:36.316Z"
     },
     {
       "id": "ErieReader-2026-08-14-friday-morning-beach-club",
@@ -1359,7 +982,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.946Z"
+      "lastScraped": "2026-08-09T11:43:33.946Z"
     },
     {
       "id": "ErieReader-2026-08-14-dre-concepci-n-s-birthday-bash-ft-halfpa",
@@ -1372,7 +995,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.468Z"
+      "lastScraped": "2026-08-09T11:43:36.316Z"
     },
     {
       "id": "FlagshipCity-2026-08-14-trash-alley-party",
@@ -1384,7 +1007,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/trash-alley-party-aug-14",
       "description": "Live music, cold drinks, and good company in one of Downtown Erie’s most unexpected spaces, a trash alley. The Trash Alley Party transforms a real working trash alley into a one-of-a-kind community gathering spot. It’s unexpected, unpolished, and totally unforettable.",
-      "lastScraped": "2026-08-08T11:35:20.978Z",
+      "lastScraped": "2026-08-09T11:36:03.939Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/t/6a6397b72863cf53bc477d6c/1784911799463/Trash+alley+party+banner+%287%29.png?format=1500w"
     },
     {
@@ -1398,7 +1021,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.468Z"
+      "lastScraped": "2026-08-09T11:43:36.316Z"
     },
     {
       "id": "ErieReader-2026-08-14-crowmeat-bob-carolina-arms-and-armour-cl",
@@ -1411,7 +1034,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.468Z"
+      "lastScraped": "2026-08-09T11:43:36.317Z"
     },
     {
       "id": "ErieReader-2026-08-14-the-spoon-river-project",
@@ -1424,7 +1047,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.468Z"
+      "lastScraped": "2026-08-09T11:43:36.317Z"
     },
     {
       "id": "ErieReader-2026-08-14-arms-and-armour-slugg",
@@ -1437,7 +1060,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.468Z"
+      "lastScraped": "2026-08-09T11:43:36.317Z"
     },
     {
       "id": "ErieReader-2026-08-14-3rd-annual-golf-tournament",
@@ -1450,7 +1073,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.946Z"
+      "lastScraped": "2026-08-09T11:43:33.946Z"
     },
     {
       "id": "ErieReader-2026-08-14-command-courage-oliver-hazard-perry-day-",
@@ -1463,7 +1086,19 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.946Z"
+      "lastScraped": "2026-08-09T11:43:33.947Z"
+    },
+    {
+      "id": "VisitErie-2026-08-14-celebrateerie-2026",
+      "name": "CelebrateErie 2026",
+      "date": "2026-08-14",
+      "time": "TBD",
+      "venue": "Perry Square",
+      "category": "Festival",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/08/14/2026/celebrateerie-2026",
+      "description": "",
+      "lastScraped": "2026-08-09T11:36:24.804Z"
     },
     {
       "id": "CelebrateErie-2026-08-14-celebrateerie-day-1",
@@ -1475,7 +1110,7 @@
       "source": "CelebrateErie",
       "url": "https://www.celebrateerie.com/",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:45.883Z"
+      "lastScraped": "2026-08-09T11:43:23.437Z"
     },
     {
       "id": "ErieReader-2026-08-14-lagoon-by-pontoon",
@@ -1488,20 +1123,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.946Z"
-    },
-    {
-      "id": "ErieReader-2026-08-14-celebrate-erie-2026",
-      "name": "Celebrate Erie 2026",
-      "date": "2026-08-14",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:00.947Z"
+      "lastScraped": "2026-08-09T11:43:33.947Z"
     },
     {
       "id": "ErieReader-2026-08-14-95th-annual-warren-county-fair",
@@ -1514,46 +1136,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:00.947Z"
-    },
-    {
-      "id": "ErieReader-2026-08-15-asbury-woods-forest-bathing",
-      "name": "Asbury Woods Forest Bathing",
-      "date": "2026-08-15",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:03.469Z"
-    },
-    {
-      "id": "ErieReader-2026-08-15-lawrence-park-farmers-market-at-the-laun",
-      "name": "Lawrence Park Farmers Market at the Launch",
-      "date": "2026-08-15",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:03.469Z"
-    },
-    {
-      "id": "ErieReader-2026-08-15-adult-d-d-the-siren-s-call",
-      "name": "Adult D&D: The Siren's Call",
-      "date": "2026-08-15",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:03.470Z"
+      "lastScraped": "2026-08-09T11:43:33.947Z"
     },
     {
       "id": "ErieReader-2026-08-15-yahn-planetarium-children-s-show",
@@ -1566,7 +1149,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.470Z"
+      "lastScraped": "2026-08-09T11:43:36.317Z"
+    },
+    {
+      "id": "ErieReader-2026-08-15-adult-d-d-the-siren-s-call",
+      "name": "Adult D&D: The Siren's Call",
+      "date": "2026-08-15",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:36.317Z"
     },
     {
       "id": "ErieReader-2026-08-15-family-fun-day-at-werner-books-music-the",
@@ -1579,7 +1175,33 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.740Z"
+      "lastScraped": "2026-08-09T11:43:36.318Z"
+    },
+    {
+      "id": "ErieReader-2026-08-15-lawrence-park-farmers-market-at-the-laun",
+      "name": "Lawrence Park Farmers Market at the Launch",
+      "date": "2026-08-15",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:36.318Z"
+    },
+    {
+      "id": "ErieReader-2026-08-15-asbury-woods-forest-bathing",
+      "name": "Asbury Woods Forest Bathing",
+      "date": "2026-08-15",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:36.318Z"
     },
     {
       "id": "ErieReader-2026-08-15-grounded-maker-s-market",
@@ -1592,7 +1214,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.741Z"
+      "lastScraped": "2026-08-09T11:43:38.727Z"
     },
     {
       "id": "ErieReader-2026-08-15-yahn-planetarium-show-general-audience",
@@ -1605,7 +1227,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.741Z"
+      "lastScraped": "2026-08-09T11:43:38.727Z"
     },
     {
       "id": "ErieReader-2026-08-15-saturday-sip-circuit",
@@ -1618,7 +1240,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.742Z"
+      "lastScraped": "2026-08-09T11:43:38.728Z"
     },
     {
       "id": "ErieReader-2026-08-15-asbury-woods-pressed-flower-craft",
@@ -1631,7 +1253,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.742Z"
+      "lastScraped": "2026-08-09T11:43:38.729Z"
     },
     {
       "id": "ErieReader-2026-08-15-comedy-lost-then-found-in-the-middle-of-",
@@ -1644,7 +1266,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.743Z"
+      "lastScraped": "2026-08-09T11:43:38.729Z"
     },
     {
       "id": "ErieReader-2026-08-15-live-music-the-monk-featuring-the-o-need",
@@ -1657,20 +1279,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.743Z"
-    },
-    {
-      "id": "ErieReader-2026-08-15-live-music-at-altered-state-distillery",
-      "name": "Live Music at Altered State Distillery",
-      "date": "2026-08-15",
-      "time": "7:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:05.743Z"
+      "lastScraped": "2026-08-09T11:43:38.729Z"
     },
     {
       "id": "ErieReader-2026-08-15-livefeed-keith-fullerton-whitman-brookly",
@@ -1683,7 +1292,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.743Z"
+      "lastScraped": "2026-08-09T11:43:38.729Z"
+    },
+    {
+      "id": "ErieReader-2026-08-15-live-music-at-altered-state-distillery",
+      "name": "Live Music at Altered State Distillery",
+      "date": "2026-08-15",
+      "time": "7:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:38.729Z"
     },
     {
       "id": "ErieReader-2026-08-15-the-glam-ham-mild-to-wild",
@@ -1696,7 +1318,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.743Z"
+      "lastScraped": "2026-08-09T11:43:38.729Z"
     },
     {
       "id": "ErieReader-2026-08-15-the-spoon-river-project",
@@ -1709,7 +1331,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.744Z"
+      "lastScraped": "2026-08-09T11:43:38.730Z"
     },
     {
       "id": "ErieReader-2026-08-15-the-music-of-billy-joel-with-tony-desare",
@@ -1722,7 +1344,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.034Z"
+      "lastScraped": "2026-08-09T11:43:38.730Z"
     },
     {
       "id": "ErieReader-2026-08-15-big-free-yoga",
@@ -1735,7 +1357,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.468Z"
+      "lastScraped": "2026-08-09T11:43:36.317Z"
     },
     {
       "id": "ErieReader-2026-08-15-adopt-a-beach",
@@ -1748,7 +1370,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.469Z"
+      "lastScraped": "2026-08-09T11:43:36.317Z"
     },
     {
       "id": "ErieReader-2026-08-15-sunflower-pottery-workshop",
@@ -1761,7 +1383,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:03.469Z"
+      "lastScraped": "2026-08-09T11:43:36.317Z"
     },
     {
       "id": "CelebrateErie-2026-08-15-celebrateerie-day-2",
@@ -1773,7 +1395,7 @@
       "source": "CelebrateErie",
       "url": "https://www.celebrateerie.com/",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:45.883Z"
+      "lastScraped": "2026-08-09T11:43:23.437Z"
     },
     {
       "id": "ErieReader-2026-08-15-95th-annual-warren-county-fair",
@@ -1786,7 +1408,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.741Z"
+      "lastScraped": "2026-08-09T11:43:38.728Z"
     },
     {
       "id": "ErieReader-2026-08-15-celebrate-erie-2026",
@@ -1799,7 +1421,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.741Z"
+      "lastScraped": "2026-08-09T11:43:38.728Z"
     },
     {
       "id": "ErieReader-2026-08-15-bookstore-romance-day-at-werner-books-co",
@@ -1812,7 +1434,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.742Z"
+      "lastScraped": "2026-08-09T11:43:38.728Z"
     },
     {
       "id": "ErieReader-2026-08-15-lagoon-by-pontoon",
@@ -1825,7 +1447,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:05.742Z"
+      "lastScraped": "2026-08-09T11:43:38.728Z"
     },
     {
       "id": "ErieReader-2026-08-16-live-music-at-altered-state-distillery",
@@ -1838,7 +1460,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.035Z"
+      "lastScraped": "2026-08-09T11:43:41.032Z"
     },
     {
       "id": "ErieReader-2026-08-16-2nd-annual-putting-for-paws-at-mound-gro",
@@ -1851,20 +1473,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.034Z"
-    },
-    {
-      "id": "ErieReader-2026-08-16-north-east-food-tour",
-      "name": "North East Food Tour",
-      "date": "2026-08-16",
-      "time": "11:00 AM",
-      "venue": "Erie, PA",
-      "category": "Festival",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:08.034Z"
+      "lastScraped": "2026-08-09T11:43:41.031Z"
     },
     {
       "id": "ErieReader-2026-08-16-companion-animal-coalition-cat-vocacy-ev",
@@ -1877,7 +1486,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.034Z"
+      "lastScraped": "2026-08-09T11:43:41.032Z"
+    },
+    {
+      "id": "ErieReader-2026-08-16-north-east-food-tour",
+      "name": "North East Food Tour",
+      "date": "2026-08-16",
+      "time": "11:00 AM",
+      "venue": "Erie, PA",
+      "category": "Festival",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:41.032Z"
     },
     {
       "id": "ErieReader-2026-08-16-try-it-beginner-wheel-throwing",
@@ -1890,7 +1512,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.035Z"
+      "lastScraped": "2026-08-09T11:43:41.032Z"
     },
     {
       "id": "ErieReader-2026-08-16-the-spoon-river-project",
@@ -1903,7 +1525,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.035Z"
+      "lastScraped": "2026-08-09T11:43:41.032Z"
     },
     {
       "id": "ErieReader-2026-08-16-comedy-lost-then-found-in-the-middle-of-",
@@ -1916,7 +1538,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.035Z"
+      "lastScraped": "2026-08-09T11:43:41.032Z"
     },
     {
       "id": "CelebrateErie-2026-08-16-celebrateerie-day-3",
@@ -1928,20 +1550,7 @@
       "source": "CelebrateErie",
       "url": "https://www.celebrateerie.com/",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:45.883Z"
-    },
-    {
-      "id": "ErieReader-2026-08-16-celebrate-erie-2026",
-      "name": "Celebrate Erie 2026",
-      "date": "2026-08-16",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:08.034Z"
+      "lastScraped": "2026-08-09T11:43:23.437Z"
     },
     {
       "id": "ErieReader-2026-08-16-lagoon-by-pontoon",
@@ -1954,7 +1563,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.035Z"
+      "lastScraped": "2026-08-09T11:43:41.032Z"
+    },
+    {
+      "id": "ErieReader-2026-08-16-celebrate-erie-2026",
+      "name": "Celebrate Erie 2026",
+      "date": "2026-08-16",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:41.032Z"
     },
     {
       "id": "ErieReader-2026-08-17-building-the-presque-isle-neighborhood-n",
@@ -1967,7 +1589,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.036Z"
+      "lastScraped": "2026-08-09T11:43:41.033Z"
     },
     {
       "id": "ErieReader-2026-08-17-ssjnn-little-italy-farmers-market",
@@ -1980,7 +1602,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.036Z"
+      "lastScraped": "2026-08-09T11:43:41.033Z"
     },
     {
       "id": "ErieReader-2026-08-17-pay-what-you-can-farm-stand-unity-in-edi",
@@ -1993,7 +1615,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.036Z"
+      "lastScraped": "2026-08-09T11:43:41.033Z"
     },
     {
       "id": "ErieReader-2026-08-17-teen-mandala-window-cling",
@@ -2006,7 +1628,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.351Z"
+      "lastScraped": "2026-08-09T11:43:41.033Z"
     },
     {
       "id": "ErieReader-2026-08-17-working-with-windows-part-2",
@@ -2019,7 +1641,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.035Z"
+      "lastScraped": "2026-08-09T11:43:41.032Z"
     },
     {
       "id": "ErieReader-2026-08-17-senior-expo-2026",
@@ -2032,7 +1654,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:08.035Z"
+      "lastScraped": "2026-08-09T11:43:41.033Z"
     },
     {
       "id": "ErieReader-2026-08-18-pay-what-you-can-farm-stand-15th-and-par",
@@ -2045,7 +1667,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.351Z"
+      "lastScraped": "2026-08-09T11:43:43.399Z"
     },
     {
       "id": "ErieReader-2026-08-18-crafty-kids-club",
@@ -2058,7 +1680,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.351Z"
+      "lastScraped": "2026-08-09T11:43:43.399Z"
     },
     {
       "id": "ErieReader-2026-08-18-work-in-the-age-of-ai-what-s-changing-wh",
@@ -2071,7 +1693,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.351Z"
+      "lastScraped": "2026-08-09T11:43:43.399Z"
     },
     {
       "id": "ErieReader-2026-08-18-asbury-woods-plover-power-",
@@ -2084,7 +1706,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.351Z"
+      "lastScraped": "2026-08-09T11:43:43.399Z"
     },
     {
       "id": "FlagshipCity-2026-08-18-karaoke-the-food-hall",
@@ -2096,7 +1718,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-aug-18",
       "description": "Karaoke night in Downtown Erie at Flagship City Food Hall featuring local host Preach Freedom. Enjoy Happy Hour at IPPA and a high-energy night of music, food, and fun.",
-      "lastScraped": "2026-08-08T11:35:20.978Z",
+      "lastScraped": "2026-08-09T11:36:03.939Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e7d8702ac07a3d5080dabe/1776801940578/KARAOKE+%281%29.png?format=1500w"
     },
     {
@@ -2110,7 +1732,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.351Z"
+      "lastScraped": "2026-08-09T11:43:43.400Z"
     },
     {
       "id": "FlagshipCity-2026-08-18-8-great-tuesdays",
@@ -2122,7 +1744,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/8-great-tuesdays-7",
       "description": "8 Great Tuesdays presented by PNC Bank is a FREE community concert series that takes place at the Rebich Investments Amphitheater throughout July and August featuring a variety of local and regional bands.",
-      "lastScraped": "2026-08-08T11:35:20.979Z",
+      "lastScraped": "2026-08-09T11:36:03.939Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e4422aa39cd2080809e2cb/1776566844092/2820501-NWPA-8-Great-Tuesdays-Logo-Lockups_StackedJPGsPNCxNWPA_Presented-By_8-Great-Tuesdays_Color.jpg?format=1500w"
     },
     {
@@ -2136,7 +1758,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.352Z"
+      "lastScraped": "2026-08-09T11:43:43.400Z"
     },
     {
       "id": "ErieReader-2026-08-19-make-a-light-up-lighthouse",
@@ -2149,7 +1771,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.352Z"
+      "lastScraped": "2026-08-09T11:43:43.400Z"
     },
     {
       "id": "ErieReader-2026-08-19-pay-what-you-can-farm-stand-ecat",
@@ -2162,7 +1784,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.352Z"
+      "lastScraped": "2026-08-09T11:43:43.400Z"
     },
     {
       "id": "ErieReader-2026-08-19-happy-appy-food-tour-in-downtown-erie",
@@ -2175,7 +1797,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.352Z"
+      "lastScraped": "2026-08-09T11:43:43.400Z"
     },
     {
       "id": "ErieReader-2026-08-19-teen-trivia-hour-music",
@@ -2188,7 +1810,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.352Z"
+      "lastScraped": "2026-08-09T11:43:43.400Z"
     },
     {
       "id": "ErieReader-2026-08-19-free-sunrise-yoga",
@@ -2201,7 +1823,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.352Z"
+      "lastScraped": "2026-08-09T11:43:43.400Z"
     },
     {
       "id": "ErieReader-2026-08-19-in-the-cards-book-club",
@@ -2214,46 +1836,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:10.352Z"
-    },
-    {
-      "id": "ErieReader-2026-08-19-history-is-fun-erie-architecture",
-      "name": "History Is Fun - Erie Architecture",
-      "date": "2026-08-19",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:10.353Z"
-    },
-    {
-      "id": "ErieReader-2026-08-19-west-bayfit-and-farmers-market",
-      "name": "West Bayfit and Farmers Market",
-      "date": "2026-08-19",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:12.638Z"
-    },
-    {
-      "id": "ErieReader-2026-08-19-chironex-wsg-cerebral-desecration",
-      "name": "Chironex wsg Cerebral Desecration",
-      "date": "2026-08-19",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:12.638Z"
+      "lastScraped": "2026-08-09T11:43:43.400Z"
     },
     {
       "id": "ErieReader-2026-08-19-live-music-at-the-flagship-city-food-hal",
@@ -2266,7 +1849,46 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.638Z"
+      "lastScraped": "2026-08-09T11:43:43.400Z"
+    },
+    {
+      "id": "ErieReader-2026-08-19-chironex-wsg-cerebral-desecration",
+      "name": "Chironex wsg Cerebral Desecration",
+      "date": "2026-08-19",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:43.401Z"
+    },
+    {
+      "id": "ErieReader-2026-08-19-history-is-fun-erie-architecture",
+      "name": "History Is Fun - Erie Architecture",
+      "date": "2026-08-19",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:45.713Z"
+    },
+    {
+      "id": "ErieReader-2026-08-19-west-bayfit-and-farmers-market",
+      "name": "West Bayfit and Farmers Market",
+      "date": "2026-08-19",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:45.713Z"
     },
     {
       "id": "FlagshipCity-2026-08-19-rich-wood-the-food-hall",
@@ -2278,21 +1900,8 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/live-music-aug-19",
       "description": "Enjoy live music in Downtown Erie every week at Flagship City Food Hall. Featuring local musicians across genres like R&B, folk rock, jazz, pop, and more. Try some food from multiple kitchens, drink specials, and a relaxed atmosphere.",
-      "lastScraped": "2026-08-08T11:35:20.979Z",
+      "lastScraped": "2026-08-09T11:36:03.939Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e7d4a132d1b603f4ffe602/1786047866445/LIVE+MUSIC+%2813%29.png?format=1500w"
-    },
-    {
-      "id": "ErieReader-2026-08-19-broke-boland-s-state-street-open-mic-nig",
-      "name": "Broke Boland's State Street Open Mic Night",
-      "date": "2026-08-19",
-      "time": "7:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:12.638Z"
     },
     {
       "id": "ErieReader-2026-08-19-it-s-not-in-your-head-understanding-the-",
@@ -2305,7 +1914,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.639Z"
+      "lastScraped": "2026-08-09T11:43:45.713Z"
+    },
+    {
+      "id": "ErieReader-2026-08-19-broke-boland-s-state-street-open-mic-nig",
+      "name": "Broke Boland's State Street Open Mic Night",
+      "date": "2026-08-19",
+      "time": "7:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:45.714Z"
     },
     {
       "id": "ErieReader-2026-08-20-r-sum-workshop",
@@ -2318,7 +1940,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.640Z"
+      "lastScraped": "2026-08-09T11:43:45.714Z"
     },
     {
       "id": "ErieReader-2026-08-20-yahn-planetarium-children-s-show",
@@ -2331,7 +1953,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.639Z"
+      "lastScraped": "2026-08-09T11:43:45.714Z"
     },
     {
       "id": "ErieReader-2026-08-20-yahn-planetarium-show-general-audience",
@@ -2344,7 +1966,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.639Z"
+      "lastScraped": "2026-08-09T11:43:45.714Z"
     },
     {
       "id": "ErieReader-2026-08-20-pay-what-you-can-farm-stand-4th-street-f",
@@ -2357,7 +1979,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.639Z"
+      "lastScraped": "2026-08-09T11:43:45.714Z"
     },
     {
       "id": "ErieReader-2026-08-20-pa-skillup-overview-workshop",
@@ -2370,7 +1992,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.640Z"
+      "lastScraped": "2026-08-09T11:43:45.714Z"
     },
     {
       "id": "ErieReader-2026-08-20-gallery-opening-npaa-landscapes-seascape",
@@ -2383,33 +2005,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.640Z"
-    },
-    {
-      "id": "ErieReader-2026-08-20-wandering-words-at-the-baseball-game",
-      "name": "Wandering Words At The Baseball Game",
-      "date": "2026-08-20",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Arts",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:12.640Z"
-    },
-    {
-      "id": "ErieReader-2026-08-20-movie-night-for-adults-april-morning",
-      "name": "Movie Night For Adults: April Morning",
-      "date": "2026-08-20",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Arts",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:12.641Z"
+      "lastScraped": "2026-08-09T11:43:45.714Z"
     },
     {
       "id": "ErieReader-2026-08-20-asbury-woods-small-but-mighty-bonsai-bui",
@@ -2422,7 +2018,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.641Z"
+      "lastScraped": "2026-08-09T11:43:45.715Z"
     },
     {
       "id": "ErieReader-2026-08-20-compton-s-table-queer-open-mic",
@@ -2435,7 +2031,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.886Z"
+      "lastScraped": "2026-08-09T11:43:45.715Z"
     },
     {
       "id": "ErieReader-2026-08-20-pick-your-project-workshop",
@@ -2448,20 +2044,33 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.886Z"
+      "lastScraped": "2026-08-09T11:43:45.715Z"
     },
     {
-      "id": "ErieReader-2026-08-20-what-happens-when-veins-struggle-to-retu",
-      "name": "What Happens When Veins Struggle To Return Blood To The Heart And What To Do About It?",
+      "id": "ErieReader-2026-08-20-wandering-words-at-the-baseball-game",
+      "name": "Wandering Words At The Baseball Game",
       "date": "2026-08-20",
-      "time": "7:00 PM",
+      "time": "6:00 PM",
       "venue": "Erie, PA",
-      "category": "Community",
+      "category": "Arts",
       "source": "ErieReader",
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.886Z"
+      "lastScraped": "2026-08-09T11:43:45.715Z"
+    },
+    {
+      "id": "ErieReader-2026-08-20-movie-night-for-adults-april-morning",
+      "name": "Movie Night For Adults: April Morning",
+      "date": "2026-08-20",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Arts",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:47.994Z"
     },
     {
       "id": "ErieReader-2026-08-20-dj-bill-page-s-trivia-night",
@@ -2474,7 +2083,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.886Z"
+      "lastScraped": "2026-08-09T11:43:47.994Z"
+    },
+    {
+      "id": "ErieReader-2026-08-20-what-happens-when-veins-struggle-to-retu",
+      "name": "What Happens When Veins Struggle To Return Blood To The Heart And What To Do About It?",
+      "date": "2026-08-20",
+      "time": "7:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:47.994Z"
     },
     {
       "id": "ErieReader-2026-08-20-live-music-the-monk-featuring-jack-steve",
@@ -2487,7 +2109,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:12.640Z"
+      "lastScraped": "2026-08-09T11:43:45.714Z"
     },
     {
       "id": "ErieReader-2026-08-20-magic-the-gathering-tournament",
@@ -2500,7 +2122,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.886Z"
+      "lastScraped": "2026-08-09T11:43:47.994Z"
     },
     {
       "id": "ErieReader-2026-08-21-careerlink-open-hours",
@@ -2513,7 +2135,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.888Z"
+      "lastScraped": "2026-08-09T11:43:47.995Z"
     },
     {
       "id": "ErieReader-2026-08-21-family-fun-day-at-werner-books-back-to-s",
@@ -2526,7 +2148,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.887Z"
+      "lastScraped": "2026-08-09T11:43:47.994Z"
     },
     {
       "id": "ErieReader-2026-08-21-free-water-taxi-fridays",
@@ -2539,7 +2161,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.888Z"
+      "lastScraped": "2026-08-09T11:43:47.994Z"
     },
     {
       "id": "ErieReader-2026-08-21-pay-what-you-can-farm-stand-perry-square",
@@ -2552,7 +2174,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.888Z"
+      "lastScraped": "2026-08-09T11:43:47.995Z"
     },
     {
       "id": "ErieReader-2026-08-21-pay-what-you-can-farm-stand-strong-vince",
@@ -2565,7 +2187,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.888Z"
+      "lastScraped": "2026-08-09T11:43:47.995Z"
     },
     {
       "id": "ErieReader-2026-08-21-the-music-of-origins-series-three-way-st",
@@ -2578,59 +2200,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.888Z"
-    },
-    {
-      "id": "ErieReader-2026-08-21-mini-canvas-or-sign-workshop",
-      "name": "Mini Canvas Or Sign Workshop",
-      "date": "2026-08-21",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:18.390Z"
-    },
-    {
-      "id": "ErieReader-2026-08-21-live-music-the-monk-featuring-wicked-goo",
-      "name": "Live Music @the Monk Featuring Wicked Goose",
-      "date": "2026-08-21",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Arts",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:18.391Z"
-    },
-    {
-      "id": "ErieReader-2026-08-21-music-of-origins-series",
-      "name": "Music of Origins Series",
-      "date": "2026-08-21",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:18.391Z"
-    },
-    {
-      "id": "ErieReader-2026-08-21-sip-spin",
-      "name": "Sip & Spin",
-      "date": "2026-08-21",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:18.391Z"
+      "lastScraped": "2026-08-09T11:43:47.995Z"
     },
     {
       "id": "ErieReader-2026-08-21-frontier-friday-concert-series",
@@ -2643,7 +2213,59 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:18.391Z"
+      "lastScraped": "2026-08-09T11:43:47.995Z"
+    },
+    {
+      "id": "ErieReader-2026-08-21-mini-canvas-or-sign-workshop",
+      "name": "Mini Canvas Or Sign Workshop",
+      "date": "2026-08-21",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:50.325Z"
+    },
+    {
+      "id": "ErieReader-2026-08-21-live-music-the-monk-featuring-wicked-goo",
+      "name": "Live Music @the Monk Featuring Wicked Goose",
+      "date": "2026-08-21",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Arts",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:50.325Z"
+    },
+    {
+      "id": "ErieReader-2026-08-21-sip-spin",
+      "name": "Sip & Spin",
+      "date": "2026-08-21",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:50.325Z"
+    },
+    {
+      "id": "ErieReader-2026-08-21-music-of-origins-series",
+      "name": "Music of Origins Series",
+      "date": "2026-08-21",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:50.325Z"
     },
     {
       "id": "ErieReader-2026-08-21-friday-morning-beach-club",
@@ -2656,7 +2278,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.887Z"
+      "lastScraped": "2026-08-09T11:43:47.994Z"
     },
     {
       "id": "ErieReader-2026-08-21-live-music-at-altered-state-distillery",
@@ -2669,7 +2291,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:18.391Z"
+      "lastScraped": "2026-08-09T11:43:50.325Z"
     },
     {
       "id": "ErieReader-2026-08-21-jerrel-beamon-headlines-the-set-closet",
@@ -2682,7 +2304,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:18.391Z"
+      "lastScraped": "2026-08-09T11:43:50.326Z"
     },
     {
       "id": "ErieReader-2026-08-21-ren-e-fleming-with-b-la-fleck-the-fiddle",
@@ -2695,7 +2317,19 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:18.392Z"
+      "lastScraped": "2026-08-09T11:43:50.326Z"
+    },
+    {
+      "id": "VisitErie-2026-08-21-zabawa-polish-festival-2026",
+      "name": "Zabawa Polish Festival 2026",
+      "date": "2026-08-21",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Festival",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/08/21/2026/zabawa-polish-festival-2026",
+      "description": "",
+      "lastScraped": "2026-08-09T11:36:24.804Z"
     },
     {
       "id": "ErieReader-2026-08-21-lagoon-by-pontoon",
@@ -2708,20 +2342,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.887Z"
-    },
-    {
-      "id": "ErieReader-2026-08-21-zabawa-polish-festival",
-      "name": "Zabawa Polish Festival",
-      "date": "2026-08-21",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:14.887Z"
+      "lastScraped": "2026-08-09T11:43:47.994Z"
     },
     {
       "id": "ErieReader-2026-08-21-eerie-stories-legends-lore-ghost-tour",
@@ -2734,7 +2355,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:14.888Z"
+      "lastScraped": "2026-08-09T11:43:47.995Z"
+    },
+    {
+      "id": "ErieReader-2026-08-21-zabawa-polish-festival",
+      "name": "Zabawa Polish Festival",
+      "date": "2026-08-21",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:47.995Z"
     },
     {
       "id": "ErieReader-2026-08-22-glinodo-goat-fest",
@@ -2747,46 +2381,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.723Z"
-    },
-    {
-      "id": "ErieReader-2026-08-22-erie-suffragists-tour",
-      "name": "Erie Suffragists Tour",
-      "date": "2026-08-22",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:18.392Z"
-    },
-    {
-      "id": "ErieReader-2026-08-22-yahn-planetarium-children-s-show",
-      "name": "Yahn Planetarium: Children's show",
-      "date": "2026-08-22",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:18.392Z"
-    },
-    {
-      "id": "ErieReader-2026-08-22-book-signing-with-jayne-simon",
-      "name": "Book Signing With Jayne Simon",
-      "date": "2026-08-22",
-      "time": "10:00 AM",
-      "venue": "Erie, PA",
-      "category": "Family",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:18.393Z"
+      "lastScraped": "2026-08-09T11:43:52.915Z"
     },
     {
       "id": "ErieReader-2026-08-22-asbury-woods-brush-board-at-the-woods-fa",
@@ -2799,7 +2394,46 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:18.393Z"
+      "lastScraped": "2026-08-09T11:43:50.326Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-book-signing-with-jayne-simon",
+      "name": "Book Signing With Jayne Simon",
+      "date": "2026-08-22",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Family",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:50.326Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-yahn-planetarium-children-s-show",
+      "name": "Yahn Planetarium: Children's show",
+      "date": "2026-08-22",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Family",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:50.326Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-erie-suffragists-tour",
+      "name": "Erie Suffragists Tour",
+      "date": "2026-08-22",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:50.326Z"
     },
     {
       "id": "ErieReader-2026-08-22-leaf-open-market",
@@ -2812,7 +2446,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:18.393Z"
+      "lastScraped": "2026-08-09T11:43:50.326Z"
     },
     {
       "id": "ErieReader-2026-08-22-roland-sticker-printer-certification",
@@ -2825,7 +2459,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.722Z"
+      "lastScraped": "2026-08-09T11:43:50.327Z"
     },
     {
       "id": "ErieReader-2026-08-22-downtown-erie-food-tour",
@@ -2838,7 +2472,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.722Z"
+      "lastScraped": "2026-08-09T11:43:52.914Z"
     },
     {
       "id": "ErieReader-2026-08-22-saturday-sip-and-diy-workshop",
@@ -2851,20 +2485,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.722Z"
-    },
-    {
-      "id": "ErieReader-2026-08-22-yahn-planetarium-show-general-audience",
-      "name": "Yahn Planetarium Show: General Audience",
-      "date": "2026-08-22",
-      "time": "11:30 AM",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:20.722Z"
+      "lastScraped": "2026-08-09T11:43:52.914Z"
     },
     {
       "id": "ErieReader-2026-08-22-lower-greats-surfsup-meetup",
@@ -2877,7 +2498,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.723Z"
+      "lastScraped": "2026-08-09T11:43:52.914Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-yahn-planetarium-show-general-audience",
+      "name": "Yahn Planetarium Show: General Audience",
+      "date": "2026-08-22",
+      "time": "11:30 AM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:52.914Z"
     },
     {
       "id": "ErieReader-2026-08-22-sip-spin",
@@ -2890,7 +2524,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.723Z"
+      "lastScraped": "2026-08-09T11:43:52.915Z"
     },
     {
       "id": "ErieReader-2026-08-22-murder-mystery-dinner-mama-mia-mayhem-bl",
@@ -2903,20 +2537,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.723Z"
-    },
-    {
-      "id": "ErieReader-2026-08-22-live-music-the-monk-featuring-mean-old-b",
-      "name": "Live Music @the Monk Featuring Mean Old Bastards",
-      "date": "2026-08-22",
-      "time": "6:00 PM",
-      "venue": "Erie, PA",
-      "category": "Music",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:20.723Z"
+      "lastScraped": "2026-08-09T11:43:52.916Z"
     },
     {
       "id": "ErieReader-2026-08-22-live-music-at-bigbar",
@@ -2929,7 +2550,20 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.723Z"
+      "lastScraped": "2026-08-09T11:43:52.916Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-live-music-the-monk-featuring-mean-old-b",
+      "name": "Live Music @the Monk Featuring Mean Old Bastards",
+      "date": "2026-08-22",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:52.916Z"
     },
     {
       "id": "ErieReader-2026-08-22-live-music-at-altered-state-distillery",
@@ -2942,7 +2576,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.724Z"
+      "lastScraped": "2026-08-09T11:43:52.916Z"
     },
     {
       "id": "ErieReader-2026-08-22-eerie-stories-legends-lore-ghost-tour",
@@ -2955,7 +2589,33 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.724Z"
+      "lastScraped": "2026-08-09T11:43:52.916Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-the-whimsical-world-of-shel-silverstein",
+      "name": "The Whimsical World of Shel Silverstein",
+      "date": "2026-08-22",
+      "time": "7:30 PM",
+      "venue": "SilversteinPerforming Arts8/22/2026 at 7:30 PMPACA",
+      "category": "Theater",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.277Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-silkroad-ensemble-featuring-rhiannon-gid",
+      "name": "Silkroad Ensemble featuring Rhiannon Giddens",
+      "date": "2026-08-22",
+      "time": "8:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.277Z"
     },
     {
       "id": "ErieReader-2026-08-22-frontier-park-bird-walks",
@@ -2968,7 +2628,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:18.392Z"
+      "lastScraped": "2026-08-09T11:43:50.326Z"
     },
     {
       "id": "ErieReader-2026-08-22-walk-for-a-brighter-tomorrow",
@@ -2981,33 +2641,7 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:18.392Z"
-    },
-    {
-      "id": "ErieReader-2026-08-22-zabawa-polish-festival",
-      "name": "Zabawa Polish Festival",
-      "date": "2026-08-22",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:20.723Z"
-    },
-    {
-      "id": "ErieReader-2026-08-22-crawford-county-fair",
-      "name": "Crawford County Fair",
-      "date": "2026-08-22",
-      "time": "TBD",
-      "venue": "Erie, PA",
-      "category": "Community",
-      "source": "ErieReader",
-      "url": "",
-      "image": "",
-      "description": "",
-      "lastScraped": "2026-08-08T11:36:20.723Z"
+      "lastScraped": "2026-08-09T11:43:50.326Z"
     },
     {
       "id": "ErieReader-2026-08-22-lagoon-by-pontoon",
@@ -3020,7 +2654,241 @@
       "url": "",
       "image": "",
       "description": "",
-      "lastScraped": "2026-08-08T11:36:20.723Z"
+      "lastScraped": "2026-08-09T11:43:52.915Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-zabawa-polish-festival",
+      "name": "Zabawa Polish Festival",
+      "date": "2026-08-22",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:52.915Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-save-our-clown-hall-rummage-sale",
+      "name": "Save Our Clown Hall Rummage Sale",
+      "date": "2026-08-22",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:52.915Z"
+    },
+    {
+      "id": "ErieReader-2026-08-22-crawford-county-fair",
+      "name": "Crawford County Fair",
+      "date": "2026-08-22",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:52.915Z"
+    },
+    {
+      "id": "ErieReader-2026-08-23-crafts-in-the-country",
+      "name": "Crafts In The Country",
+      "date": "2026-08-23",
+      "time": "10:00 AM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.277Z"
+    },
+    {
+      "id": "ErieReader-2026-08-23-asbury-woods-medicinal-plant-walk",
+      "name": "Asbury Woods Medicinal Plant Walk",
+      "date": "2026-08-23",
+      "time": "12:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.277Z"
+    },
+    {
+      "id": "ErieReader-2026-08-23-book-signing-with-david-durst",
+      "name": "Book Signing With David Durst",
+      "date": "2026-08-23",
+      "time": "2:00 PM",
+      "venue": "Erie, PA",
+      "category": "Arts",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.277Z"
+    },
+    {
+      "id": "ErieReader-2026-08-23-wild-church-at-glinodo-park",
+      "name": "Wild Church At Glinodo Park",
+      "date": "2026-08-23",
+      "time": "4:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.278Z"
+    },
+    {
+      "id": "ErieReader-2026-08-23-lagoon-by-pontoon",
+      "name": "Lagoon By Pontoon",
+      "date": "2026-08-23",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.277Z"
+    },
+    {
+      "id": "ErieReader-2026-08-23-travis-tritt",
+      "name": "Travis Tritt",
+      "date": "2026-08-23",
+      "time": "TBD",
+      "venue": "Liberty Park",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.277Z"
+    },
+    {
+      "id": "ErieReader-2026-08-23-crawford-county-fair",
+      "name": "Crawford County Fair",
+      "date": "2026-08-23",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.277Z"
+    },
+    {
+      "id": "ErieReader-2026-08-23-zabawa-polish-festival",
+      "name": "Zabawa Polish Festival",
+      "date": "2026-08-23",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.277Z"
+    },
+    {
+      "id": "ErieReader-2026-08-24-ssjnn-little-italy-farmers-market",
+      "name": "SSJNN Little Italy Farmers Market",
+      "date": "2026-08-24",
+      "time": "3:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.282Z"
+    },
+    {
+      "id": "ErieReader-2026-08-24-pay-what-you-can-farm-stand-unity-in-edi",
+      "name": "Pay What You Can Farm Stand: Unity in Edinboro",
+      "date": "2026-08-24",
+      "time": "4:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.609Z"
+    },
+    {
+      "id": "ErieReader-2026-08-24-monday-makers-back-to-school-pencil-pouc",
+      "name": "Monday Makers: Back To School Pencil Pouch",
+      "date": "2026-08-24",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.609Z"
+    },
+    {
+      "id": "ErieReader-2026-08-24-teen-diy-school-supplies",
+      "name": "Teen: DIY School Supplies",
+      "date": "2026-08-24",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.609Z"
+    },
+    {
+      "id": "ErieReader-2026-08-24-working-files-and-folders",
+      "name": "Working Files And Folders",
+      "date": "2026-08-24",
+      "time": "9:30 AM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.282Z"
+    },
+    {
+      "id": "ErieReader-2026-08-24-crawford-county-fair",
+      "name": "Crawford County Fair",
+      "date": "2026-08-24",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:55.282Z"
+    },
+    {
+      "id": "ErieReader-2026-08-25-pay-what-you-can-farm-stand-15th-and-par",
+      "name": "Pay What You Can Farm Stand: 15th and Parade",
+      "date": "2026-08-25",
+      "time": "12:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.609Z"
     },
     {
       "id": "FlagshipCity-2026-08-25-karaoke-the-food-hall",
@@ -3032,8 +2900,21 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-aug-25",
       "description": "Karaoke night in Downtown Erie at Flagship City Food Hall featuring local host Preach Freedom. Enjoy Happy Hour at IPPA and a high-energy night of music, food, and fun.",
-      "lastScraped": "2026-08-08T11:35:20.979Z",
+      "lastScraped": "2026-08-09T11:36:03.939Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e7d89bfa548a09b3395370/1776801985158/KARAOKE+%281%29.png?format=1500w"
+    },
+    {
+      "id": "ErieReader-2026-08-25-8-great-tuesdays-2026",
+      "name": "8 Great Tuesdays 2026",
+      "date": "2026-08-25",
+      "time": "6:30 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.609Z"
     },
     {
       "id": "FlagshipCity-2026-08-25-8-great-tuesdays",
@@ -3045,8 +2926,112 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/8-great-tuesdays-8",
       "description": "8 Great Tuesdays presented by PNC Bank is a FREE community concert series that takes place at the Rebich Investments Amphitheater throughout July and August featuring a variety of local and regional bands.",
-      "lastScraped": "2026-08-08T11:35:20.979Z",
+      "lastScraped": "2026-08-09T11:36:03.940Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e44241a39cd2080809e33e/1776566867879/2820501-NWPA-8-Great-Tuesdays-Logo-Lockups_StackedJPGsPNCxNWPA_Presented-By_8-Great-Tuesdays_Color.jpg?format=1500w"
+    },
+    {
+      "id": "ErieReader-2026-08-25-little-italy-a-dream-remembered",
+      "name": "Little Italy: A Dream Remembered",
+      "date": "2026-08-25",
+      "time": "7:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.609Z"
+    },
+    {
+      "id": "ErieReader-2026-08-25-get-happy-with-lara-downes-and-kurt-elli",
+      "name": "Get Happy with Lara Downes and Kurt Elling",
+      "date": "2026-08-25",
+      "time": "8:00 PM",
+      "venue": "Erie, PA",
+      "category": "Music",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.609Z"
+    },
+    {
+      "id": "ErieReader-2026-08-25-crawford-county-fair",
+      "name": "Crawford County Fair",
+      "date": "2026-08-25",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.609Z"
+    },
+    {
+      "id": "ErieReader-2026-08-26-the-power-and-potential-of-personalized-",
+      "name": "The Power And Potential Of Personalized Medicine: Discussing Hereditary Cancer Risk",
+      "date": "2026-08-26",
+      "time": "12:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.610Z"
+    },
+    {
+      "id": "ErieReader-2026-08-26-pay-what-you-can-farm-stand-ecat",
+      "name": "Pay What You Can Farm Stand: ECAT",
+      "date": "2026-08-26",
+      "time": "4:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.610Z"
+    },
+    {
+      "id": "ErieReader-2026-08-26-happy-appy-food-tour-in-downtown-erie",
+      "name": "Happy Appy Food Tour In Downtown Erie",
+      "date": "2026-08-26",
+      "time": "5:00 PM",
+      "venue": "Erie, PA",
+      "category": "Festival",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.610Z"
+    },
+    {
+      "id": "ErieReader-2026-08-26-free-sunrise-yoga",
+      "name": "FREE Sunrise Yoga",
+      "date": "2026-08-26",
+      "time": "6:00 AM",
+      "venue": "gaSports8/26/2026 from 6 AM to 8 AMDobbins Landing",
+      "category": "Sports",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.609Z"
+    },
+    {
+      "id": "ErieReader-2026-08-26-small-questions-big-answers",
+      "name": "Small Questions, Big Answers",
+      "date": "2026-08-26",
+      "time": "6:00 PM",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.610Z"
     },
     {
       "id": "FlagshipCity-2026-08-26-lopaka-rootz-kt-the-food-hall",
@@ -3058,8 +3043,33 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/live-music-aug-26",
       "description": "Enjoy live music in Downtown Erie every week at Flagship City Food Hall. Featuring local musicians across genres like R&B, folk rock, jazz, pop, and more. Try some food from multiple kitchens, drink specials, and a relaxed atmosphere.",
-      "lastScraped": "2026-08-08T11:35:20.980Z",
+      "lastScraped": "2026-08-09T11:36:03.940Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e7d4d0bd164f6548d4756a/1786047884341/LIVE+MUSIC+%2813%29.png?format=1500w"
+    },
+    {
+      "id": "ErieReader-2026-08-26-crawford-county-fair",
+      "name": "Crawford County Fair",
+      "date": "2026-08-26",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "ErieReader",
+      "url": "",
+      "image": "",
+      "description": "",
+      "lastScraped": "2026-08-09T11:43:57.610Z"
+    },
+    {
+      "id": "VisitErie-2026-08-30-erie-county-fair-2026",
+      "name": "Erie County Fair 2026",
+      "date": "2026-08-30",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/08/30/2026/erie-county-fair-2026",
+      "description": "",
+      "lastScraped": "2026-08-09T11:36:24.804Z"
     },
     {
       "id": "FlagshipCity-2026-09-01-karaoke-the-food-hall",
@@ -3071,7 +3081,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-sept-1",
       "description": "Karaoke night in Downtown Erie at Flagship City Food Hall featuring local host Preach Freedom. Enjoy Happy Hour at IPPA and a high-energy night of music, food, and fun.",
-      "lastScraped": "2026-08-08T11:35:20.980Z",
+      "lastScraped": "2026-08-09T11:36:03.940Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e7d8c79f589d24377cda46/1776802032434/KARAOKE+%281%29.png?format=1500w"
     },
     {
@@ -3084,7 +3094,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/live-music-sept-2",
       "description": "Enjoy live music in Downtown Erie every week at Flagship City Food Hall. Featuring local musicians across genres like R&B, folk rock, jazz, pop, and more. Try some food from multiple kitchens, drink specials, and a relaxed atmosphere.",
-      "lastScraped": "2026-08-08T11:35:20.980Z",
+      "lastScraped": "2026-08-09T11:36:03.940Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e7d4ff30d5c51f162e56b8/1776801068071/LIVE+MUSIC+%2813%29.png?format=1500w"
     },
     {
@@ -3097,8 +3107,44 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/boutique-nights-sept-4",
       "description": "Boutique Nights is back! Downtown Erie streets will fill with art, music, and life. Come Downtown to experience this artful event!",
-      "lastScraped": "2026-08-08T11:35:20.980Z",
+      "lastScraped": "2026-08-09T11:36:03.940Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69d714ed73ab1022a8adb1f2/1775705283354/4.png?format=1500w"
+    },
+    {
+      "id": "VisitErie-2026-09-05-german-heritage-festival-2026",
+      "name": "German Heritage Festival 2026",
+      "date": "2026-09-05",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Festival",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/09/05/2026/german-heritage-festival-2026",
+      "description": "",
+      "lastScraped": "2026-08-09T11:36:24.804Z"
+    },
+    {
+      "id": "VisitErie-2026-09-06-gem-city-renaissance-festival",
+      "name": "Gem City Renaissance Festival",
+      "date": "2026-09-06",
+      "time": "TBD",
+      "venue": "Frontier Park",
+      "category": "Festival",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/09/06/2026/gem-city-renaissance-festival-2",
+      "description": "",
+      "lastScraped": "2026-08-09T11:36:24.805Z"
+    },
+    {
+      "id": "VisitErie-2026-09-07-2026-waterford-community-fair",
+      "name": "2026 Waterford Community Fair",
+      "date": "2026-09-07",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Community",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/09/07/2026/2026-waterford-community-fair",
+      "description": "",
+      "lastScraped": "2026-08-09T11:36:24.805Z"
     },
     {
       "id": "FlagshipCity-2026-09-08-karaoke-the-food-hall",
@@ -3110,7 +3156,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-sept-8",
       "description": "Karaoke night in Downtown Erie at Flagship City Food Hall featuring local host Preach Freedom. Enjoy Happy Hour at IPPA and a high-energy night of music, food, and fun.",
-      "lastScraped": "2026-08-08T11:35:20.981Z",
+      "lastScraped": "2026-08-09T11:36:03.940Z",
       "image": "http://static1.squarespace.com/static/64890c08b14f8044b088a7db/64ab35a396ba7270aff6233a/69e7d8f4bd164f6548d660fb/1776802076810/KARAOKE+%281%29.png?format=1500w"
     },
     {
@@ -3123,7 +3169,43 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/live-music-sept-9",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:20.981Z"
+      "lastScraped": "2026-08-09T11:36:03.940Z"
+    },
+    {
+      "id": "VisitErie-2026-09-11-32nd-annual-pennwest-edinboro-highland-g",
+      "name": "32nd Annual PennWest Edinboro Highland Games",
+      "date": "2026-09-11",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Sports",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/09/11/2026/32nd-annual-pennwest-edinboro-highland-games",
+      "description": "",
+      "lastScraped": "2026-08-09T11:36:24.805Z"
+    },
+    {
+      "id": "VisitErie-2026-09-12-fall-harvest-festival-at-port-farms",
+      "name": "Fall Harvest Festival at Port Farms",
+      "date": "2026-09-12",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Festival",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/09/12/2026/fall-harvest-festival-at-port-farms-2",
+      "description": "",
+      "lastScraped": "2026-08-09T11:36:24.805Z"
+    },
+    {
+      "id": "VisitErie-2026-09-12-2026-lake-erie-lit-fest",
+      "name": "2026 Lake Erie Lit Fest",
+      "date": "2026-09-12",
+      "time": "TBD",
+      "venue": "Erie, PA",
+      "category": "Festival",
+      "source": "VisitErie",
+      "url": "https://www.visiterie.com/events/event/09/12/2026/2026-lake-erie-lit-fest",
+      "description": "",
+      "lastScraped": "2026-08-09T11:36:24.805Z"
     },
     {
       "id": "FlagshipCity-2026-09-15-karaoke-the-food-hall",
@@ -3135,7 +3217,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-sept-15",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:20.981Z"
+      "lastScraped": "2026-08-09T11:36:03.941Z"
     },
     {
       "id": "FlagshipCity-2026-09-16-live-music-the-food-hall",
@@ -3147,7 +3229,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/live-music-sept-16",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:20.981Z"
+      "lastScraped": "2026-08-09T11:36:03.941Z"
     },
     {
       "id": "FlagshipCity-2026-09-22-karaoke-the-food-hall",
@@ -3159,7 +3241,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-sept-22",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:20.981Z"
+      "lastScraped": "2026-08-09T11:36:03.941Z"
     },
     {
       "id": "FlagshipCity-2026-09-23-live-music-the-food-hall",
@@ -3171,7 +3253,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/live-music-sept-23",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:20.981Z"
+      "lastScraped": "2026-08-09T11:36:03.941Z"
     },
     {
       "id": "FlagshipCity-2026-09-29-karaoke-the-food-hall",
@@ -3183,7 +3265,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/karaoke-at-the-food-hall-sept-29",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:20.982Z"
+      "lastScraped": "2026-08-09T11:36:03.941Z"
     },
     {
       "id": "FlagshipCity-2026-09-30-live-music-the-food-hall",
@@ -3195,7 +3277,7 @@
       "source": "FlagshipCity",
       "url": "https://www.flagshipcitydistrict.com/events/live-music-sept-30",
       "description": "",
-      "lastScraped": "2026-08-08T11:35:20.982Z"
+      "lastScraped": "2026-08-09T11:36:03.941Z"
     }
   ]
 }
